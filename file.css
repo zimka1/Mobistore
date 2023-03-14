@@ -1,0 +1,659 @@
+@font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTDemi/FuturaPTDemi.woff') format('woff'); /* Подключение WOFF-шрифта */
+    font-weight: normal;
+    font-style: normal;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+    overflow-x: hidden;
+}
+header {
+    width: 100%;
+    height: 15%;
+    font-size: 3em;
+    position: fixed;
+    top:0px;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 768px) {
+header {
+    height: 10%;
+    font-size: 2em;
+}
+}
+
+@media screen and (max-width: 480px) {
+header {
+    height: 5%;
+    font-size: 1.5em;
+}
+}
+.columnsHeader {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin-top: 0px;
+    height: 55px;
+    justify-content: center; 
+   
+}
+
+/*---------------------------------------------------------------*/
+.columnsHeader .column1 .textCol{
+    height: 55px;
+    line-height: 0.5;
+    margin-top: 10px;
+}
+.columnsHeader .column1 .textCol .mobistor{
+    font-family: 'Futura PT';
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #2F2C2D;
+
+}
+.columnsHeader .column1 .textCol .scooters{
+    font-family: 'Futura PT';
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #F55522;
+
+}
+/*---------------------------------------------------------------*/
+.columnsHeader .column2 .textCol{
+    height: 55px;
+    line-height: 0.2;
+    margin-top: 5px;
+
+}
+.columnsHeader .column2 .textCol .br1{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+    color: #353942;
+}
+.columnsHeader .column2 .textCol .br2{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #353942;
+}
+.columnsHeader .column2 .textCol .br3{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FF5C38;
+}
+/*---------------------------------------------------------------*/
+.columnsHeader .column3{
+    display: flex;
+}
+.columnsHeader .column3 .textCol{
+    height: 55px;
+    line-height: 0.2;
+    margin-top: 0;
+    margin-left: 20px;
+}
+.columnsHeader .column3 .textCol .br1{
+    color: #353942;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Futura PT';
+    font-size: 12px;
+
+
+}
+.columnsHeader .column3 .textCol .br2{
+    width: 130px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+/*---------------------------------------------------------------*/
+
+.columnsHeader .column4{
+    display: flex;
+    margin: 15px -5px
+}
+.columnsHeader .column4 .masenger{
+    margin: 0 5px
+}
+/*---------------------------------------------------------------*/
+
+.columnsHeader .column5{
+    display: flex;
+}
+.columnsHeader .column5 .textCol{
+    line-height: 0.2;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.columnsHeader .column5 .textCol .br1{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #353942;
+
+
+}
+.columnsHeader .column5 .textCol .br2{
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: right;
+    color: #353942;
+    text-align: center;
+
+}
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.headerNav{
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    margin-top: 25px;
+    border-top: solid 1px #C4C4C4;
+}
+.topnav{
+    background-color: #ffffff;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+.topnav a{
+    text-align: center;
+    padding: 16px 16px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #353942;
+    text-decoration: none;
+}
+.topnav a:hover{
+    color: #FF8329;
+}
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+.original{
+    margin-top: 0;
+}
+.original .bg{
+    z-index: -1;
+    position: absolute;
+    width: 1900px;
+    max-width: inherit;
+    margin: 0 0 0 75%;
+    left: -1430px;
+}
+.originalText{
+    padding: 50px 90px;
+    
+}
+/*---------------------------------------------------------------*/
+.originalText .text1{
+    margin-top: 0px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    margin-bottom: 10px;
+    line-height: 100%;
+    color: #4B4B4B;
+
+}
+.originalText .text1 .br1{
+    color: #FFFFFF;
+    background-image: url("img/main/line.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center bottom; 
+    display: inline-block;
+    padding: 10px;
+}
+/*---------------------------------------------------------------*/
+.originalText .text2{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 120%;
+    color: #4B4B4B;
+    margin: 0;
+}
+.originalText .btn{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 25px;
+    width: 280px;
+    height: 70px;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
+    box-shadow: 0px 0px 60px rgba(228, 117, 73, 0.734);
+    border-radius: 100px;
+}
+/*---------------------------------------------------------------*/
+.pluses{
+    background: linear-gradient(111.58deg, #F9E7E7 0%, #FFE8D7 100%);
+    border-radius: 20px;
+    border-color: #ff7700;
+    width: 80%;
+    height: 160px;
+    margin-top: 70px;
+    display: fixed;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.columnsPluses{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    padding: 35px;
+    justify-content: center; /* Выравниваем по горизонтали */
+    border-radius: 20px;
+
+}
+/*---------------------------------------------------------------*/
+.columnsPluses .column1, .columnsPluses .column2, .columnsPluses .column3{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.columnsPluses img{
+    width: 80px;
+    height: 90px;
+    border-radius: 100px;
+
+}
+
+.columnsPluses .columnText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: #353942;
+}
+.columnsPluses .columnText .br1{
+    color: #FF5C38;
+}
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+.msScooter .bg{
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    border-bottom: 2px solid #ECECEC;
+    
+}
+.msScooter{
+    padding-bottom: 70px;
+}
+.msScooterTitle .br1{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 140%;
+    text-align: center;
+    color: #FF5C38;
+}
+.msScooterTitle{
+    font-family: Futura PT;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #4B4B4B;
+}
+
+/*---------------------------------------------------------------*/
+.columnScooter{
+    display: flex;
+    gap: 20px;
+    padding: 35px;
+    align-items: center;
+    justify-content: center; 
+    margin-top: -80px;
+}
+.columnScooter .back, .columnScooter .next{
+    height: 57px;
+    width: 35.22px;   
+}
+.columnScooter .pic{
+    width: 766px;
+    height: 380px;
+}
+.columnScooter2{
+    display: grid;
+    grid-template-columns: repeat(5, 0fr);
+    gap: 0px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center; 
+    margin-top: -80px;
+}
+.columnScooter2 img{
+    width: 160px;
+    height: 160px;
+}
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+.katalogTitle{
+    font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 54px;
+line-height: 120%;
+/* or 65px */
+
+text-align: center;
+
+color: #FF5C38;
+}
+
+.katalogTitle .br1{
+color: #4B4B4B;
+}
+.katalogSubTitle_bg{
+    width: 100%;
+    font-size: 3em;
+    position: fixed;
+    top:0px;
+    background-color: #ffffff;
+    position: relative;
+}
+.katalogSubTitle{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 200%;
+    padding: 0;
+    margin: 25px;
+    /* identical to box height, or 34px */
+
+    text-align: center;
+
+    color: #4B4B4B;
+}
+
+.culomnsKatalog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center; 
+}
+/*---------------------------------------------------------------*/
+
+.cardspec{
+    width: 320px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    position: relative;
+}
+.mosh_bg{
+    background-color: #ff7700;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 30px;
+    background-position: center bottom; 
+    display: inline-block;
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-top:  20px;
+    z-index: 1;
+}
+.mosh{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    justify-content: center;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* identical to box height, or 20px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.imgScooter{
+    z-index: -1;
+    margin-top: -50px;
+}
+.scooterName{
+    font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 120%;
+/* or 34px */
+padding-bottom: 0px;
+margin-bottom: 0px;
+
+color: #4B4B4B;
+}
+.scooterInf{
+    padding-left: 20px;
+}
+.scooterInf table .lc{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    /* or 14px */
+    width: 210px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    color: #353942;
+}
+.scooterInf table .even{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 120%;
+    /* or 14px */
+    height: 20px;
+    
+    
+    justify-content: center;
+    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    color: #353942;
+}
+.scooterInf table{
+    padding-top: 0px;
+    margin-top: 10px;
+}
+.scooterInf .cost{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    padding-top: 10px;
+    margin: 0;
+    
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    
+    color: #353942;
+    
+    opacity: 0.4;
+}
+.scooterInf .money{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 120%;
+    padding: 0;
+    margin: 0;
+    color: #4B4B4B;
+}
+.scooterInf .btn{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 25px;
+    width: 280px;
+    height: 70px;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    
+    background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
+    border-radius: 100px;
+}
+.columnsKatalog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 800px);
+    justify-content: center;
+    grid-gap: 10px;
+    gap: 20px;
+    padding-top: 15px;
+
+    align-items: center;
+
+}
+.headColumn{
+    display: flex;
+    justify-content: center;
+}
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+.podbor{
+    margin-top: 100px;
+}
+.headColumnsPodbor{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin-top: 150px;
+}
+.podbor .bg{
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    border-bottom: 2px solid #ECECEC;   
+}
+.podbor .podborTitle{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 120%;
+    /* or 65px */
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 0px;
+    margin: 0;
+    color: #FFFFFF;
+}
+.podbor .podborSubTitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 120%;
+    /* or 34px */
+    margin-top: 10px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.columnsPodbor .column1 .bg, .columnsPodbor .column2 .bg, .columnsPodbor .column3 .bg{
+    width: 275px;
+    height: 275px;
+    border-radius: 100%;
+    z-index: -1;
+    border: 1px solid #FF1887;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.184211) 44.79%, rgba(0, 0, 0, 0.6) 100%);
+}
+.columnsPodbor .column4 .bg{
+    width: 310px;
+    height: 310px;
+    background-image: url("img/main/podbor/4.png");
+    border: 0;
+    margin-top: -30px;
+}
+.columnsPodbor img{
+    margin-top: -180px;
+    padding-bottom: 0;
+}
+
+.columnsPodbor .column2 img{
+    margin-left: -50px;
+}
+.columnsPodbor .podborText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: -40px;
+    /* or 22px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.columnsPodbor .podborText .br1{
+    color: #FFC700;
+}
+.columnsPodbor{
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 300px;
+    text-align: center;
+
+}
