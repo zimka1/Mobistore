@@ -204,10 +204,10 @@ header {
 .original .bg{
     z-index: -1;
     position: absolute;
-    width: 1900px;
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
     max-width: inherit;
-    margin: 0 0 0 75%;
-    left: -1430px;
 }
 .originalText{
     padding: 50px 90px;
@@ -267,7 +267,7 @@ header {
     border-color: #ff7700;
     width: 80%;
     height: 160px;
-    margin-top: 70px;
+    margin-top: 150px;
     display: fixed;
     margin-left: auto;
     margin-right: auto;
@@ -574,19 +574,21 @@ color: #4B4B4B;
 /*---------------------------------------------------------------*/
 .podbor{
     margin-top: 100px;
+    padding-bottom: 350px; 
+
 }
-.headColumnsPodbor{
+.headColumnsPodbor {
     display: flex;
     width: 80%;
-    justify-content: center;
+    justify-content: center; /* добавляем этот стиль */
     margin-top: 150px;
 }
 .podbor .bg{
     width: 100%;
+    height: 100%;
     z-index: -1;
     position: absolute;
     border-bottom: 2px solid #ECECEC; 
-    padding-bottom: 20px; 
 
 }
 .podbor .podborTitle{
@@ -616,7 +618,7 @@ color: #4B4B4B;
 }
 .columnsPodbor .column1 .bg, .columnsPodbor .column2 .bg, .columnsPodbor .column3 .bg{
     width: 275px;
-    height: 255px;
+    height: 275px;
     border-radius: 100%;
     z-index: -1;
     border: 1px solid #FF1887;
@@ -654,10 +656,80 @@ color: #4B4B4B;
 .columnsPodbor .podborText .br1{
     color: #FFC700;
 }
-.columnsPodbor{
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 300px;
+.columnsPodbor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 300px;
+  text-align: center;
+  max-width: 1200px; /* добавляем максимальную ширину */
+  margin: 0 auto; /* для выравнивания грида по центру горизонтально */
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+.adv{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.advTitle{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 120%;
     text-align: center;
-    
+    color: #4B4B4B;
+}
+
+.columnsAdv .column{
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    width: 350px;
+    position: relative;
+}
+
+.columnsAdv .columnText{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #4B4B4B;
+}
+
+.columnsAdv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "col1 col2 col2 col3"
+        "col4 col4 col5 col5";
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: -60px;
+}
+
+.columnsAdv .column:nth-child(1) {
+    grid-area: col1;
+}
+
+.columnsAdv .column:nth-child(2) {
+    grid-area: col2;
+}
+
+.columnsAdv .column:nth-child(3) {
+    grid-area: col3;
+}
+
+.columnsAdv .column:nth-child(4) {
+    grid-area: col4;
+}
+
+.columnsAdv .column:nth-child(5) {
+    grid-area: col5;
 }
