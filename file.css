@@ -585,7 +585,9 @@ color: #4B4B4B;
     width: 100%;
     z-index: -1;
     position: absolute;
-    border-bottom: 2px solid #ECECEC;   
+    border-bottom: 2px solid #ECECEC; 
+    padding-bottom: 20px; 
+
 }
 .podbor .podborTitle{
     font-family: 'Futura PT';
@@ -614,16 +616,18 @@ color: #4B4B4B;
 }
 .columnsPodbor .column1 .bg, .columnsPodbor .column2 .bg, .columnsPodbor .column3 .bg{
     width: 275px;
-    height: 275px;
+    height: 255px;
     border-radius: 100%;
     z-index: -1;
     border: 1px solid #FF1887;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.184211) 44.79%, rgba(0, 0, 0, 0.6) 100%);
 }
 .columnsPodbor .column4 .bg{
-    width: 310px;
-    height: 310px;
+    width: 305px;
+    height: 305px;
     background-image: url("img/main/podbor/4.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     border: 0;
     margin-top: -30px;
 }
@@ -655,5 +659,5 @@ color: #4B4B4B;
     grid-template-columns: repeat(4, 1fr);
     gap: 300px;
     text-align: center;
-
+    
 }
