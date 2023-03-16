@@ -278,7 +278,7 @@ header {
         height: 70px;
         background-color: #ffffff;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         grid-template-areas: "col1 col1 col2 col2 col3";
         gap: 0px;
         justify-items: center;
@@ -312,14 +312,33 @@ header {
         display: block;
         
     }
+    .headerNav .columnsHeader .column1 .mobistor{
+        font-size: 28px;
+    }
+    .headerNav .columnsHeader .column1 .scooters{
+        font-size: 20px;
+    }
     .headerNav .columnsHeader .column1 .textCol{
         line-height: 20px;
+        
     }
     .headerNav .columnsHeader .column2{
         display: block;
     }
     .headerNav .columnsHeader .column2 .textCol{
         line-height: 10px;
+    }
+    .headerNav .columnsHeader .column2 .textCol .br1{
+        line-height: 10px;
+        font-size: 12px;
+    }
+    .headerNav .columnsHeader .column2 .textCol .br2{
+        line-height: 10px;
+        font-size: 12px;
+    }
+    .headerNav .columnsHeader .column2 .textCol .br3{
+        line-height: 10px;
+        font-size: 9px;
     }
     .headerNav .columnsHeader .column3{
         display: block;
@@ -381,14 +400,14 @@ header {
 .original{
     margin-top: 0;
 }
-.original .bg{
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-	height: 100%;
-	object-fit: cover;
-    max-width: inherit;
+.original{
+    background-image: url('img/main/original.png');
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
 }
+
+  
 .originalText{
     padding: 50px 90px;
     
@@ -440,14 +459,76 @@ header {
     box-shadow: 0px 0px 60px rgba(228, 117, 73, 0.734);
     border-radius: 100px;
 }
+.unVisOrig .originalText .text1{
+    display: none;
+}
+.unVisOrig .originalText .text2{
+    display: none;
+}
+.unVisOrig .originalText .btn{
+    display: none;
+}
+@media screen and (max-width: 1067px) {
+    .original {
+      background-position: 80% center;
+    }
+    .original{
+        background-size: auto 100%;
+    }
+    
+    .originalText .text1{
+        font-size: 38px;
+    }
+    .originalText .text2{
+        font-size: 24px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .originalText .text1{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .originalText .text2{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        text-align: center;
+        font-size: 24px;
+    }
+    .original .originalText .text1{
+        visibility: hidden;
+    }
+    .original .originalText .text2{
+        visibility: hidden;
+    }
+    .original .originalText .btn{
+        visibility: hidden;
+    }
+    .unVisOrig .originalText .text1{
+        display: block;
+        margin-top: -80px;
+    }
+    .unVisOrig .originalText .text2{
+        display: block;
+    }
+    .unVisOrig .originalText .btn{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 /*---------------------------------------------------------------*/
 .pluses{
     background: linear-gradient(111.58deg, #F9E7E7 0%, #FFE8D7 100%);
     border-radius: 20px;
     border-color: #ff7700;
     width: 80%;
-    height: 160px;
-    margin-top: 150px;
+    
+    margin-top:-50px;
     display: fixed;
     margin-left: auto;
     margin-right: auto;
@@ -455,9 +536,10 @@ header {
 }
 
 .columnsPluses{
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
+    width: 100%;
+    gap: 50px;
     padding: 35px;
     justify-content: center; /* Выравниваем по горизонтали */
     border-radius: 20px;
@@ -466,8 +548,7 @@ header {
 /*---------------------------------------------------------------*/
 .columnsPluses .column1, .columnsPluses .column2, .columnsPluses .column3{
     display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    align-items: center;
 }
 .columnsPluses img{
     width: 80px;
@@ -482,10 +563,22 @@ header {
     font-weight: 600;
     font-size: 18px;
     line-height: 120%;
+    margin-left: 10px;
     color: #353942;
 }
 .columnsPluses .columnText .br1{
     color: #FF5C38;
+}
+@media screen and (max-width: 1300px) {
+    .columnsPluses{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: (3, 1fr);
+    }
+    .pluses{
+        width: 375px;
+        margin-top: 0px;
+    }
 }
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
