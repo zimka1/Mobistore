@@ -13,6 +13,8 @@ body{
 header {
     width: 100%;
     height: 15%;
+    display: block;
+    justify-content: center;
     font-size: 3em;
     position: fixed;
     top:0px;
@@ -29,25 +31,41 @@ header {
 
 @media screen and (max-width: 480px) {
 header {
+    
     height: 5%;
     font-size: 1.5em;
 }
 }
-.columnsHeader {
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
+/* .columnsHeader {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    width: 100%;
+    gap: 30px;
+    padding: 0 0 0 20px;
     margin-top: 0px;
     height: 55px;
     justify-content: center; 
    
+} */
+.columnsHeader {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "col1 col2 col3 col4 col5";
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
+
+
 
 /*---------------------------------------------------------------*/
 .columnsHeader .column1 .textCol{
+    margin: 0;
     height: 55px;
     line-height: 0.5;
-    margin-top: 10px;
 }
 .columnsHeader .column1 .textCol .mobistor{
     font-family: 'Futura PT';
@@ -67,9 +85,9 @@ header {
 }
 /*---------------------------------------------------------------*/
 .columnsHeader .column2 .textCol{
+    margin: 0;
     height: 55px;
     line-height: 0.2;
-    margin-top: 5px;
 
 }
 .columnsHeader .column2 .textCol .br1{
@@ -97,11 +115,12 @@ header {
 /*---------------------------------------------------------------*/
 .columnsHeader .column3{
     display: flex;
+    align-items: center;
 }
 .columnsHeader .column3 .textCol{
-    height: 55px;
+    margin: 0;
+    
     line-height: 0.2;
-    margin-top: 0;
     margin-left: 20px;
 }
 .columnsHeader .column3 .textCol .br1{
@@ -126,20 +145,23 @@ header {
 
 .columnsHeader .column4{
     display: flex;
-    margin: 15px -5px
+    align-items: center;
+    margin-top: 20px;
 }
 .columnsHeader .column4 .masenger{
-    margin: 0 5px
+    margin-right: 10px
 }
 /*---------------------------------------------------------------*/
 
 .columnsHeader .column5{
     display: flex;
+    align-items: center;
 }
 .columnsHeader .column5 .textCol{
     line-height: 0.2;
-    margin-top: 15px;
+    margin: 0;
     margin-left: 20px;
+
 }
 .columnsHeader .column5 .textCol .br1{
     font-family: 'Futura PT';
@@ -163,6 +185,52 @@ header {
     text-align: center;
 
 }
+.columnsHeader {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+@media screen and (max-width: 980px) {
+    header {
+        
+        height: 5%;
+        font-size: 1.5em;
+    }
+    .columnsHeader .column3 .textCol{
+        margin: 0;
+        
+        line-height: 0.6;
+        margin-left: 10px;
+    }
+    .columnsHeader {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .columnsHeader .column4 {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      
+    .columnsHeader .column3 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .columnsHeader .column1{
+        display: none;
+
+    }
+    .columnsHeader .column2{
+        display: none;
+    }
+    .columnsHeader .column5{
+        display: none;
+
+    }
+}
+
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
@@ -171,7 +239,7 @@ header {
     justify-content: center;
     width: 100%;
     height: 30px;
-    margin-top: 25px;
+    margin-top: 15px;
     border-top: solid 1px #C4C4C4;
 }
 .topnav{
@@ -194,6 +262,118 @@ header {
 }
 .topnav a:hover{
     color: #FF8329;
+}
+.headerNav .columnsHeader .column3{
+    display: none;
+}
+.headerNav .columnsHeader .column1{
+    display: none;
+
+}
+.headerNav .columnsHeader .column2{
+    display: none;
+}
+@media screen and (max-width: 780px) {
+    .headerNav .columnsHeader {
+        height: 70px;
+        background-color: #ffffff;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "col1 col1 col2 col2 col3";
+        gap: 0px;
+        justify-items: center;
+        align-items: center;
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .headerNav .columnsHeader .column1:nth-child(1) {
+        grid-area: col1;
+    }
+    
+    .headerNav .columnsHeader .column2:nth-child(2) {
+        grid-area: col2;
+    }
+    
+    .headerNav .columnsHeader .column3:nth-child(3) {
+        grid-area: col3;
+    }
+    .headerNav .columnsHeader .column2 {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      
+    .headerNav .columnsHeader .column3 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .headerNav .columnsHeader .column1{
+        display: block;
+        
+    }
+    .headerNav .columnsHeader .column1 .textCol{
+        line-height: 20px;
+    }
+    .headerNav .columnsHeader .column2{
+        display: block;
+    }
+    .headerNav .columnsHeader .column2 .textCol{
+        line-height: 10px;
+    }
+    .headerNav .columnsHeader .column3{
+        display: block;
+        width: 50px;
+    }
+    .columnsHeader .menu2{
+        display: none;
+    }
+/* ------------------------------------------------------------- */
+
+    .topnav a{
+        display: none;
+    }
+    .topnav .icon.row{
+        flex-wrap: nowrap;
+        float: right;
+        margin-top: 5px;
+        display: flex;
+        color: black;
+    }
+    nav{
+        width: 100%;
+        height: 70px;
+    }
+    .topnav.responsive{
+        position: relative;
+        margin-top: 0;
+    }
+    
+    .topnav.responsive a{
+        border-bottom: solid 1px #C4C4C4;
+        border-top: solid 1px #C4C4C4;
+        text-align: center;
+        float: none;
+        display: block;
+        text-align: left;
+        background: #fff;
+        z-index: 1;
+        position: relative;
+    }
+    .headerNav .columnsHeader .column3.responsive .menu2{
+        display: none;
+    }
+    .headerNav .columnsHeader .column3.responsive .menu1{
+        display: block;
+    }
+    .headerNav .columnsHeader .column3 .menu1{
+        display: none;
+    }
+    .headerNav .columnsHeader .column3 .menu2{
+        display: block;
+    }
+    
+
 }
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
