@@ -484,17 +484,16 @@ header {
     }
 
 }
-@media screen and (max-width: 1167px) {
+@media screen and (max-width: 967px) {
     .originalText .text1{
-        margin-left: auto;
-        margin-right: auto;
         padding: 0;
         text-align: center;
     }
-    
+    .unVisOrig .originalText{
+        padding: 0;
+    }
     .originalText .text2{
-        margin-left: auto;
-        margin-right: auto;
+
         padding: 0;
         text-align: center;
         font-size: 24px;
@@ -507,6 +506,9 @@ header {
     }
     .original .originalText .btn{
         visibility: hidden;
+    }
+    .unVisOrig{
+        justify-content: center;
     }
     .unVisOrig .originalText .text1{
         display: block;
@@ -572,12 +574,13 @@ header {
 @media screen and (max-width: 1300px) {
     .columnsPluses{
         display: grid;
+        gap:30px;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: (3, 1fr);
+        grid-template-rows: (3, 0fr);
     }
     .pluses{
         width: 375px;
-        margin-top: 0px;
+        margin-top: 50px;
     }
 }
 /*---------------------------------------------------------------*/
