@@ -1304,13 +1304,12 @@ color: #4B4B4B;
 .columnsAdv {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: (auto auto);
     grid-template-areas: 
         "col1 col2 col2 col3"
         "col4 col4 col5 col5";
     justify-items: center;
     align-items: center;
-    grid-row-gap: -60px;
 }
 
 .columnsAdv .column:nth-child(1) {
@@ -1329,7 +1328,7 @@ color: #4B4B4B;
     grid-area: col4;
 }
 
-.columnsAdv .column:nth-child(5) {
+.columnsAdv .column5:nth-child(5) {
     grid-area: col5;
 }
 @media screen and (max-width: 1000px) {
@@ -1356,7 +1355,7 @@ color: #4B4B4B;
     .columnsAdv .column5 img{
         width: 40%;
         height: 40%;
-        margin-left: 90px;
+        margin-left: 120px;
     }
     .columnsAdv {
         display: grid;
