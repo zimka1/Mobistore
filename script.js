@@ -1,30 +1,24 @@
 
 menu1.onclick = function myFunction(){
-    var x = document.getElementById("myTopnav");
-    var y = document.getElementById("columnTopnav");
-    if (x.className === "topnav"){
-        x.className += " responsive";
-    }else{
-        x.className = "topnav";
-    }
-    if (y.className === "column3"){
+  var x = document.getElementById("myTopnav");
+  var y = document.getElementById("columnTopnav");
+  if (x.className === "topnav"){
+      x.className += " responsive";
       y.className += " responsive";
-    }else{
+  }else{
+      x.className = "topnav";
       y.className = "column3";
-    }
+  }
 }
 menu2.onclick = function myFunction(){
   var x = document.getElementById("myTopnav");
   var y = document.getElementById("columnTopnav");
   if (x.className === "topnav"){
       x.className += " responsive";
+      y.className += " responsive";
   }else{
       x.className = "topnav";
-  }
-  if (y.className === "column3"){
-    y.className += " responsive";
-  }else{
-    y.className = "column3";
+      y.className = "column3";
   }
 }
 

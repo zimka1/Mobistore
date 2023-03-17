@@ -320,7 +320,7 @@ header {
     }
     .headerNav .columnsHeader .column1 .textCol{
         line-height: 20px;
-        
+        margin-top: 5px;
     }
     .headerNav .columnsHeader .column2{
         display: block;
@@ -344,7 +344,7 @@ header {
         display: block;
         width: 50px;
     }
-    .columnsHeader .menu2{
+    .columnsHeader .menu1{
         display: none;
     }
 /* ------------------------------------------------------------- */
@@ -379,16 +379,16 @@ header {
         z-index: 1;
         position: relative;
     }
-    .headerNav .columnsHeader .column3.responsive .menu2{
+    .headerNav .columnsHeader .column3.responsive .menu1{
         display: none;
     }
-    .headerNav .columnsHeader .column3.responsive .menu1{
+    .headerNav .columnsHeader .column3.responsive .menu2{
         display: block;
     }
-    .headerNav .columnsHeader .column3 .menu1{
+    .headerNav .columnsHeader .column3 .menu2{
         display: none;
     }
-    .headerNav .columnsHeader .column3 .menu2{
+    .headerNav .columnsHeader .column3 .menu1{
         display: block;
     }
     
