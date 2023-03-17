@@ -1270,7 +1270,7 @@ color: #4B4B4B;
 .adv{
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
 }
 .advTitle{
     font-family: 'Futura PT';
@@ -1286,8 +1286,7 @@ color: #4B4B4B;
     justify-content: center;
     text-align: center;
     z-index: 1;
-    width: 350px;
-    position: relative;
+    
 }
 
 .columnsAdv .columnText{
@@ -1307,7 +1306,6 @@ color: #4B4B4B;
     grid-template-areas: 
         "col1 col2 col2 col3"
         "col4 col4 col5 col5";
-    justify-content: space-between;
     justify-items: center;
     align-items: center;
     grid-row-gap: -60px;
@@ -1331,4 +1329,65 @@ color: #4B4B4B;
 
 .columnsAdv .column:nth-child(5) {
     grid-area: col5;
+}
+@media screen and (max-width: 1000px) {
+    .advTitle{
+        font-size: 26px;
+    }
+
+    .columnsAdv .column .columnText{
+        font-size: 12px;
+      
+        padding: 0;
+        margin: 0;
+    }
+    .columnsAdv .column5 .columnText{
+        font-size: 12px;
+      
+        padding: 0;
+        margin: 0;
+    }
+    .columnsAdv img{
+        width: 50%;
+        height: 50%;
+    }
+    .columnsAdv .column5 img{
+        width: 40%;
+        height: 40%;
+        margin-left: 90px;
+    }
+    .columnsAdv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "col1 col2"
+            "col3 col4"
+            "col5 col5";
+        gap: 50px;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    
+    .columnsAdv .column:nth-child(1) {
+        grid-area: col1;
+    }
+    
+    .columnsAdv .column:nth-child(2) {
+        grid-area: col2;
+    }
+    
+    .columnsAdv .column:nth-child(3) {
+        grid-area: col3;
+    }
+    
+    .columnsAdv .column:nth-child(4) {
+        grid-area: col4;
+    }
+    
+    .columnsAdv .column5:nth-child(5) {
+        grid-area: col5;
+    }
 }
