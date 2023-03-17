@@ -1051,21 +1051,20 @@ color: #4B4B4B;
 .podbor{
     margin-top: 100px;
     padding-bottom: 350px; 
+    width: 100%;
 
 }
 .headColumnsPodbor {
     display: flex;
-    width: 80%;
-    justify-content: center; /* добавляем этот стиль */
+    width: 100%;
+    justify-content: center;
     margin-top: 150px;
 }
-.podbor .bg{
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    position: absolute;
-    border-bottom: 2px solid #ECECEC; 
-
+.podbor{
+    background-image: url('img/main/podbor.png');
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
 }
 .podbor .podborTitle{
     font-family: 'Futura PT';
@@ -1135,12 +1134,136 @@ color: #4B4B4B;
 .columnsPodbor {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 300px;
+  gap: 20px;
   text-align: center;
-  max-width: 1200px; /* добавляем максимальную ширину */
-  margin: 0 auto; /* для выравнивания грида по центру горизонтально */
-}
 
+}
+@media screen and (max-width: 1200px) {
+    .podbor {
+        background-position: 35% center;
+      }
+    .podbor {
+          background-size: auto 100%;
+    }  
+    .podbor .podborTitle{
+        font-size: 26px;
+    }
+    .podbor .podborSubTitle{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        /* or 34px */
+        margin-top: 10px;
+        text-align: center;
+    
+        color: #FFFFFF;
+    }
+    .columnsPodbor .column1 .bg, .columnsPodbor .column2 .bg, .columnsPodbor .column3 .bg{
+        width: 215px;
+        height: 215px;
+        border-radius: 100%;
+        z-index: -1;
+        border: 1px solid #FF1887;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.184211) 44.79%, rgba(0, 0, 0, 0.6) 100%);
+    }
+    .columnsPodbor .column4 .bg{
+        width: 215px;
+        height: 215px;
+        background-image: url("img/main/podbor/4.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        border: 0;
+        margin-top: -30px;
+    }
+    .columnsPodbor img{
+        margin-top: -180px;
+        padding-bottom: 0;
+    }
+    .columnsPodbor .column1 img, .columnsPodbor .column3 img .columnsPodbor .column4 img{
+        width: 100%;
+
+    }
+    .columnsPodbor .column1{
+        margin-left: 0px;
+        
+    }
+    .columnsPodbor .column1 img{
+        margin-top: -150px;
+    }
+    .columnsPodbor .column1 .bg{
+        width: 215px;
+        height: 215px;
+    }
+    .columnsPodbor .column2{
+        margin-left: 170px;
+        margin-top: 35px;
+        width: 175px;
+        height: 175px;
+    }
+    .columnsPodbor .column2 .bg{
+        width: 175px;
+        height: 175px;
+    }
+    .columnsPodbor .column2 img{
+        width: 170%;
+        margin-left: -60px;
+        margin-top: -130px;
+    }
+    .columnsPodbor .column3{
+        margin-left: 0px;
+
+    }
+    .columnsPodbor .column3 .bg{
+        width: 180px;
+        height: 180px;
+    }
+    .columnsPodbor .column3 img{
+        margin-left: -10px;
+        margin-top: -100px;
+        width: 210px;
+        height: 230px;
+    }
+    .columnsPodbor .column4{
+        margin-left: 150px;
+       
+
+    }
+    .columnsPodbor .podborText{
+        font-size: 12px;
+    }
+    .columnsPodbor .podborText .br1{
+        color: #FFC700;
+    }
+    .columnsPodbor {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 130px);
+      grid-template-areas: "col1 col1" "col2 col2" "col3 col3" "col4 col4";
+      gap: 20px;
+      text-align: center;
+    
+    }
+    .columnsPodbor .column1:nth-child(1) {
+        grid-area: col1;
+    }
+    
+    .columnsPodbor .column2:nth-child(2) {
+        grid-area: col2;
+    }
+    
+    .columnsPodbor .column3:nth-child(3) {
+        grid-area: col3;
+    }
+    
+    .columnsPodbor .column4:nth-child(4) {
+        grid-area: col4;
+    }
+    
+ 
+    
+}
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
