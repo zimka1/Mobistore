@@ -1605,7 +1605,6 @@ color: #4B4B4B;
 
     .questionsTitle{
         font-size: 24px;
-        padding: 30px;
     }
     .columnsQuestions1 .column.title{
         display: block;
@@ -1624,8 +1623,8 @@ color: #4B4B4B;
     }
     .columnsQuestions1 .subcolumns{
         display: grid;
-        grid-template-columns: repeat(3, 80px);
-        grid-template-areas: "col2 col1 col1";
+        grid-template-columns: repeat(7, auto);
+        grid-template-areas: "col2 col1";
         gap: 10;
         align-items: center;
         
@@ -1642,7 +1641,7 @@ color: #4B4B4B;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 80px);
         grid-template-areas: "col1" "col2";
-        width: 80%;
+        width: 70%;
         padding-top: 50px;
         margin-left: auto;
         margin-right: auto;
