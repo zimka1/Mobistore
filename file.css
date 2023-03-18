@@ -1409,6 +1409,7 @@ color: #4B4B4B;
 
 
 .feedbackTitle{
+    margin-top: 150px;
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 400;
@@ -1461,6 +1462,7 @@ color: #4B4B4B;
 
 
 .questions{
+    margin-top: 150px;
     background-image: url('img/main/questions/back.png');
     background-position: center;
     background-repeat: repeat-y;
@@ -1693,5 +1695,18 @@ color: #4B4B4B;
     }
     .columnsQuestions2 .column.dop{
         display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .questions {
+        background-position: 50% center;
+      }
+    .questions {
+          background-size: auto 100%;
+    }
+
+
+    .questionsTitle{
+        font-size: 18px;
     }
 }
