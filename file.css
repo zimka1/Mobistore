@@ -564,7 +564,7 @@ header {
 }
 .columnsPluses img{
     width: 80px;
-    height: 90px;
+    height: 80px;
     border-radius: 100px;
 
 }
@@ -591,6 +591,12 @@ header {
     .pluses{
         width: 355px;
         margin-top: 50px;
+    }
+    .columnsPluses img{
+        width: 64px;
+        height: 64px;
+        border-radius: 100px;
+    
     }
 }
 /*---------------------------------------------------------------*/
