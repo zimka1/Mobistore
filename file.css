@@ -66,6 +66,7 @@ header {
     margin: 0;
     height: 55px;
     line-height: 0.5;
+    margin-top: 10px;
 }
 .columnsHeader .column1 .textCol .mobistor{
     font-family: 'Futura PT';
@@ -339,7 +340,7 @@ header {
     }
     .headerNav .columnsHeader .column2 .textCol .br3{
         line-height: 10px;
-        font-size: 9px;
+        font-size: 10px;
     }
     .headerNav .columnsHeader .column3{
         display: block;
