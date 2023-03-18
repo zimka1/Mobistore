@@ -1450,8 +1450,249 @@ color: #4B4B4B;
     font-size: 14px;
 }
 @media screen and (max-width: 600px) {
+    .feedbackTitle{
+        font-size: 26px;
+    }
     .columnsFeedback .column.unvis{
         display: none;
     }
 
+}
+
+
+.questions{
+    background-image: url('img/main/questions/back.png');
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+}
+.questionsTitle{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 120%;
+    /* or 65px */
+    color: #FFFFFF;
+}
+.questions .name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    align-items: center;
+    text-align: right;
+
+    color: #FFFFFF;
+}
+.questions .name .br1{
+    font-size: 14px;
+}
+.columnsQuestions1 .subcolumns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+.columnsQuestions1{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "col1 col1 col1 col2 col2";
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0px;
+    align-items: center;
+}
+.columnsQuestions1 .column.title{
+    display: flex;
+    justify-content: center;
+}
+
+.columnsQuestions1 .column:nth-child(1) {
+    grid-area: col1;
+}
+
+.columnsQuestions1 .column:nth-child(2) {
+    grid-area: col2;
+}
+
+.columnsQuestions2 .queSales{
+    background: linear-gradient(90deg, #FF1887 0%, #FF5C38 100%);
+    border-radius: 12px;    
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    /* or 26px */
+    padding: 15px;
+    width: 80%;
+    color: #FFFFFF;
+}
+.columnsQuestions2 .tab{
+    padding-top: 0;
+}
+.columnsQuestions2 .tab .lc{
+    
+    width: 650px;
+    border-bottom: 1px solid #FF1887;
+}
+.columnsQuestions2 .tab .lc h4{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    /* or 26px */
+    margin: 0;
+    padding: 20px;
+    padding-right: 0;
+    color: #FFFFFF;
+}
+
+.columnsQuestions2 .column .dopSale{
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid #FF1887;
+    border-radius: 12px; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 20px;
+    
+}
+.columnsQuestions2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "col1 col1 col2";
+    gap: 0px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+.columnsQuestions2 .column:nth-child(1) {
+    grid-area: col1;
+}
+
+.columnsQuestions2 .column:nth-child(2) {
+    grid-area: col2;
+}
+.columnsQuestions2 .column.dop{
+
+    justify-content: center;
+}
+.columnsQuestions2 .column .dopSale{
+    display: none;
+}
+.columnsQuestions2 .column.dop .dopSale{
+    display: block;
+}
+@media screen and (max-width: 1000px) {
+    .questions {
+        background-position: 50% center;
+      }
+    .questions {
+          background-size: auto 100%;
+    }
+
+
+    .questionsTitle{
+        font-size: 24px;
+        padding: 30px;
+    }
+    .columnsQuestions1 .column.title{
+        display: block;
+    }
+    .questions .name{
+        font-size: 12px;
+        text-align: left;
+    }
+    .questions .name .br1{
+        font-size: 11px;
+    }
+    .columnsQuestions1 .subcolumns img{
+        width: 42px;
+        height: 42px;
+        float: right;
+    }
+    .columnsQuestions1 .subcolumns{
+        display: grid;
+        grid-template-columns: repeat(3, 80px);
+        grid-template-areas: "col2 col1 col1";
+        gap: 10;
+        align-items: center;
+        
+    }
+    .columnsQuestions1 .subcolumns .subcolumn:nth-child(1) {
+        grid-area: col1;
+    }
+    
+    .columnsQuestions1 .subcolumns .subcolumn:nth-child(2) {
+        grid-area: col2;
+    }
+    .columnsQuestions1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 80px);
+        grid-template-areas: "col1" "col2";
+        width: 80%;
+        padding-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 0px;
+        align-items: center;
+    }
+
+    
+    .columnsQuestions2 .queSales{
+        font-size: 16px;
+        width: 100%;
+    }
+    .columnsQuestions2 .tab{
+        padding-top: 0;
+    }
+    .columnsQuestions2 .tab .lc{
+        
+        width: 335px;
+        border-bottom: 1px solid #FF1887;
+    }
+    .columnsQuestions2 .tab .lc h4{
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .columnsQuestions2 .column .dopSale{
+        font-size: 14px;
+        
+    }
+    .columnsQuestions2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "col1";
+        gap: 0px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 100px;
+    }
+    .columnsQuestions2 .column:nth-child(1) {
+        grid-area: col1;
+    }
+    
+    .columnsQuestions2 .column:nth-child(2) {
+        grid-area: col2;
+    }
+    .columnsQuestions2 .column .dopSale{
+        display: block;
+    }
+    .columnsQuestions2 .column.dop{
+        display: none;
+    }
 }
