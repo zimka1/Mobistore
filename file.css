@@ -1406,3 +1406,52 @@ color: #4B4B4B;
         grid-area: col5;
     }
 }
+
+
+.feedbackTitle{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 120%;
+    /* or 65px */
+    text-align: center;
+
+    color: #4B4B4B;
+}
+.columnsFeedback{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.columnsFeedback .column.butback img{
+    float: right;
+}
+.columnsFeedback .column.butnext img{
+    float: left;
+}
+.columnsFeedback .column{
+    justify-content: center;
+}
+.columnsFeedback .column .columnText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    margin-top: 0;
+    color: #353942;
+}
+.columnsFeedback .column .columnText .br1{
+    color: #FF5C38;
+    font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+    .columnsFeedback .column.unvis{
+        display: none;
+    }
+
+}
