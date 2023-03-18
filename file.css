@@ -278,15 +278,16 @@ header {
         height: 70px;
         background-color: #ffffff;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-areas: "col1 col1 col2 col2 col3";
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: "col1 col1 col1 col2 col2 col2 col3";
         gap: 0px;
         justify-items: center;
         align-items: center;
-        margin-top: 0;
+        margin-top: 10px;
         padding-top: 0;
         margin-bottom: 0;
         padding-bottom: 0;
+
     }
     .headerNav .columnsHeader .column1:nth-child(1) {
         grid-area: col1;
@@ -472,21 +473,11 @@ header {
 }
 @media screen and (max-width: 1067px) {
     .original {
-      background-position: 80% center;
+      background-position: 85% center;
     }
     .original{
         background-size: auto 100%;
     }
-    
-    .originalText .text1{
-        font-size: 38px;
-    }
-    .originalText .text2{
-        font-size: 24px;
-    }
-
-}
-@media screen and (max-width: 967px) {
     .originalText .text1{
         padding: 0;
         text-align: center;
@@ -500,6 +491,12 @@ header {
         text-align: center;
         font-size: 24px;
     }
+    .originalText .text1{
+        font-size: 38px;
+    }
+    .originalText .text2{
+        font-size: 24px;
+    }
     .original .originalText .text1{
         visibility: hidden;
     }
@@ -507,6 +504,7 @@ header {
         visibility: hidden;
     }
     .original .originalText .btn{
+        display: none;
         visibility: hidden;
     }
     .unVisOrig{
@@ -514,16 +512,25 @@ header {
     }
     .unVisOrig .originalText .text1{
         display: block;
-        margin-top: -80px;
+        margin-top: -40px;
     }
     .unVisOrig .originalText .text2{
         display: block;
     }
     .unVisOrig .originalText .btn{
         display: block;
+        margin-top: 40px;
         margin-left: auto;
         margin-right: auto;
     }
+
+}
+@media screen and (max-width: 767px) {
+    .original {
+        height: 30%;
+    }
+    
+  
 }
 /*---------------------------------------------------------------*/
 .pluses{
@@ -576,12 +583,12 @@ header {
 @media screen and (max-width: 1300px) {
     .columnsPluses{
         display: grid;
-        gap:30px;
+        gap:20px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: (3, 0fr);
     }
     .pluses{
-        width: 375px;
+        width: 355px;
         margin-top: 50px;
     }
 }
@@ -909,10 +916,10 @@ color: #4B4B4B;
     .columnsKatalog{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto;
+        grid-template-rows: auto 700px;
         justify-content: center;
-        grid-gap: 10px;
-        gap: 20px;
+        grid-gap: 20px;
+        gap: 5px;
         padding-top: 15px;
     }
 }
@@ -1338,13 +1345,13 @@ color: #4B4B4B;
 
     .columnsAdv .column .columnText{
         font-size: 12px;
-      
+        
         padding: 0;
         margin: 0;
     }
     .columnsAdv .column5 .columnText{
         font-size: 12px;
-      
+        
         padding: 0;
         margin: 0;
     }
@@ -1365,7 +1372,7 @@ color: #4B4B4B;
             "col1 col2"
             "col3 col4"
             "col5 col5";
-        gap: 50px;
+        gap: 20px;
         justify-content: space-between;
         justify-items: center;
         align-items: center;
