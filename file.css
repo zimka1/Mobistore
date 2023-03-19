@@ -1879,3 +1879,272 @@ color: #4B4B4B;
     background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
     border-radius: 100px;
 }
+@media screen and (max-width: 1100px) {
+    .testDrTitle{
+        font-size: 28px;
+    }
+    .testDrText{
+        font-size: 16px;
+    }
+    .testDrFormTitle{
+        font-size: 22px;
+    }
+    .testDrFormText1{
+        font-size: 14px;
+    }
+    .testDrFormText2{
+        font-size: 14px;
+    }
+    .testDrFormText3{
+        font-size: 14px;
+    }
+    .testDrColumns{
+        display: grid;
+        grid-template-columns: repeat(1, 400px);
+        width: 80%;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "col1" "col3" "col4" "col6" "col5" "col2";
+        gap: 10px;
+        justify-content: center;
+        padding-left: 10px;
+        height: 600px;
+    }
+    .testDrForm input{
+        width: 90%;
+        height: 72px;
+    }
+    .testDrInf .btn{
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: normal;
+        margin-top: 25px;
+        width: 90%;
+        height: 70px;
+        font-size: 22px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
+        border-radius: 100px;
+    }
+    .testDrForm img{
+        width: 186px;
+        height: 305px;
+        margin-top: 0px;
+        float: right;
+    }
+    .testDrForm .column1:nth-child(1) {
+        grid-area: col1;
+    }
+    .testDrForm .column2:nth-child(2) {
+        grid-area: col2;
+    }
+    .testDrForm .column3:nth-child(3) {
+        grid-area: col3;
+    }
+    .testDrForm .column4:nth-child(4) {
+        grid-area: col4;
+    }
+    .testDrForm .column5:nth-child(5) {
+        grid-area: col5;
+    }
+    .testDrForm .column6:nth-child(6) {
+        grid-area: col6;
+    }
+    .testDrForm .column1{
+        grid-row: 1;
+    }
+    .testDrForm .column2{
+        grid-row: 6;
+    }
+    .testDrForm .column3{
+        grid-row: 2;
+    }
+    .testDrForm .column4{
+        grid-row: 3;
+    }
+    .testDrForm .column5{
+        grid-row: 5;
+    }
+    .testDrForm .column6{
+        grid-row: 4;
+    }
+    .testDrForm .column2{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 15%;
+    display: block;
+    justify-content: center;
+    font-size: 3em;
+    position: fixed;
+    top:0px;
+    position: relative;
+    background-color: #3C3D46;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 980px) {
+    footer {
+        
+        height: 5%;
+        font-size: 1.5em;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+footer {
+    height: 10%;
+    font-size: 2em;
+}
+}
+footer .columnsHeader{
+    height: 100px;
+}
+
+
+/*---------------------------------------------------------------*/
+
+footer .columnsHeader .column1 .textCol .mobistor{
+    font-family: 'Futura PT';
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+}
+footer .columnsHeader .column1 .textCol .scooters{
+    font-family: 'Futura PT';
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #F55522;
+
+}
+/*---------------------------------------------------------------*/
+
+footer .columnsHeader .column2 .textCol .br1{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+    color: #ffffff;
+}
+footer .columnsHeader .column2 .textCol .br2{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+}
+footer .columnsHeader .column2 .textCol .br3{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FF5C38;
+}
+/*---------------------------------------------------------------*/
+footer .columnsHeader .column3 .textCol .br1{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Futura PT';
+    font-size: 12px;
+
+
+}
+footer .columnsHeader .column3 .textCol .br2{
+    width: 130px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+}
+/*---------------------------------------------------------------*/
+
+footer .columnsHeader .column5 .textCol .br1{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #ffffff;
+
+
+}
+footer .columnsHeader .column5 .textCol .br2{
+    color: #ffffff;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: right;
+
+    text-align: center;
+
+}
+
+footer .columnsHeader{
+    border-bottom: 1px solid #C4C4C4;
+}
+footer .endColumn{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "col1 col1 col2 col2";
+    justify-content: center;
+    align-items: center;
+}
+footer .endColumn .column:nth-child(1) {
+    grid-area: col1;
+}
+footer .endColumn .column:nth-child(2) {
+    grid-area: col2;
+}
+footer .endColumn .column h4{
+    text-align: center;
+}
+footer .endColumn .nepodcherk{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 140%;
+/* identical to box height, or 17px */
+
+color: #FFFFFF;
+
+opacity: 0.43;
+}
+footer .endColumn .podcherk{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 140%;
+/* identical to box height, or 17px */
+text-decoration-line: underline;
+
+color: #FFFFFF;
+
+opacity: 0.43;
+}
