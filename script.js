@@ -22,17 +22,9 @@ menu2.onclick = function myFunction(){
   }
 }
 
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 5,
-    slidesPerView: 5,
-  });
-  var swiper2 = new Swiper(".mySwiper2", {
-    
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-      swiper: swiper,
-    },
-  });
+function clearTextarea(element) {
+  if (element.value == element.defaultValue) {
+    element.value = '';
+  }
+}
+
