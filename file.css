@@ -333,10 +333,10 @@ header {
         
     }
     header .headerNav .columnsHeader .column1 .mobistor{
-        font-size: 28px;
+        font-size: 24px;
     }
     header .headerNav .columnsHeader .column1 .scooters{
-        font-size: 20px;
+        font-size: 18px;
     }
     header .headerNav .columnsHeader .column1 .textCol{
         line-height: 20px;
@@ -973,7 +973,6 @@ color: #4B4B4B;
         margin: 0;
         margin-top: 2px;
         justify-content: center;
-        font-family: 'Futura PT';
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -996,7 +995,6 @@ color: #4B4B4B;
         justify-content: center;
     }
     .scooterInf table .lc{
-        font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 10px;
@@ -1011,7 +1009,6 @@ color: #4B4B4B;
         color: #353942;
     }
     .scooterInf table .even{
-        font-family: 'Inter';
         font-style: normal;
         font-weight: 600;
         font-size: 10px;
@@ -1036,7 +1033,6 @@ color: #4B4B4B;
         justify-content: space-between;
     }
     .scooterInf .cost{
-        font-family: 'Inter';
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
@@ -1050,7 +1046,6 @@ color: #4B4B4B;
         opacity: 0.4;
     }
     .scooterInf .money{
-        font-family: 'Futura PT';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -1060,7 +1055,6 @@ color: #4B4B4B;
         color: #4B4B4B;
     }
     .scooterInf .btn{
-        font-family: 'Futura PT';
         font-style: normal;
         font-weight: normal;
         margin-top: 25px;
@@ -1442,6 +1436,8 @@ color: #4B4B4B;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     align-items: center;
 }
@@ -1453,6 +1449,10 @@ color: #4B4B4B;
 }
 .columnsFeedback .column{
     justify-content: center;
+}
+.columnsFeedback .column.imges img{
+    width: 274px;
+    height: 486px;
 }
 .columnsFeedback .column .columnText{
     font-family: 'Inter';
@@ -1469,13 +1469,21 @@ color: #4B4B4B;
     font-size: 14px;
 }
 @media screen and (max-width: 600px) {
+    .columnsFeedback{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
     .feedbackTitle{
         font-size: 26px;
     }
     .columnsFeedback .column.unvis{
         display: none;
     }
-
 }
 
 
