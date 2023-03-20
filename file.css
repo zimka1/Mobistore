@@ -1,9 +1,27 @@
 @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTDemi/FuturaPTDemi.woff') format('woff'); /* Подключение WOFF-шрифта */
+    font-family: 'FuturaBold';
+    src: url('fonts/FuturaPT/FuturaPT-Bold.woff') format('woff'); /* Подключение WOFF-шрифта */
     font-weight: normal;
     font-style: normal;
-  }
+}
+@font-face {
+    font-family: 'FuturaDemi';
+    src: url('fonts/FuturaPT/FuturaPT-Demi.woff') format('woff'); /* Подключение WOFF-шрифта */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FuturaExtra';
+    src: url('fonts/FuturaPT/FuturaPT-ExtraBold.woff') format('woff'); /* Подключение WOFF-шрифта */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FuturaBook';
+    src: url('fonts/FuturaPT/FuturaPT-Book.woff') format('woff'); /* Подключение WOFF-шрифта */
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     margin: 0;
     padding: 0;
@@ -69,7 +87,7 @@ header {
     margin-top: 10px;
 }
 .columnsHeader .column1 .textCol .mobistor{
-    font-family: 'Futura PT';
+    font-family: 'FuturaExtra';
     font-weight: 800;
     font-size: 32px;
     text-transform: uppercase;
@@ -77,7 +95,7 @@ header {
 
 }
 .columnsHeader .column1 .textCol .scooters{
-    font-family: 'Futura PT';
+    font-family: 'FuturaBold';
     font-weight: 400;
     font-size: 24px;
     text-transform: uppercase;
@@ -92,7 +110,7 @@ header {
 
 }
 .columnsHeader .column2 .textCol .br1{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -100,14 +118,14 @@ header {
     color: #353942;
 }
 .columnsHeader .column2 .textCol .br2{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     color: #353942;
 }
 .columnsHeader .column2 .textCol .br3{
-    font-family: 'Futura PT';
+    font-family: 'FuturaBook';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -128,7 +146,7 @@ header {
     color: #353942;
     text-transform: uppercase;
     font-weight: 700;
-    font-family: 'Futura PT';
+    font-family: 'FuturaBold';
     font-size: 12px;
 
 
@@ -165,7 +183,7 @@ header {
 
 }
 .columnsHeader .column5 .textCol .br1{
-    font-family: 'Futura PT';
+    font-family: 'FuturaBold';
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -252,9 +270,9 @@ header {
 .topnav a{
     text-align: center;
     padding: 16px 16px;
-    font-family: 'Futura PT';
+    font-family: 'FuturaBook';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     text-transform: uppercase;
@@ -419,7 +437,7 @@ header {
 /*---------------------------------------------------------------*/
 .originalText .text1{
     margin-top: 0px;
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
@@ -439,7 +457,7 @@ header {
 }
 /*---------------------------------------------------------------*/
 .originalText .text2{
-    font-family: 'Futura PT';
+    font-family: 'FuturaBook';
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
@@ -448,7 +466,7 @@ header {
     margin: 0;
 }
 .originalText .btn{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: normal;
     margin-top: 25px;
@@ -613,7 +631,7 @@ header {
     padding-bottom: 70px;
 }
 .msScooterTitle .br1{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 54px;
@@ -622,7 +640,7 @@ header {
     color: #FF5C38;
 }
 .msScooterTitle{
-    font-family: Futura PT;
+    font-family: 'FuturaBook';
     font-size: 32px;
     font-weight: 400;
     line-height: 45px;
@@ -702,7 +720,7 @@ header {
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 .katalogTitle{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
 font-style: normal;
 font-weight: 400;
 font-size: 54px;
@@ -726,7 +744,7 @@ color: #4B4B4B;
     position: relative;
 }
 .katalogSubTitle{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -784,7 +802,7 @@ color: #4B4B4B;
     margin: 0;
     margin-top: 5px;
     justify-content: center;
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -800,7 +818,7 @@ color: #4B4B4B;
     margin-top: -50px;
 }
 .scooterName{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
 font-style: normal;
 font-weight: 400;
 font-size: 28px;
@@ -815,7 +833,7 @@ color: #4B4B4B;
     padding-left: 20px;
 }
 .scooterInf table .lc{
-    font-family: 'Inter';
+    font-family: inter;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -830,7 +848,7 @@ color: #4B4B4B;
     color: #353942;
 }
 .scooterInf table .even{
-    font-family: 'Inter';
+    font-family: inter;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -865,7 +883,7 @@ color: #4B4B4B;
     opacity: 0.4;
 }
 .scooterInf .money{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -875,7 +893,7 @@ color: #4B4B4B;
     color: #4B4B4B;
 }
 .scooterInf .btn{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: normal;
     margin-top: 25px;
@@ -1083,7 +1101,7 @@ color: #4B4B4B;
     background-size: 100% 100%;
 }
 .podbor .podborTitle{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 54px;
@@ -1289,7 +1307,7 @@ color: #4B4B4B;
     width: 100%;
 }
 .advTitle{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 54px;
@@ -1306,7 +1324,7 @@ color: #4B4B4B;
 }
 
 .columnsAdv .columnText{
-    font-family: 'Futura PT';
+    font-family: 'FuturaBook';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -1410,7 +1428,7 @@ color: #4B4B4B;
 
 .feedbackTitle{
     margin-top: 150px;
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 54px;
@@ -1469,7 +1487,7 @@ color: #4B4B4B;
     background-size: 100% 100%;
 }
 .questionsTitle{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 54px;
@@ -1524,7 +1542,7 @@ color: #4B4B4B;
 .columnsQuestions2 .queSales{
     background: linear-gradient(90deg, #FF1887 0%, #FF5C38 100%);
     border-radius: 12px;    
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -1543,7 +1561,7 @@ color: #4B4B4B;
     border-bottom: 1px solid #FF1887;
 }
 .columnsQuestions2 .tab .lc h4{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -1746,7 +1764,7 @@ color: #4B4B4B;
     justify-content: center;
 }
 .testDrTitle{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 54px;
@@ -1813,7 +1831,7 @@ color: #4B4B4B;
     grid-area: col6;
 }
 .testDrFormTitle{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -1859,6 +1877,7 @@ color: #4B4B4B;
     float: right;
 }
 .testDrForm input{
+    font-family: 'FuturaDemi';
     width: 90%;
     height: 72px;
     margin-top: 30px;
@@ -1866,7 +1885,7 @@ color: #4B4B4B;
     border: 1px solid #676767;
 }
 .testDrInf .btn{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: normal;
     margin-top: 25px;
@@ -2040,7 +2059,7 @@ footer .columnsHeader{
 /*---------------------------------------------------------------*/
 
 footer .columnsHeader .column1 .textCol .mobistor{
-    font-family: 'Futura PT';
+    font-family: 'FuturaExtra';
     font-weight: 800;
     font-size: 32px;
     text-transform: uppercase;
@@ -2048,7 +2067,7 @@ footer .columnsHeader .column1 .textCol .mobistor{
 
 }
 footer .columnsHeader .column1 .textCol .scooters{
-    font-family: 'Futura PT';
+    font-family: 'FuturaBold';
     font-weight: 400;
     font-size: 24px;
     text-transform: uppercase;
@@ -2058,7 +2077,7 @@ footer .columnsHeader .column1 .textCol .scooters{
 /*---------------------------------------------------------------*/
 
 footer .columnsHeader .column2 .textCol .br1{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -2066,14 +2085,14 @@ footer .columnsHeader .column2 .textCol .br1{
     color: #ffffff;
 }
 footer .columnsHeader .column2 .textCol .br2{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     color: #ffffff;
 }
 footer .columnsHeader .column2 .textCol .br3{
-    font-family: 'Futura PT';
+    font-family: 'FuturaBook';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -2084,7 +2103,7 @@ footer .columnsHeader .column3 .textCol .br1{
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
-    font-family: 'Futura PT';
+    font-family: 'FuturaBold';
     font-size: 12px;
 
 
@@ -2101,7 +2120,7 @@ footer .columnsHeader .column3 .textCol .br2{
 /*---------------------------------------------------------------*/
 
 footer .columnsHeader .column5 .textCol .br1{
-    font-family: 'Futura PT';
+    font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
