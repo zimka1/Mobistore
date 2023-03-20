@@ -1750,7 +1750,6 @@ color: #4B4B4B;
     font-style: normal;
     font-weight: 400;
     font-size: 54px;
-    
     margin-right: 0;
     padding-right: 0;
     line-height: 120%;
@@ -1765,22 +1764,26 @@ color: #4B4B4B;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
-    width: 70%;
     line-height: 140%;
     color: #333333;
+    width: 40%;
 }
 .testDrInf{
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 100px;
 }
-.testDrForm{
+
+.testDrFormBg{
     width: 100%;
     background: #FFFFFF;
     border: 1px solid #ECECEC;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
+    
+}
+.testDrForm{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px 100px;
@@ -1880,11 +1883,19 @@ color: #4B4B4B;
     border-radius: 100px;
 }
 @media screen and (max-width: 1100px) {
+    .testDr {
+        background-position: 50% center;
+      }
+    .testDr {
+          background-size: auto 100%;
+    }
+
     .testDrTitle{
         font-size: 28px;
     }
     .testDrText{
         font-size: 16px;
+        width: 80%;
     }
     .testDrFormTitle{
         font-size: 22px;
@@ -1898,16 +1909,26 @@ color: #4B4B4B;
     .testDrFormText3{
         font-size: 14px;
     }
-    .testDrColumns{
-        display: grid;
-        grid-template-columns: repeat(1, 400px);
+    .testDrFormBg{
         width: 80%;
+    }
+    .testDrFormBg{
+        height: 60%;
+        width: 100%;
+        
+    }
+    .testDrForm{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        padding: 0px;
         grid-template-rows: repeat(6, auto);
         grid-template-areas: "col1" "col3" "col4" "col6" "col5" "col2";
         gap: 10px;
+        width: 90%;
         justify-content: center;
-        padding-left: 10px;
-        height: 600px;
+        padding-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .testDrForm input{
         width: 90%;
