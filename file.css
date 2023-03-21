@@ -165,10 +165,18 @@ header {
 .columnsHeader .column4{
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .columnsHeader .column4 .masenger{
     margin-right: 10px
+}
+.columnsHeader .column4 .masenger{
+    width: 42px;
+    height: 42px;
+    border-radius: 100px;
+}
+.columnsHeader .column4 .masenger:hover{
+    border:1px solid #FF8329
 }
 .columnsHeader .column4 .masenger.call{
     display: none;
@@ -578,7 +586,7 @@ header {
 .columnsPluses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 90%;
+    width: 100%;
     gap: 50px;
     padding: 35px;
     justify-content: center; /* Выравниваем по горизонтали */
@@ -608,6 +616,12 @@ header {
 }
 .columnsPluses .columnText .br1{
     color: #FF5C38;
+}
+@media screen and (max-width: 1300px) {
+    .columnsPluses{
+        width: 90%;
+    
+    }
 }
 @media screen and (max-width: 1100px) {
     .columnsPluses{
@@ -667,7 +681,7 @@ header {
     padding: 35px;
     align-items: center;
     justify-content: center; 
-    margin-top: -80px;
+    margin-top: -50px;
 }
 .columnScooter .back, .columnScooter .next{
     height: 57px;
@@ -684,7 +698,7 @@ header {
     padding: 15px;
     align-items: center;
     justify-content: center; 
-    margin-top: -80px;
+    margin-top: -50px;
 }
 .columnScooter2 img{
     width: 160px;
@@ -2085,7 +2099,6 @@ footer .columnsHeader{
 
 
 /*---------------------------------------------------------------*/
-
 footer .columnsHeader .column1 .textCol .mobistor{
     font-family: 'FuturaExtra';
     font-weight: 800;
@@ -2173,7 +2186,14 @@ footer .columnsHeader .column5 .textCol .br2{
 footer .columnsHeader{
     border-bottom: 1px solid #C4C4C4;
 }
-
+footer .columnsHeader .column4 .masenger{
+    width: 42px;
+    height: 42px;
+    border-radius: 100px;
+}
+footer .columnsHeader .column4 .masenger:hover{
+    border:1px solid #FF8329
+}
 @media screen and (max-width: 980px) {
     
     footer .columnsHeader {
@@ -2229,6 +2249,9 @@ footer .columnsHeader{
     }
     footer .columnsHeader .column4 .masenger{
         margin-right: 0;
+    }
+    footer .columnsHeader .column4 .masenger:hover{
+        color:#FF8329
     }
     footer .columnsHeader .column4{
         display: grid;
