@@ -265,10 +265,10 @@ header {
         display: none;
 
     }
-    .columnsHeader .column4 .masenger.call{
+    header .columnsHeader .column4 .masenger.call{
         display: block;
     }
-    .columnsHeader .column4 .masenger img{
+    header .columnsHeader .column4 .masenger img{
         width: 42px;
         height: 42px;
     }
@@ -282,10 +282,10 @@ header {
         justify-content: center;
         margin-top: 23px;
     }
-    .columnsHeader .column4 .masenger {
+    header .columnsHeader .column4 .masenger {
         margin-right: 0;
     }
-    .columnsHeader .column4 .masenger img{
+    header .columnsHeader .column4 .masenger img{
         width: 35px;
         height: 35px;
     }
