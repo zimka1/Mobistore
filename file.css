@@ -248,6 +248,12 @@ header {
         grid-column: 2;
         grid-row: 1;
     }
+    header .columnsHeader .column3 .br1{
+        display: none;
+    }
+    header .columnsHeader .column3 .textCol{
+        margin-top: -6px;
+    }
     header .columnsHeader .column1{
         display: none;
 
@@ -262,9 +268,26 @@ header {
     .columnsHeader .column4 .masenger.call{
         display: block;
     }
-    .columnsHeader .column4 .masenger.call img{
+    .columnsHeader .column4 .masenger img{
         width: 42px;
         height: 42px;
+    }
+}
+@media screen and (max-width: 500px) {
+    header .columnsHeader .column4{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap:5px;
+        text-align: center;
+        justify-content: center;
+        margin-top: 23px;
+    }
+    .columnsHeader .column4 .masenger {
+        margin-right: 0;
+    }
+    .columnsHeader .column4 .masenger img{
+        width: 35px;
+        height: 35px;
     }
 }
 
