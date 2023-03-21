@@ -1918,6 +1918,7 @@ color: #4B4B4B;
     }
 
     .testDrTitle{
+        margin-top: 100px;
         font-size: 28px;
     }
     .testDrText{
@@ -1940,7 +1941,7 @@ color: #4B4B4B;
         width: 80%;
     }
     .testDrFormBg{
-        height: 60%;
+        height: 50%;
         width: 100%;
         
     }
@@ -1958,11 +1959,15 @@ color: #4B4B4B;
         margin-right: auto;
     }
     .testDrForm input{
+        display: flex;
         width: 90%;
         height: 72px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     .testDrInf .btn{
-        font-family: 'Futura PT';
+        font-family: 'FuturaDemi';
         font-style: normal;
         font-weight: normal;
         margin-top: 25px;
@@ -1973,10 +1978,13 @@ color: #4B4B4B;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         margin-top: 10px;
         background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
         border-radius: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     .testDrForm img{
         width: 186px;
@@ -2022,7 +2030,7 @@ color: #4B4B4B;
     }
     .testDrForm .column2{
         margin: 0;
-        margin-top: 100px;
+        margin-top: 30px;
         display: flex;
         justify-content: center;
     }
@@ -2159,9 +2167,11 @@ footer .columnsHeader{
     footer .columnsHeader {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 100px);
+        grid-template-rows: repeat(5, auto);
         grid-template-areas: "col1" "col2" "col3" "col4" "col5";
+        gap: 20px;
         height: 500px;
+        padding-top: 20px;
     }
     footer .column1:nth-child(1) {
         grid-area: col1;
@@ -2204,6 +2214,15 @@ footer .columnsHeader{
         margin-right: auto;
         margin-left: auto;
         
+    }
+    footer .columnsHeader .column4 .masenger{
+        margin-right: 0;
+    }
+    footer .columnsHeader .column4{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:10px;
+       
     }
     footer .columnsHeader .column3 .textCol{
         margin-top: 10px;
