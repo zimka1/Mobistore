@@ -170,6 +170,9 @@ header {
 .columnsHeader .column4 .masenger{
     margin-right: 10px
 }
+.columnsHeader .column4 .masenger.call{
+    display: none;
+}
 /*---------------------------------------------------------------*/
 
 .columnsHeader .column5{
@@ -247,6 +250,13 @@ header {
     header .columnsHeader .column5{
         display: none;
 
+    }
+    .columnsHeader .column4 .masenger.call{
+        display: block;
+    }
+    .columnsHeader .column4 .masenger.call img{
+        width: 42px;
+        height: 42px;
     }
 }
 
