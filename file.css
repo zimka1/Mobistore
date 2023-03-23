@@ -801,7 +801,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 55px;
+    margin-top: 0px;
 }
 
 .msScooter .thumbs img {
@@ -812,7 +812,7 @@ header {
     border: 2px solid white;
     border-radius: 50%;
     cursor: pointer;
-    margin-top: -50px;
+    margin-top: 0px;
 }
 
 .msScooter .thumbs img.active {
@@ -860,7 +860,6 @@ header {
         border: 2px solid white;
         border-radius: 50%;
         cursor: pointer;
-        margin-top: -50px;
     }
 }
 @media screen and (max-width: 450px) {
@@ -872,7 +871,6 @@ header {
         border: 2px solid white;
         border-radius: 50%;
         cursor: pointer;
-        margin-top: -50px;
         }
 }
 
