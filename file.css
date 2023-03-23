@@ -29,7 +29,6 @@ body{
     margin: 0;
     padding: 0;
     background-color: #E5E5E5;
-    overflow-x: hidden;
 }
 header {
     width: 100%;
@@ -473,6 +472,7 @@ header {
     margin-top: 0;
     width: 100%;
     height: 750px;
+    overflow-x: hidden;
 
 }
 .original{
@@ -614,6 +614,7 @@ header {
     display: fixed;
     margin-left: auto;
     margin-right: auto;
+    overflow-x: hidden;
 
 }
 
@@ -1241,6 +1242,7 @@ color: #4B4B4B;
     margin-top: 100px;
     padding-bottom: 350px; 
     width: 100%;
+    overflow-x: hidden;
 
 }
 .headColumnsPodbor {
@@ -1583,9 +1585,9 @@ color: #4B4B4B;
 
 .feedback{
     height: 500px;
-    overflow-x: hidden;
-    padding-bottom: 100px;
     
+    padding-bottom: 100px;
+    overflow-x: hidden;
 }
 .feedback .feedbackTitle{
     margin-top: 150px;
@@ -1747,6 +1749,7 @@ color: #4B4B4B;
         justify-content: center;
         align-items: center;
     } */
+
     .feedback .slider {
         position: relative;
         width: 100%;
