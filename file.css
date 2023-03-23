@@ -275,6 +275,10 @@ header {
         width: 42px;
         height: 42px;
     }
+    header .columnsHeader .column4 .masenger{
+        width: 42px;
+        height: 42px;
+    }
 }
 @media screen and (max-width: 500px) {
     header .columnsHeader .column4{
@@ -289,6 +293,10 @@ header {
         margin-right: 0;
     }
     header .columnsHeader .column4 .masenger img{
+        width: 35px;
+        height: 35px;
+    }
+    header .columnsHeader .column4 .masenger{
         width: 35px;
         height: 35px;
     }
