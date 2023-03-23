@@ -98,11 +98,17 @@ goToSlide(0);
 thumbs[0].classList.add('active');
 
 
+
+
+
+
 const slides2 = document.querySelectorAll('.feedback .slide');
 const prev2 = document.querySelector('.feedback .prev');
 const next2 = document.querySelector('.feedback .next');
+const sliderContainer2 = document.querySelector('.feedback .slider-container');
 let currentIndex2 = 0;
-
+let touchStartX2 = 0;
+let touchEndX2 = 0;
 // Переключение на слайд по индексу
 function goToSlide2(index) {
   // Скрытие всех слайдов
@@ -130,7 +136,23 @@ function prevSlide2() {
   }
   goToSlide2(currentIndex2);
 }
+function handleSwipe2() {
+  const swipeDistance = touchEndX2 - touchStartX2;
+  if (swipeDistance > 0) {
+    prevSlide2();
+  } else if (swipeDistance < 0) {
+    nextSlide2();
+  }
+}
 
+sliderContainer2.addEventListener('touchstart', event => {
+  touchStartX2 = event.touches[0].clientX;
+});
+
+sliderContainer2.addEventListener('touchend', event => {
+  touchEndX2 = event.changedTouches[0].clientX;
+  handleSwipe2();
+});
 // Обработчики событий для кнопок вперед и назад
 next2.addEventListener('click', nextSlide2);
 prev2.addEventListener('click', prevSlide2);
