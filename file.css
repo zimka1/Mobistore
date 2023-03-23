@@ -833,7 +833,7 @@ header {
     .msScooter .next,.msScooter .prev{
         display: none;
     }
-    .slider {
+    .msScooter .slider {
         position: relative;
         width: 100%;
         display: grid;
@@ -843,7 +843,7 @@ header {
         grid-template-areas: "col1 col1 col1 col1 col1"
                                 "col4 col4 col4 col4 col4";
     }
-    .thumbs img {
+    .msScooter .thumbs img {
         width: 70px;
         height: 70px;
         object-fit: cover;
@@ -855,7 +855,7 @@ header {
     }
 }
 @media screen and (max-width: 450px) {
-    .thumbs img {
+    .msScooter .thumbs img {
         width: 60px;
         height: 60px;
         object-fit: cover;
