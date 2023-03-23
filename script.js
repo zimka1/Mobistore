@@ -160,4 +160,4 @@ prev2.addEventListener('click', prevSlide2);
 
 
 // Показ первого слайда и первой картинки-эскиза
-goToSlide(0);
+goToSlide2(0);
