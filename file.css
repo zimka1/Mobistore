@@ -735,12 +735,12 @@ header {
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
-.slider-container {
+.msScooter .slider-container {
     display: flex;
     justify-content: center;
-  }
-  
-.slider {
+}
+
+.msScooter .slider {
     position: relative;
     width: 100%;
     display: grid;
@@ -748,29 +748,29 @@ header {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "col2 col2 col1 col1 col1 col1 col3 col3"
-                         "col4 col4 col4 col4 col4 col4 col4 col4";
+                            "col4 col4 col4 col4 col4 col4 col4 col4";
 }
-.slider .slides:nth-child(1) {
+.msScooter .slider .slides:nth-child(1) {
     grid-area: col1;
 }
-.slider .prev:nth-child(3) {
+.msScooter .slider .prev:nth-child(3) {
     grid-area: col2;
 }
-.slider .next:nth-child(4) {
+.msScooter .slider .next:nth-child(4) {
     grid-area: col3;
 }
-.slider .thumbs:nth-child(2) {
+.msScooter .slider .thumbs:nth-child(2) {
     grid-area: col4;
 }
-  .slides {
+.msScooter .slides {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 400px;
     position: relative;
-  }
-  
-  .slide {
+}
+
+.msScooter .slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -778,24 +778,24 @@ header {
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-  }
-  .slide img{
+}
+.msScooter .slide img{
     width: 100%;
     height: 100%;
-  }
-  
-  .slide.active {
+}
+
+.msScooter .slide.active {
     opacity: 1;
-  }
-  
-  .thumbs {
+}
+
+.msScooter .thumbs {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-  }
-  
-  .thumbs img {
+}
+
+.msScooter .thumbs img {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -804,34 +804,33 @@ header {
     border-radius: 50%;
     cursor: pointer;
     margin-top: -50px;
-  }
-  
-  .thumbs img.active {
+}
+
+.msScooter .thumbs img.active {
     border-color: black;
-  }
-  
-  .prev,
-  .next {
-   
+}
+
+.msScooter .prev,
+.msScooter .next {
     background-color: transparent;
     border: none;
     font-size: 2em;
     color: white;
     cursor: pointer;
-  }
-  
-  
-  
-  .next img{
+}
+
+
+
+.msScooter .next img{
     float: left;
-  }
-  .prev img{
+}
+.msScooter .prev img{
     float: right;
-  }
-  
+}
+
 
 @media screen and (max-width: 800px) {
-    .next, .prev{
+    .msScooter .next,.msScooter .prev{
         display: none;
     }
     .slider {
@@ -842,7 +841,7 @@ header {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, auto);
         grid-template-areas: "col1 col1 col1 col1 col1"
-                             "col4 col4 col4 col4 col4";
+                                "col4 col4 col4 col4 col4";
     }
     .thumbs img {
         width: 70px;
@@ -853,7 +852,7 @@ header {
         border-radius: 50%;
         cursor: pointer;
         margin-top: -50px;
-      }
+    }
 }
 @media screen and (max-width: 450px) {
     .thumbs img {
@@ -865,7 +864,7 @@ header {
         border-radius: 50%;
         cursor: pointer;
         margin-top: -50px;
-      }
+        }
 }
 
 
@@ -1453,6 +1452,7 @@ color: #4B4B4B;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    padding-bottom: 100px;
 }
 .advTitle{
     font-family: 'FuturaDemi';
@@ -1573,8 +1573,10 @@ color: #4B4B4B;
     }
 }
 
-
-.feedbackTitle{
+.feedback{
+    padding-bottom: 100px;
+}
+.feedback .feedbackTitle{
     margin-top: 150px;
     font-family: 'FuturaDemi';
     font-style: normal;
@@ -1586,29 +1588,26 @@ color: #4B4B4B;
 
     color: #4B4B4B;
 }
-.columnsFeedback{
+.feedback .columnsFeedback{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 5px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
 }
-.columnsFeedback .column.butback img{
+.feedback .columnsFeedback .column.butback img{
     float: right;
 }
-.columnsFeedback .column.butnext img{
+.feedback .columnsFeedback .column.butnext img{
     float: left;
 }
-.columnsFeedback .column{
+.feedback .columnsFeedback .column{
     justify-content: center;
 }
-.columnsFeedback .column.imges img{
-    width: 274px;
-    height: 486px;
-}
-.columnsFeedback .column .columnText{
+
+.feedback .columnsFeedback .column .columnText{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -1618,12 +1617,12 @@ color: #4B4B4B;
     margin-top: 0;
     color: #353942;
 }
-.columnsFeedback .column .columnText .br1{
+.feedback .columnsFeedback .column .columnText .br1{
     color: #FF5C38;
     font-size: 14px;
 }
 @media screen and (max-width: 600px) {
-    .columnsFeedback{
+    /* .feedback .columnsFeedback{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 5px;
@@ -1631,14 +1630,145 @@ color: #4B4B4B;
         margin-right: auto;
         justify-content: center;
         align-items: center;
-    }
-    .feedbackTitle{
+    } */
+    .feedback .feedbackTitle{
         font-size: 26px;
     }
-    .columnsFeedback .column.unvis{
+    .feedback .columnsFeedback .column.unvis{
         display: none;
     }
 }
+
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+.feedback .slider-container {
+    display: flex;
+    justify-content: center;
+}
+
+.feedback .slider {
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: "col2 col1 col1 col1 col1 col1 col1 col1 col1 col3";
+}
+.feedback .slider .slides:nth-child(1) {
+    grid-area: col1;
+}
+.feedback .slider .prev:nth-child(2) {
+    grid-area: col2;
+}
+.feedback .slider .next:nth-child(3) {
+    grid-area: col3;
+}
+.feedback .slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    position: relative;
+}
+
+.feedback .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.feedback .slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.feedback .slide.first {
+    opacity: 1;
+}
+
+.feedback .prev,
+.feedback .next {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    padding-top: 100px;
+}
+.feedback .columnsFeedback .column.imges img{
+    width: 274px;
+    height: 486px;
+}
+
+
+.feedback .next img{
+    float: left;
+}
+.feedback .prev img{
+    float: right;
+}
+
+
+@media screen and (max-width: 1200px) {
+ 
+    .feedback .prev{
+        display: none;
+    }
+    .feedback .next{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* .feedback .columnsFeedback{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    } */
+    .feedback .slider {
+        position: relative;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        margin-right: -5px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "col1 col1 col1 col1";
+    }
+    .feedback .feedbackTitle{
+        font-size: 26px;
+    }
+    .feedback .columnsFeedback .column.unvis{
+        display: none;
+    }
+    .feedback .prev{
+        display: none;
+    }
+    .feedback .next{
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+
 
 
 .questions{

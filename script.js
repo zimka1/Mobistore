@@ -29,29 +29,27 @@ function clearTextarea(element) {
 }
 
 
-const slides = document.querySelectorAll('.slide');
-const thumbs = document.querySelectorAll('.thumbs img');
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
+const slides = document.querySelectorAll('.msScooter .slide');
+const thumbs = document.querySelectorAll('.msScooter .thumbs img');
+const prev = document.querySelector('.msScooter .prev');
+const next = document.querySelector('.msScooter .next');
+const sliderContainer = document.querySelector('.msScooter .slider-container');
 let currentIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
 
-// Переключение на слайд по индексу
 function goToSlide(index) {
-  // Скрытие всех слайдов
   slides.forEach(slide => {
     slide.classList.remove('active');
   });
-  // Показ нужного слайда
   slides[index].classList.add('active');
 
-  // Подсветка соответствующей картинки-эскиза
   thumbs.forEach(thumb => {
     thumb.classList.remove('active');
   });
   thumbs[index].classList.add('active');
 }
 
-// Переключение на следующий слайд
 function nextSlide() {
   currentIndex++;
   if (currentIndex > slides.length - 1) {
@@ -60,7 +58,6 @@ function nextSlide() {
   goToSlide(currentIndex);
 }
 
-// Переключение на предыдущий слайд
 function prevSlide() {
   currentIndex--;
   if (currentIndex < 0) {
@@ -69,11 +66,27 @@ function prevSlide() {
   goToSlide(currentIndex);
 }
 
-// Обработчики событий для кнопок вперед и назад
+function handleSwipe() {
+  const swipeDistance = touchEndX - touchStartX;
+  if (swipeDistance > 0) {
+    prevSlide();
+  } else if (swipeDistance < 0) {
+    nextSlide();
+  }
+}
+
+sliderContainer.addEventListener('touchstart', event => {
+  touchStartX = event.touches[0].clientX;
+});
+
+sliderContainer.addEventListener('touchend', event => {
+  touchEndX = event.changedTouches[0].clientX;
+  handleSwipe();
+});
+
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
-// Обработчики событий для картинок-эскизов
 thumbs.forEach((thumb, index) => {
   thumb.addEventListener('click', () => {
     currentIndex = index;
@@ -81,6 +94,48 @@ thumbs.forEach((thumb, index) => {
   });
 });
 
-// Показ первого слайда и первой картинки-эскиза
 goToSlide(0);
 thumbs[0].classList.add('active');
+
+
+const slides2 = document.querySelectorAll('.feedback .slide');
+const prev2 = document.querySelector('.feedback .prev');
+const next2 = document.querySelector('.feedback .next');
+let currentIndex2 = 0;
+
+// Переключение на слайд по индексу
+function goToSlide2(index) {
+  // Скрытие всех слайдов
+  slides2.forEach(slide => {
+    slide.classList.remove('first');
+  });
+  // Показ нужного слайда
+  slides2[index].classList.add('first');
+}
+
+// Переключение на следующий слайд
+function nextSlide2() {
+  currentIndex2++;
+  if (currentIndex2 > slides2.length - 1) {
+    currentIndex2 = 0;
+  }
+  goToSlide2(currentIndex2);
+}
+
+// Переключение на предыдущий слайд
+function prevSlide2() {
+  currentIndex2--;
+  if (currentIndex2 < 0) {
+    currentIndex2 = slides2.length - 1;
+  }
+  goToSlide2(currentIndex2);
+}
+
+// Обработчики событий для кнопок вперед и назад
+next2.addEventListener('click', nextSlide2);
+prev2.addEventListener('click', prevSlide2);
+
+
+
+// Показ первого слайда и первой картинки-эскиза
+goToSlide(0);
