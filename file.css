@@ -680,7 +680,7 @@ header {
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
-.msScooter .bg{
+.msscooter .bg{
     width: 100%;
     z-index: -1;
     height: 100%;
@@ -688,7 +688,7 @@ header {
     border-bottom: 2px solid #ECECEC;
     
 }
-.msScooter{
+.msscooter{
     padding-bottom: 70px;
 }
 .msScooterTitle .br1{
@@ -714,7 +714,7 @@ header {
 
 @media screen and (max-width: 1100px) {
 
-    .msScooter .bg{
+    .msscooter .bg{
         display: none;
     }
     .msScooterTitle .br1{
@@ -744,136 +744,135 @@ header {
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
-.msScooter .slider-container {
-    display: flex;
-    justify-content: center;
+.msScooter{
+    display: none;
 }
 
-.msScooter .slider {
-    position: relative;
-    width: 100%;
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "col2 col2 col1 col1 col1 col1 col3 col3"
-                            "col4 col4 col4 col4 col4 col4 col4 col4";
-}
-.msScooter .slider .slides:nth-child(1) {
-    grid-area: col1;
-}
-.msScooter .slider .prev:nth-child(3) {
-    grid-area: col2;
-}
-.msScooter .slider .next:nth-child(4) {
-    grid-area: col3;
-}
-.msScooter .slider .thumbs:nth-child(2) {
-    grid-area: col4;
-}
-.msScooter .slides {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    position: relative;
-}
-
-.msScooter .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-.msScooter .slide img{
-    width: 100%;
-    height: 100%;
-}
-
-.msScooter .slide.active {
-    opacity: 1;
-}
-
-.msScooter .thumbs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-}
-
-.msScooter .thumbs img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin: 0 10px;
-    border: 2px solid white;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-top: 0px;
-}
-
-.msScooter .thumbs img.active {
-    border-color: black;
-}
-
-.msScooter .prev,
-.msScooter .next {
+.owl-carousel{
+    width:60%;
+    margin:auto;
     background-color: transparent;
+}
+.owl-carousel .slide img{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.owl-nav {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 35%;
+    background-color: transparent;
+    z-index: 999;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  .owl-prev, .owl-next {
+    background-color: transparent;
+}
+.owl-prev .prev{
+    background: none;
     border: none;
-    font-size: 2em;
-    color: white;
-    cursor: pointer;
+}
+.owl-next .next{
+    background: none;
+    border: none;
+}
+.owl-theme .owl-dots .owl-dot span {
+    display: none;
+}
+button.owl-dot.active{
+    border: 1px solid black;
+}
+.owl-dots .owl-dot{
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+}
+.owl-dots .owl-dot:nth-child(1) {
+    background-image: url(img/slider/1.png);
+    background-size: 100% 100%;
+    border-radius: 100%;
 }
 
-
-
-.msScooter .next img{
-    float: left;
-}
-.msScooter .prev img{
-    float: right;
+.owl-dots .owl-dot:nth-child(2) {
+    background-image: url(img/slider/2.png);
+    background-size: 100% 100%;
+    border-radius: 100%;
 }
 
+.owl-dots .owl-dot:nth-child(3) {
+    background-image: url(img/slider/3.png);
+    background-size: 100% 100%;
+    border-radius: 100%;
+}
 
-@media screen and (max-width: 800px) {
-    .msScooter .next,.msScooter .prev{
+.owl-dots .owl-dot:nth-child(4) {
+    background-image: url(img/slider/4.png);
+    background-size: 100% 100%;
+    border-radius: 100%;
+}
+.owl-dots .owl-dot:nth-child(5) {
+    background-image: url(img/slider/5.png);
+    background-size: 100% 100%;
+    border-radius: 100%;
+}
+@media screen and (max-width: 1149px) {
+    .owl-carousel{
+        width:70%;
+        margin:auto;
+    }
+    .owl-carousel .slide img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .owl-dots .owl-dot{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .owl-carousel{
+        width:70%;
+        margin:auto;
+    }
+    .owl-carousel .slide img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .owl-prev img, .owl-next img{
         display: none;
     }
-    .msScooter .slider {
-        position: relative;
-        width: 100%;
-        display: grid;
-        align-items: center;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas: "col1 col1 col1 col1 col1"
-                                "col4 col4 col4 col4 col4";
-    }
-    .msScooter .thumbs img {
-        width: 70px;
-        height: 70px;
-        object-fit: cover;
-        margin: 0 5px;
-        border: 2px solid white;
-        border-radius: 50%;
-        cursor: pointer;
+    .owl-dots .owl-dot{
+        width: 75px;
+        height: 75px;
     }
 }
-@media screen and (max-width: 450px) {
-    .msScooter .thumbs img {
+@media screen and (max-width: 600px) {
+    .owl-carousel{
+        width: 100%;
+        margin:auto;
+    }
+    .owl-carousel .slide img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .owl-prev img, .owl-next img{
+        display: none;
+    }
+    .owl-dots .owl-dot{
         width: 60px;
         height: 60px;
-        object-fit: cover;
-        margin: 0 2px;
-        border: 2px solid white;
-        border-radius: 50%;
-        cursor: pointer;
-        }
+    }
 }
-
 
 
 /*---------------------------------------------------------------*/

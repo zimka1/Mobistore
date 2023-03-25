@@ -162,3 +162,37 @@ prev2.addEventListener('click', prevSlide2);
 
 // Показ первого слайда и первой картинки-эскиза
 goToSlide2(0);
+
+
+
+
+$(document).ready(function(){
+  
+  const slider = $("#slider").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    mouseDrag:true,
+    navText: [
+      '<button class="prev" style=""><img src="img/slider/back.png" alt=""></button>',
+        '<button class="next"><img src="img/slider/next.png" alt=""></button>'
+    ],
+    margin:0,
+    stagePadding: 0,
+    responsive:{
+      400: {
+        margin:10,
+        stagePadding: 0
+      },
+      600: {
+        margin:0,
+        stagePadding: 0
+      },
+      900: {
+          margin:20,
+        stagePadding: 30
+      }
+    }
+ });
+});
+
