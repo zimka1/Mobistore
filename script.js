@@ -196,3 +196,54 @@ $(document).ready(function(){
  });
 });
 
+$(document).ready(function(){
+  
+  const slider = $("#slider2").owlCarousel({
+    items: 4,
+    loop: true,
+    nav: true,
+    mouseDrag:true,
+    navText: [
+      '<button class="prev" style=""><img src="img/slider/back.png" alt=""></button>',
+        '<button class="next"><img src="img/slider/next.png" alt=""></button>'
+    ],
+    dots:0,
+    margin:0,
+    stagePadding: 0,
+    responsive:{
+      300:{
+        items:1,
+        margin: -90,
+        stagePadding:0
+      },
+      400:{
+        items:1,
+        margin: -140,
+        stagePadding:0
+      },
+      500:{
+        items:3,
+        margin:250,
+        stagePadding:0
+      },
+      600:{
+        items:3,
+        margin:250,
+        stagePadding:0
+      },
+      730: {
+        items: 3
+      },
+      1000: {
+        items: 4,
+
+      },
+      1900: {
+        items:4,
+        margin: 0,
+        stagePadding:0
+       
+      }
+    }
+ });
+});

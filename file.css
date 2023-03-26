@@ -748,17 +748,17 @@ header {
     display: none;
 }
 
-.owl-carousel{
+.msscooter .owl-carousel{
     width:60%;
     margin:auto;
     background-color: transparent;
 }
-.owl-carousel .slide img{
+.msscooter .owl-carousel .slide img{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
-.owl-nav {
+.msscooter .owl-nav {
     position: absolute;
     width: 100%;
     height: 0px;
@@ -772,103 +772,103 @@ header {
     display: flex;
     justify-content: space-between;
   }
-  .owl-prev, .owl-next {
+.msscooter .owl-prev, .owl-next {
     background-color: transparent;
 }
-.owl-prev .prev{
+.msscooter .owl-prev .prev{
     background: none;
     border: none;
 }
-.owl-next .next{
+.msscooter .owl-next .next{
     background: none;
     border: none;
 }
-.owl-theme .owl-dots .owl-dot span {
+.msscooter .owl-theme .owl-dots .owl-dot span {
     display: none;
 }
-button.owl-dot.active{
+.msscooter button.owl-dot.active{
     border: 1px solid black;
 }
-.owl-dots .owl-dot{
+.msscooter .owl-dots .owl-dot{
     width: 120px;
     height: 120px;
     margin-right: 10px;
 }
-.owl-dots .owl-dot:nth-child(1) {
+.msscooter .owl-dots .owl-dot:nth-child(1) {
     background-image: url(img/slider/1.png);
     background-size: 100% 100%;
     border-radius: 100%;
 }
 
-.owl-dots .owl-dot:nth-child(2) {
+.msscooter .owl-dots .owl-dot:nth-child(2) {
     background-image: url(img/slider/2.png);
     background-size: 100% 100%;
     border-radius: 100%;
 }
 
-.owl-dots .owl-dot:nth-child(3) {
+.msscooter .owl-dots .owl-dot:nth-child(3) {
     background-image: url(img/slider/3.png);
     background-size: 100% 100%;
     border-radius: 100%;
 }
 
-.owl-dots .owl-dot:nth-child(4) {
+.msscooter .owl-dots .owl-dot:nth-child(4) {
     background-image: url(img/slider/4.png);
     background-size: 100% 100%;
     border-radius: 100%;
 }
-.owl-dots .owl-dot:nth-child(5) {
+.msscooter .owl-dots .owl-dot:nth-child(5) {
     background-image: url(img/slider/5.png);
     background-size: 100% 100%;
     border-radius: 100%;
 }
 @media screen and (max-width: 1149px) {
-    .owl-carousel{
+    .msscooter .owl-carousel{
         width:70%;
         margin:auto;
     }
-    .owl-carousel .slide img{
+    .msscooter .owl-carousel .slide img{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    .owl-dots .owl-dot{
+    .msscooter .owl-dots .owl-dot{
         width: 100px;
         height: 100px;
     }
 }
 @media screen and (max-width: 900px) {
-    .owl-carousel{
+    .msscooter .owl-carousel{
         width:70%;
         margin:auto;
     }
-    .owl-carousel .slide img{
+    .msscooter .owl-carousel .slide img{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    .owl-prev img, .owl-next img{
+    .msscooter .owl-prev img, .owl-next img{
         display: none;
     }
-    .owl-dots .owl-dot{
+    .msscooter .owl-dots .owl-dot{
         width: 75px;
         height: 75px;
     }
 }
 @media screen and (max-width: 600px) {
-    .owl-carousel{
+    .msscooter .owl-carousel{
         width: 100%;
         margin:auto;
     }
-    .owl-carousel .slide img{
+    .msscooter .owl-carousel .slide img{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    .owl-prev img, .owl-next img{
+    .msscooter .owl-prev img, .owl-next img{
         display: none;
     }
-    .owl-dots .owl-dot{
+    .msscooter .owl-dots .owl-dot{
         width: 60px;
         height: 60px;
     }
@@ -1586,18 +1586,7 @@ color: #4B4B4B;
     padding-bottom: 100px;
     overflow-x: hidden;
 }
-.feedback .feedbackTitle{
-    margin-top: 150px;
-    font-family: 'FuturaDemi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 54px;
-    line-height: 120%;
-    /* or 65px */
-    text-align: center;
 
-    color: #4B4B4B;
-}
 .feedback .columnsFeedback{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1654,127 +1643,123 @@ color: #4B4B4B;
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
 
-.feedback .slider-container {
-    
-    display: flex;
-    justify-content: center;
+
+
+
+
+
+.feedBack .feedbackTitle{
+    margin-top: 50px;
+    font-family: 'FuturaDemi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 120%;
+    /* or 65px */
+    text-align: center;
+
+    color: #4B4B4B;
 }
 
-.feedback .slider {
-    position: relative;
-    width: 100%;
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-areas: "col2 col1 col1 col1 col1 col1 col1 col1 col1 col3";
-}
-.feedback .slider .slides:nth-child(1) {
-    grid-area: col1;
-}
-.feedback .slider .prev:nth-child(2) {
-    grid-area: col2;
-}
-.feedback .slider .next:nth-child(3) {
-    grid-area: col3;
-}
-.feedback .slides {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    position: relative;
-}
 
-.feedback .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-.feedback .slide img{
-    width: 100%;
-    height: 100%;
-}
-
-.feedback .slide.first {
+.feedBack .slide.first {
     opacity: 1;
 }
 
-.feedback .prev,
-.feedback .next {
-    background-color: transparent;
-    border: none;
-    font-size: 2em;
-    color: white;
-    cursor: pointer;
-    padding-top: 100px;
-}
-.feedback .columnsFeedback .column.imges img{
+.feedBack .column.imges img{
     width: 274px;
     height: 486px;
 }
-
-
-.feedback .next img{
-    float: left;
+.feedBack .column.imges{
+    display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
 }
-.feedback .prev img{
-    float: right;
+.feedBack .column.imges .columnText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: -10px;
+    align-items: center;
+    text-align: center;
+
+    color: #353942;
+}
+.feedBack .column.imges .columnText span{
+    color: #FF5C38;
+}
+.feedBack .owl-nav {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 35%;
+    background-color: transparent;
+    z-index: 999;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+.feedBack .owl-prev, .owl-next {
+    background-color: transparent;
+}
+.feedBack .owl-prev .prev{
+    background: none;
+    border: none;
+}
+.feedBack .owl-next .next{
+    background: none;
+    border: none;
+}
+.feedBack .owl-carousel{
+    
+}
+.feedBack{
+    overflow-x: hidden;
 }
 
-
-@media screen and (max-width: 1200px) {
- 
-    .feedback .prev{
-        display: none;
-    }
-    .feedback .next{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    /* .feedback .columnsFeedback{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 5px;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        align-items: center;
-    } */
-
-    .feedback .slider {
-        position: relative;
+@media screen and (max-width: 1300px) {
+    .feedBack .owl-carousel{
         width: 100%;
-        display: grid;
-        align-items: center;
-        margin-right: -5px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "col1 col1 col1 col1";
+        overflow-x: hidden;
     }
-    .feedback .feedbackTitle{
+    .feedBack .owl-prev .prev{
+        display: none;
+    }
+    .feedBack .owl-next .next{
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .feedBack .owl-carousel{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .feedBack .feedbackTitle{
         font-size: 26px;
     }
-    .feedback .columnsFeedback .column.unvis{
+}
+@media screen and (max-width: 500px) {
+    .feedBack .owl-carousel{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .feedBack .owl-prev .prev{
         display: none;
     }
-    .feedback .prev{
-        display: none;
-    }
-    .feedback .next{
+    .feedBack .owl-next .next{
         display: none;
     }
 }
-
-
-
-
-
-
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
