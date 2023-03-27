@@ -2027,6 +2027,7 @@ color: #4B4B4B;
     transition: 0.5s;
     border-bottom: 1px solid #FF1887;
     border-top: 1px solid #FF1887;
+
 }
 .accordionItemHeading{
     font-family: 'Futura PT';
@@ -2050,7 +2051,6 @@ color: #FFFFFF;
 .accordionItemContent {
     padding: 0 0px;
 	color: #000000;
-    width: 94%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;   
@@ -2069,7 +2069,6 @@ color: #FFFFFF;
     color: #FFFFFF;
     padding-bottom: 15px;
     padding-top: 15px;
-
 }
 @media screen and (max-width: 700px) {
 
