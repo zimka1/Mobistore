@@ -2026,6 +2026,7 @@ color: #4B4B4B;
     margin-top: 0;
     transition: 0.5s;
     border-bottom: 1px solid #FF1887;
+    border-top: 1px solid #FF1887;
 }
 .accordionItemHeading{
     font-family: 'Futura PT';
@@ -2068,7 +2069,6 @@ color: #FFFFFF;
     color: #FFFFFF;
     padding-bottom: 15px;
     padding-top: 15px;
-    border-bottom: 1px solid #FF1887;
 
 }
 @media screen and (max-width: 700px) {
