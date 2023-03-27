@@ -2012,7 +2012,7 @@ color: #4B4B4B;
 
 
 .accordionItemHeading {
-    background-color: transparent;
+    background: transparent;
     color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 16px;
@@ -2037,7 +2037,7 @@ font-size: 22px;
 color: #FFFFFF;
 }
 
-.accordionItemHeading:hover {
+.accordionItemHeading.active{
     background-color: #FF1887;
 }
 
@@ -2049,7 +2049,7 @@ color: #FFFFFF;
 .accordionItemContent {
     padding: 0 0px;
 	color: #000000;
-    width: 90%;
+    width: 94%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;   
@@ -2078,12 +2078,6 @@ color: #FFFFFF;
         font-size: 16px;
 
     }
-    
-    .accordionItemHeading:hover {
-        background-color: #FF1887;
-    }
-    
-    
     
     
     
