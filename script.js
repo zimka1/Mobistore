@@ -259,13 +259,19 @@ for (i = 0; i < acc.length; i++) {
     
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
+      panel.style.border = "0px solid #FF1887"
+      panel.style.margin = "0px";
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.border = "1px solid #FF1887"
+      panel.style.margin = "10px";
     } 
     if (previous !== null) {
       previous.classList.remove("active");
       var prevPanel = previous.nextElementSibling;
       prevPanel.style.maxHeight = null;
+      prevPanel.style.border = "0px solid #FF1887"
+      prevPanel.style.margin = "0px";
     }
     if (previous == this){
       previous = null;
