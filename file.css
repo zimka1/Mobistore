@@ -530,8 +530,11 @@ header {
     text-transform: uppercase;
     color: #FFFFFF;
     background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
-    box-shadow: 0px 0px 60px rgba(228, 117, 73, 0.734);
+    
     border-radius: 100px;
+}
+.originalText .btn:hover{
+    box-shadow: 0px 0px 60px rgba(228, 117, 73, 0.734);
 }
 .unVisOrig .originalText .text1{
     display: none;
@@ -779,10 +782,16 @@ header {
     background: none;
     border: none;
 }
+/* .msscooter .owl-prev .prev:hover{
+    box-shadow: 0px 0px 60px rgba(228, 117, 73, 0.734);
+} */
 .msscooter .owl-next .next{
     background: none;
     border: none;
 }
+/* .msscooter .owl-next .next:hover{
+    box-shadow: 0px 0px 60px rgba(228, 117, 73, 0.734);
+} */
 .msscooter .owl-theme .owl-dots .owl-dot span {
     display: none;
 }
@@ -838,6 +847,9 @@ header {
     }
 }
 @media screen and (max-width: 900px) {
+    .msscooter{
+        border-bottom: 1px solid #ECECEC;
+    }
     .msscooter .owl-carousel{
         width:70%;
         margin:auto;
@@ -885,7 +897,7 @@ font-weight: 400;
 font-size: 54px;
 line-height: 120%;
 /* or 65px */
-margin-top: 150px;
+margin-top: 50px;
 text-align: center;
 
 color: #FF5C38;
@@ -1068,6 +1080,10 @@ color: #4B4B4B;
     
     background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
     border-radius: 100px;
+}
+.scooterInf .btn:hover{
+    box-shadow: 0px 0px 60px rgba(228, 117, 73, 0.734);
+
 }
 .columnsKatalog{
     display: grid;
@@ -1252,7 +1268,7 @@ color: #4B4B4B;
     background-image: url('img/main/podbor.png');
     background-position: center;
     background-repeat: repeat-y;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 .podbor .podborTitle{
     font-family: 'FuturaDemi';
@@ -1459,7 +1475,8 @@ color: #4B4B4B;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ECECEC;
 }
 .advTitle{
     font-family: 'FuturaDemi';
@@ -1497,6 +1514,7 @@ color: #4B4B4B;
         "col4 col4 col5 col5";
     justify-items: center;
     align-items: center;
+    padding-bottom: 40px;
 }
 
 .columnsAdv .column:nth-child(1) {
@@ -1769,7 +1787,7 @@ color: #4B4B4B;
 
 
 .questions{
-    margin-top: 150px;
+    margin-top: 30px;
     background-image: url('img/main/questions/back.png');
     background-position: center;
     background-repeat: repeat-y;
@@ -2191,13 +2209,16 @@ color: #FFFFFF;
     margin-top: -250px;
     float: right;
 }
-.testDrForm input{
+.testDrForm textarea{
     font-family: 'FuturaDemi';
-    width: 90%;
+    width: 89%;
     height: 72px;
     margin-top: 30px;
     border-radius: 10px;
     border: 1px solid #676767;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 5px;
 }
 .testDrInf .btn{
     font-family: 'FuturaDemi';
@@ -2215,6 +2236,9 @@ color: #FFFFFF;
     margin-top: 10px;
     background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
     border-radius: 100px;
+}
+.testDrInf .btn:hover{
+    box-shadow: 0px 0px 20px rgba(228, 117, 73, 0.734);
 }
 @media screen and (max-width: 1100px) {
     .testDr {
