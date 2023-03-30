@@ -482,12 +482,12 @@ header {
 }
 
   
-.originalText{
+.original_kontent{
     padding: 50px 90px;
     
 }
 /*---------------------------------------------------------------*/
-.originalText .text1{
+.original_kontent .text1{
     margin-top: 0px;
     font-family: 'FuturaDemi';
     font-style: normal;
@@ -498,7 +498,7 @@ header {
     color: #4B4B4B;
 
 }
-.originalText .text1 .br1{
+.original_kontent .text1 span{
     color: #FFFFFF;
     background-image: url("img/main/line.png");
     background-repeat: no-repeat;
@@ -508,7 +508,7 @@ header {
     padding: 10px;
 }
 /*---------------------------------------------------------------*/
-.originalText .text2{
+.original_kontent .text2{
     font-family: 'FuturaBook';
     font-style: normal;
     font-weight: 400;
@@ -517,7 +517,7 @@ header {
     color: #4B4B4B;
     margin: 0;
 }
-.originalText .btn{
+.original_kontent .btn{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: normal;
@@ -530,19 +530,18 @@ header {
     text-transform: uppercase;
     color: #FFFFFF;
     background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
-    
     border-radius: 100px;
 }
-.originalText .btn:hover{
+.original_kontent .btn:hover{
     box-shadow: 0px 0px 60px rgba(228, 117, 73, 0.734);
 }
-.unVisOrig .originalText .text1{
+.unVisOrig .original_kontent .text1{
     display: none;
 }
-.unVisOrig .originalText .text2{
+.unVisOrig .original_kontent .text2{
     display: none;
 }
-.unVisOrig .originalText .btn{
+.unVisOrig .original_kontent .btn{
     display: none;
 }
 @media screen and (max-width: 1067px) {
@@ -552,46 +551,46 @@ header {
     .original{
         background-size: auto 100%;
     }
-    .originalText .text1{
+    .original_kontent .text1{
         padding: 0;
         text-align: center;
     }
-    .unVisOrig .originalText{
+    .unVisOrig .original_kontent{
         padding: 0;
     }
-    .originalText .text2{
+    .original_kontent .text2{
 
         padding: 0;
         text-align: center;
         font-size: 24px;
     }
-    .originalText .text1{
+    .original_kontent .text1{
         font-size: 38px;
     }
-    .originalText .text2{
+    .original_kontent .text2{
         font-size: 24px;
     }
-    .original .originalText .text1{
+    .original .original_kontent .text1{
         visibility: hidden;
     }
-    .original .originalText .text2{
+    .original .original_kontent .text2{
         visibility: hidden;
     }
-    .original .originalText .btn{
+    .original .original_kontent .btn{
         display: none;
         visibility: hidden;
     }
     .unVisOrig{
         justify-content: center;
     }
-    .unVisOrig .originalText .text1{
+    .unVisOrig .original_kontent .text1{
         display: block;
         margin-top: -40px;
     }
-    .unVisOrig .originalText .text2{
+    .unVisOrig .original_kontent .text2{
         display: block;
     }
-    .unVisOrig .originalText .btn{
+    .unVisOrig .original_kontent .btn{
         display: block;
         margin-top: 40px;
         margin-left: auto;
@@ -612,7 +611,6 @@ header {
     border-radius: 20px;
     border-color: #ff7700;
     width: 80%;
-    
     margin-top:-250px;
     display: fixed;
     margin-left: auto;
@@ -652,7 +650,7 @@ header {
     margin-left: 10px;
     color: #353942;
 }
-.columnsPluses .columnText .br1{
+.columnsPluses .columnText span{
     color: #FF5C38;
 }
 @media screen and (max-width: 1300px) {
@@ -694,13 +692,9 @@ header {
 .msscooter{
     padding-bottom: 70px;
 }
-.msScooterTitle .br1{
+.msScooterTitle span{
     font-family: 'FuturaDemi';
-    font-style: normal;
-    font-weight: 400;
     font-size: 54px;
-    line-height: 140%;
-    text-align: center;
     color: #FF5C38;
 }
 .msScooterTitle{
@@ -720,7 +714,7 @@ header {
     .msscooter .bg{
         display: none;
     }
-    .msScooterTitle .br1{
+    .msScooterTitle span{
         text-align: center;
        
         font-size: 32px;
@@ -951,6 +945,7 @@ color: #4B4B4B;
 
 .cardspec{
     width: 320px;
+    height: 790px;
     background-color: #ffffff;
     border-radius: 30px;
     position: relative;
@@ -1474,7 +1469,7 @@ color: #4B4B4B;
 .adv{
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 80%;
     padding-bottom: 20px;
     border-bottom: 1px solid #ECECEC;
 }
@@ -1735,9 +1730,7 @@ color: #4B4B4B;
     background: none;
     border: none;
 }
-.feedBack .owl-carousel{
-    
-}
+
 .feedBack{
     overflow-x: hidden;
 }
