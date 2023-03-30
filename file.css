@@ -56,7 +56,7 @@ header {
     font-size: 1.5em;
 }
 }
-/* .columns_header {
+/* .columns-header {
     display: grid;
     grid-template-columns: repeat(5, 2fr);
     width: 100%;
@@ -67,7 +67,7 @@ header {
     justify-content: center; 
    
 } */
-.columns_header {
+.columns-header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "col1 col2 col3 col4 col5";
@@ -82,13 +82,13 @@ header {
 
 
 /*---------------------------------------------------------------*/
-.columns_header .columns-header-item1 .columns-header-text{
+.columns-header .columns-header-item1 .columns-header-text{
     margin: 0;
     height: 55px;
     line-height: 0.5;
     margin-top: 10px;
 }
-.columns_header .columns-header-item1 .columns-header-text .mobistor{
+.columns-header .columns-header-item1 .columns-header-text .mobistor{
     font-family: 'FuturaExtra';
     font-weight: 800;
     font-size: 32px;
@@ -96,7 +96,7 @@ header {
     color: #2F2C2D;
 
 }
-.columns_header .columns-header-item1 .columns-header-text .scooters{
+.columns-header .columns-header-item1 .columns-header-text .scooters{
     font-family: 'FuturaBold';
     font-weight: 400;
     font-size: 24px;
@@ -105,13 +105,13 @@ header {
 
 }
 /*---------------------------------------------------------------*/
-.columns_header .columns-header-item2 .columns-header-text{
+.columns-header .columns-header-item2 .columns-header-text{
     margin: 0;
     height: 55px;
     line-height: 0.2;
 
 }
-.columns_header .columns-header-item2 .columns-header-text .columns-header-line1{
+.columns-header .columns-header-item2 .columns-header-text .columns-header-line1{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 700;
@@ -119,14 +119,14 @@ header {
 
     color: #353942;
 }
-.columns_header .columns-header-item2 .columns-header-text .columns-header-line2{
+.columns-header .columns-header-item2 .columns-header-text .columns-header-line2{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     color: #353942;
 }
-.columns_header .columns-header-item2 .columns-header-text .columns-header-line3{
+.columns-header .columns-header-item2 .columns-header-text .columns-header-line3{
     font-family: 'FuturaBook';
     font-style: normal;
     font-weight: 700;
@@ -134,17 +134,17 @@ header {
     color: #FF5C38;
 }
 /*---------------------------------------------------------------*/
-.columns_header .columns-header-item3{
+.columns-header .columns-header-item3{
     display: flex;
     align-items: center;
 }
-.columns_header .columns-header-item3 .columns-header-text{
+.columns-header .columns-header-item3 .columns-header-text{
     margin: 0;
     
     line-height: 0.2;
     margin-left: 20px;
 }
-.columns_header .columns-header-item3 .columns-header-text .columns-header-line1{
+.columns-header .columns-header-item3 .columns-header-text .columns-header-line1{
     color: #353942;
     text-transform: uppercase;
     font-weight: 700;
@@ -153,7 +153,7 @@ header {
 
 
 }
-.columns_header .columns-header-item3 .columns-header-text .columns-header-line2{
+.columns-header .columns-header-item3 .columns-header-text .columns-header-line2{
     width: 130px;
     font-family: inter;
     font-style: normal;
@@ -164,38 +164,38 @@ header {
 }
 /*---------------------------------------------------------------*/
 
-.columns_header .columns-header-item4{
+.columns-header .columns-header-item4{
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
-.columns_header .columns-header-item4 .masenger{
+.columns-header .columns-header-item4 .masenger{
     margin-right: 10px
 }
-.columns_header .columns-header-item4 .masenger{
+.columns-header .columns-header-item4 .masenger{
     width: 42px;
     height: 42px;
     border-radius: 100px;
 }
-.columns_header .columns-header-item4 .masenger:hover{
+.columns-header .columns-header-item4 .masenger:hover{
     border:1px solid #FF8329
 }
-.columns_header .columns-header-item4 .masenger.call{
+.columns-header .columns-header-item4 .masenger.call{
     display: none;
 }
 /*---------------------------------------------------------------*/
 
-.columns_header .columns-header-item5{
+.columns-header .columns-header-item5{
     display: flex;
     align-items: center;
 }
-.columns_header .columns-header-item5 .columns-header-text{
+.columns-header .columns-header-item5 .columns-header-text{
     line-height: 0.2;
     margin: 0;
     margin-left: 20px;
 
 }
-.columns_header .columns-header-item5 .columns-header-text .columns-header-line1{
+.columns-header .columns-header-item5 .columns-header-text .columns-header-line1{
     font-family: 'FuturaBold';
     font-style: normal;
     font-weight: bold;
@@ -206,7 +206,7 @@ header {
 
 
 }
-.columns_header .columns-header-item5 .columns-header-text .columns-header-line2{
+.columns-header .columns-header-item5 .columns-header-text .columns-header-line2{
 
     font-family: Inter;
     font-style: normal;
@@ -217,7 +217,7 @@ header {
     text-align: center;
 
 }
-.columns_header {
+.columns-header {
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 0;
@@ -231,56 +231,56 @@ header {
         height: 5%;
         font-size: 1.5em;
     }
-    header .columns_header .columns-header-item3 .columns-header-text{
+    header .columns-header .columns-header-item3 .columns-header-text{
         margin: 0;
         
         line-height: 0.6;
         margin-left: 10px;
     }
-    header .columns_header {
+    header .columns-header {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    header .columns_header .columns-header-item4 {
+    header .columns-header .columns-header-item4 {
         grid-column: 1;
         grid-row: 1;
       }
       
-    header .columns_header .columns-header-item3 {
+    header .columns-header .columns-header-item3 {
         grid-column: 2;
         grid-row: 1;
     }
-    header .columns_header .columns-header-item3 .columns-header-line1{
+    header .columns-header .columns-header-item3 .columns-header-line1{
         display: none;
     }
-    header .columns_header .columns-header-item3 .columns-header-text{
+    header .columns-header .columns-header-item3 .columns-header-text{
         margin-top: -6px;
     }
-    header .columns_header .columns-header-item1{
+    header .columns-header .columns-header-item1{
         display: none;
 
     }
-    header .columns_header .columns-header-item2{
+    header .columns-header .columns-header-item2{
         display: none;
     }
-    header .columns_header .columns-header-item5{
+    header .columns-header .columns-header-item5{
         display: none;
 
     }
-    header .columns_header .columns-header-item4 .masenger.call{
+    header .columns-header .columns-header-item4 .masenger.call{
         display: block;
     }
-    header .columns_header .columns-header-item4 .masenger img{
+    header .columns-header .columns-header-item4 .masenger img{
         width: 42px;
         height: 42px;
     }
-    header .columns_header .columns-header-item4 .masenger{
+    header .columns-header .columns-header-item4 .masenger{
         width: 42px;
         height: 42px;
     }
 }
 @media screen and (max-width: 500px) {
-    header .columns_header .columns-header-item4{
+    header .columns-header .columns-header-item4{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap:5px;
@@ -288,14 +288,14 @@ header {
         justify-content: center;
         margin-top: 23px;
     }
-    header .columns_header .columns-header-item4 .masenger {
+    header .columns-header .columns-header-item4 .masenger {
         margin-right: 0;
     }
-    header .columns_header .columns-header-item4 .masenger img{
+    header .columns-header .columns-header-item4 .masenger img{
         width: 35px;
         height: 35px;
     }
-    header .columns_header .columns-header-item4 .masenger{
+    header .columns-header .columns-header-item4 .masenger{
         width: 35px;
         height: 35px;
     }
@@ -344,7 +344,7 @@ header {
     display: none;
 }
 @media screen and (max-width: 780px) {
-    header .headerNav .columns_header {
+    header .headerNav .columns-header {
         height: 70px;
         background-color: #ffffff;
         display: grid;
@@ -383,10 +383,10 @@ header {
         display: block;
         
     }
-    .columns_header .columns-header-item1 .columns-header-text .mobistor{
+    .columns-header .columns-header-item1 .columns-header-text .mobistor{
         font-size: 24px;
     }
-    .columns_header .columns-header-item1 .columns-header-text .scooters{
+    .columns-header .columns-header-item1 .columns-header-text .scooters{
         font-size: 18px;
     }
     header .headerNav .columns-header-item1 .columns-header-text{
@@ -415,7 +415,7 @@ header {
         display: block;
         width: 50px;
     }
-    header .columns_header .menu1{
+    header .columns-header .menu1{
         display: none;
     }
 /* ------------------------------------------------------------- */
@@ -482,12 +482,12 @@ header {
 }
 
   
-.original_kontent{
+.original-kontent{
     padding: 50px 90px;
     
 }
 /*---------------------------------------------------------------*/
-.original_kontent .text1{
+.original-kontent .original-text1{
     margin-top: 0px;
     font-family: 'FuturaDemi';
     font-style: normal;
@@ -498,7 +498,7 @@ header {
     color: #4B4B4B;
 
 }
-.original_kontent .text1 span{
+.original-kontent .original-text1 span{
     color: #FFFFFF;
     background-image: url("img/main/line.png");
     background-repeat: no-repeat;
@@ -508,7 +508,7 @@ header {
     padding: 10px;
 }
 /*---------------------------------------------------------------*/
-.original_kontent .text2{
+.original-kontent .original-text2{
     font-family: 'FuturaBook';
     font-style: normal;
     font-weight: 400;
@@ -517,7 +517,7 @@ header {
     color: #4B4B4B;
     margin: 0;
 }
-.original_kontent .btn{
+.original-kontent .btn{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: normal;
@@ -532,16 +532,16 @@ header {
     background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
     border-radius: 100px;
 }
-.original_kontent .btn:hover{
+.original-kontent .btn:hover{
     box-shadow: 0px 0px 60px rgba(228, 117, 73, 0.734);
 }
-.unVisOrig .original_kontent .text1{
+.unVisOrig .original-kontent .original-text1{
     display: none;
 }
-.unVisOrig .original_kontent .text2{
+.unVisOrig .original-kontent .original-text2{
     display: none;
 }
-.unVisOrig .original_kontent .btn{
+.unVisOrig .original-kontent .btn{
     display: none;
 }
 @media screen and (max-width: 1067px) {
@@ -551,46 +551,46 @@ header {
     .original{
         background-size: auto 100%;
     }
-    .original_kontent .text1{
+    .original-kontent .original-text1{
         padding: 0;
         text-align: center;
     }
-    .unVisOrig .original_kontent{
+    .unVisOrig .original-kontent{
         padding: 0;
     }
-    .original_kontent .text2{
+    .original-kontent .original-text2{
 
         padding: 0;
         text-align: center;
         font-size: 24px;
     }
-    .original_kontent .text1{
+    .original-kontent .original-text1{
         font-size: 38px;
     }
-    .original_kontent .text2{
+    .original-kontent .original-text2{
         font-size: 24px;
     }
-    .original .original_kontent .text1{
+    .original .original-kontent .original-text1{
         visibility: hidden;
     }
-    .original .original_kontent .text2{
+    .original .original-kontent .original-text2{
         visibility: hidden;
     }
-    .original .original_kontent .btn{
+    .original .original-kontent .btn{
         display: none;
         visibility: hidden;
     }
     .unVisOrig{
         justify-content: center;
     }
-    .unVisOrig .original_kontent .text1{
+    .unVisOrig .original-kontent .original-text1{
         display: block;
         margin-top: -40px;
     }
-    .unVisOrig .original_kontent .text2{
+    .unVisOrig .original-kontent .original-text2{
         display: block;
     }
-    .unVisOrig .original_kontent .btn{
+    .unVisOrig .original-kontent .btn{
         display: block;
         margin-top: 40px;
         margin-left: auto;
@@ -884,7 +884,7 @@ header {
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
-.katalogTitle{
+.katalog-title{
     font-family: 'FuturaDemi';
 font-style: normal;
 font-weight: 400;
@@ -897,10 +897,10 @@ text-align: center;
 color: #FF5C38;
 }
 
-.katalogTitle .br1{
+.katalog-title .br1{
 color: #4B4B4B;
 }
-.katalogSubTitle_bg{
+.katalog-SubTitle-bg{
     width: 100%;
     font-size: 3em;
     position: fixed;
@@ -908,7 +908,7 @@ color: #4B4B4B;
     background-color: #ffffff;
     position: relative;
 }
-.katalogSubTitle{
+.katalog-SubTitle{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
@@ -932,10 +932,10 @@ color: #4B4B4B;
     justify-content: center; 
 }
 @media screen and (max-width: 1100px) {
-    .katalogTitle{
+    .katalog-title{
         font-size: 28px;
     }
-    .katalogSubTitle{
+    .katalog-SubTitle{
         font-size: 18px;
         line-height: 400%;
 
@@ -943,14 +943,14 @@ color: #4B4B4B;
 }
 /*---------------------------------------------------------------*/
 
-.cardspec{
+.katalog-card{
     width: 320px;
-    height: 790px;
+    min-height: 790px;
     background-color: #ffffff;
     border-radius: 30px;
     position: relative;
 }
-.mosh_bg{
+.power-bg{
     background-color: #ff7700;
     background-repeat: no-repeat;
     width: 30%;
@@ -962,7 +962,7 @@ color: #4B4B4B;
     margin-top:  20px;
     z-index: 1;
 }
-.mosh{
+.power{
     display: flex;
     padding: 0;
     margin: 0;
@@ -983,7 +983,7 @@ color: #4B4B4B;
     z-index: -1;
     margin-top: -50px;
 }
-.scooterName{
+.katalog-card-name{
     font-family: 'FuturaDemi';
 font-style: normal;
 font-weight: 400;
@@ -995,10 +995,10 @@ margin-bottom: 0px;
 
 color: #4B4B4B;
 }
-.scooterInf{
+.katalog-card-inf{
     padding-left: 20px;
 }
-.scooterInf table .lc{
+.katalog-card-inf table .characteristica{
     font-family: inter;
     font-style: normal;
     font-weight: 400;
@@ -1013,7 +1013,7 @@ color: #4B4B4B;
     border-bottom: 1px solid #ECECEC;
     color: #353942;
 }
-.scooterInf table .even{
+.katalog-card-inf table .value{
     font-family: inter;
     font-style: normal;
     font-weight: 600;
@@ -1028,11 +1028,11 @@ color: #4B4B4B;
     border-bottom: 1px solid #ECECEC;
     color: #353942;
 }
-.scooterInf table{
+.katalog-card-inf table{
     padding-top: 0px;
     margin-top: 10px;
 }
-.scooterInf .cost{
+.katalog-card-inf .cost{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -1048,7 +1048,7 @@ color: #4B4B4B;
     
     opacity: 0.4;
 }
-.scooterInf .money{
+.katalog-card-inf .money{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
@@ -1058,7 +1058,7 @@ color: #4B4B4B;
     margin: 0;
     color: #4B4B4B;
 }
-.scooterInf .btn{
+.katalog-card-inf .btn{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: normal;
@@ -1076,11 +1076,11 @@ color: #4B4B4B;
     background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
     border-radius: 100px;
 }
-.scooterInf .btn:hover{
+.katalog-card-inf .btn:hover{
     box-shadow: 0px 0px 60px rgba(228, 117, 73, 0.734);
 
 }
-.columnsKatalog{
+.katalog-columns{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 800px);
@@ -1092,12 +1092,12 @@ color: #4B4B4B;
     align-items: center;
 
 }
-.headColumn{
+.katalog-container{
     display: flex;
     justify-content: center;
 }
 @media screen and (max-width: 1100px) {
-    .columnsKatalog{
+    .katalog-columns{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto;
@@ -1108,7 +1108,7 @@ color: #4B4B4B;
     }
 }
 @media screen and (max-width: 800px) {
-    .columnsKatalog{
+    .katalog-columns{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto 700px;
@@ -1119,13 +1119,14 @@ color: #4B4B4B;
     }
 }
 @media screen and (max-width: 800px) {
-    .cardspec{
+    .katalog-card{
         width: 180px;
+        min-height: 650px;
         background-color: #ffffff;
         border-radius: 30px;
         position: relative;
     }
-    .mosh_bg{
+    .power-bg{
         background-color: #ff7700;
         background-repeat: no-repeat;
         width: 35%;
@@ -1137,7 +1138,7 @@ color: #4B4B4B;
         margin-top:  10px;
         z-index: 1;
     }
-    .mosh{
+    .power{
         display: flex;
         padding: 0;
         margin: 0;
@@ -1157,14 +1158,14 @@ color: #4B4B4B;
         margin-top: 0px;
         width: 100%;
     }
-    .scooterName{
+    .katalog-card-name{
         font-size: 16px;
     }
-    .scooterInf{
+    .katalog-card-inf{
         padding-left: 20px;
         justify-content: center;
     }
-    .scooterInf table .lc{
+    .katalog-card-inf table .characteristica{
         font-style: normal;
         font-weight: 400;
         font-size: 10px;
@@ -1178,7 +1179,7 @@ color: #4B4B4B;
         border-bottom: 1px solid #ECECEC;
         color: #353942;
     }
-    .scooterInf table .even{
+    .katalog-card-inf table .value{
         font-style: normal;
         font-weight: 600;
         font-size: 10px;
@@ -1192,17 +1193,17 @@ color: #4B4B4B;
         border-bottom: 1px solid #ECECEC;
         color: #353942;
     }
-    .scooterInf table{
+    .katalog-card-inf table{
         padding-top: 0px;
         margin-top: 10px;
     }
-    .cena{
+    .katalog-price{
         display: flex;
         align-items: center;
         width: 90%;
         justify-content: space-between;
     }
-    .scooterInf .cost{
+    .katalog-card-inf .cost{
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
@@ -1215,7 +1216,7 @@ color: #4B4B4B;
         
         opacity: 0.4;
     }
-    .scooterInf .money{
+    .katalog-card-inf .money{
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -1224,7 +1225,7 @@ color: #4B4B4B;
         margin-top: 6px;
         color: #4B4B4B;
     }
-    .scooterInf .btn{
+    .katalog-card-inf .btn{
         font-style: normal;
         font-weight: normal;
         margin-top: 25px;
@@ -1253,7 +1254,7 @@ color: #4B4B4B;
     overflow-x: hidden;
 
 }
-.headColumnsPodbor {
+.katalog-containersPodbor {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -2391,13 +2392,13 @@ footer {
     font-size: 2em;
 }
 }
-footer .columns_header{
+footer .columns-header{
     height: 100px;
 }
 
 
 /*---------------------------------------------------------------*/
-footer .columns_header .columns-header-item1 .columns-header-text .mobistor{
+footer .columns-header .columns-header-item1 .columns-header-text .mobistor{
     font-family: 'FuturaExtra';
     font-weight: 800;
     font-size: 32px;
@@ -2405,7 +2406,7 @@ footer .columns_header .columns-header-item1 .columns-header-text .mobistor{
     color: #ffffff;
 
 }
-footer .columns_header .columns-header-item1 .columns-header-text .scooters{
+footer .columns-header .columns-header-item1 .columns-header-text .scooters{
     font-family: 'FuturaBold';
     font-weight: 400;
     font-size: 24px;
@@ -2415,7 +2416,7 @@ footer .columns_header .columns-header-item1 .columns-header-text .scooters{
 }
 /*---------------------------------------------------------------*/
 
-footer .columns_header .columns-header-item2 .columns-header-text .columns-header-line1{
+footer .columns-header .columns-header-item2 .columns-header-text .columns-header-line1{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 700;
@@ -2423,14 +2424,14 @@ footer .columns_header .columns-header-item2 .columns-header-text .columns-heade
 
     color: #ffffff;
 }
-footer .columns_header .columns-header-item2 .columns-header-text .columns-header-line2{
+footer .columns-header .columns-header-item2 .columns-header-text .columns-header-line2{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     color: #ffffff;
 }
-footer .columns_header .columns-header-item2 .columns-header-text .columns-header-line3{
+footer .columns-header .columns-header-item2 .columns-header-text .columns-header-line3{
     font-family: 'FuturaBook';
     font-style: normal;
     font-weight: 700;
@@ -2438,7 +2439,7 @@ footer .columns_header .columns-header-item2 .columns-header-text .columns-heade
     color: #FF5C38;
 }
 /*---------------------------------------------------------------*/
-footer .columns_header .columns-header-item3 .columns-header-text .columns-header-line1{
+footer .columns-header .columns-header-item3 .columns-header-text .columns-header-line1{
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
@@ -2447,7 +2448,7 @@ footer .columns_header .columns-header-item3 .columns-header-text .columns-heade
 
 
 }
-footer .columns_header .columns-header-item3 .columns-header-text .columns-header-line2{
+footer .columns-header .columns-header-item3 .columns-header-text .columns-header-line2{
     width: 130px;
     font-family: inter;
     font-style: normal;
@@ -2458,7 +2459,7 @@ footer .columns_header .columns-header-item3 .columns-header-text .columns-heade
 }
 /*---------------------------------------------------------------*/
 
-footer .columns_header .columns-header-item5 .columns-header-text .columns-header-line1{
+footer .columns-header .columns-header-item5 .columns-header-text .columns-header-line1{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: bold;
@@ -2469,7 +2470,7 @@ footer .columns_header .columns-header-item5 .columns-header-text .columns-heade
 
 
 }
-footer .columns_header .columns-header-item5 .columns-header-text .columns-header-line2{
+footer .columns-header .columns-header-item5 .columns-header-text .columns-header-line2{
     color: #ffffff;
     font-family: Inter;
     font-style: normal;
@@ -2481,20 +2482,20 @@ footer .columns_header .columns-header-item5 .columns-header-text .columns-heade
 
 }
 
-footer .columns_header{
+footer .columns-header{
     border-bottom: 1px solid #C4C4C4;
 }
-footer .columns_header .columns-header-item4 .masenger{
+footer .columns-header .columns-header-item4 .masenger{
     width: 42px;
     height: 42px;
     border-radius: 100px;
 }
-footer .columns_header .columns-header-item4 .masenger:hover{
+footer .columns-header .columns-header-item4 .masenger:hover{
     border:1px solid #FF8329
 }
 @media screen and (max-width: 980px) {
     
-    footer .columns_header {
+    footer .columns-header {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, auto);
@@ -2503,32 +2504,32 @@ footer .columns_header .columns-header-item4 .masenger:hover{
         height: 500px;
         padding-top: 20px;
     }
-    footer .columns_header .columns-header-item1:nth-child(1) {
+    footer .columns-header .columns-header-item1:nth-child(1) {
         grid-area: col1;
     }
-    footer .columns_header .columns-header-item2:nth-child(2) {
+    footer .columns-header .columns-header-item2:nth-child(2) {
         grid-area: col2;
     }
-    footer .columns_header .columns-header-item3:nth-child(3) {
+    footer .columns-header .columns-header-item3:nth-child(3) {
         grid-area: col3;
     }
-    footer .columns_header .columns-header-item4:nth-child(4) {
+    footer .columns-header .columns-header-item4:nth-child(4) {
         grid-area: col4;
     }
-    footer .columns_header .columns-header-item5:nth-child(5) {
+    footer .columns-header .columns-header-item5:nth-child(5) {
         grid-area: col5;
     }
-    footer .columns_header .columns-header-item5{
+    footer .columns-header .columns-header-item5{
         display: block;
         padding-bottom: 50px;
     }
-    footer .columns_header .columns-header-item5 img{
+    footer .columns-header .columns-header-item5 img{
         display: block;
         margin-right: auto;
         margin-left: auto;
         
     }
-    footer .columns_header .columns-header-item5 .columns-header-text{
+    footer .columns-header .columns-header-item5 .columns-header-text{
         margin-top: 10px;
         display: block;
         margin-left: 0;
@@ -2536,28 +2537,28 @@ footer .columns_header .columns-header-item4 .masenger:hover{
         margin-left: auto;
         line-height: 50%;
     }
-    footer .columns_header .columns-header-item3{
+    footer .columns-header .columns-header-item3{
         display: block;
     }
-    footer .columns_header .columns-header-item3 img{
+    footer .columns-header .columns-header-item3 img{
         display: block;
         margin-right: auto;
         margin-left: auto;
         
     }
-    footer .columns_header .columns-header-item4 .masenger{
+    footer .columns-header .columns-header-item4 .masenger{
         margin-right: 0;
     }
-    footer .columns_header .columns-header-item4 .masenger:hover{
+    footer .columns-header .columns-header-item4 .masenger:hover{
         color:#FF8329
     }
-    footer .columns_header .columns-header-item4{
+    footer .columns-header .columns-header-item4{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap:10px;
        
     }
-    footer .columns_header .columns-header-item3 .columns-header-text{
+    footer .columns-header .columns-header-item3 .columns-header-text{
         margin-top: 10px;
         display: block;
         margin-left: 0;
@@ -2569,11 +2570,11 @@ footer .columns_header .columns-header-item4 .masenger:hover{
     .brUnvis{
         display: none;
     }
-    footer .columns_header .columns-header-item2 .columns-header-text{
+    footer .columns-header .columns-header-item2 .columns-header-text{
         text-align: center;
         line-height: 50%;
     }
-    footer .columns_header .columns-header-item1 .columns-header-text{
+    footer .columns-header .columns-header-item1 .columns-header-text{
         text-align: center;
         line-height: 80%;
     }
