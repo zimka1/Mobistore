@@ -56,7 +56,7 @@ header {
     font-size: 1.5em;
 }
 }
-/* .columnsHeader {
+/* .columns_header {
     display: grid;
     grid-template-columns: repeat(5, 2fr);
     width: 100%;
@@ -67,7 +67,7 @@ header {
     justify-content: center; 
    
 } */
-.columnsHeader {
+.columns_header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "col1 col2 col3 col4 col5";
@@ -82,13 +82,13 @@ header {
 
 
 /*---------------------------------------------------------------*/
-.columnsHeader .column1 .textCol{
+.columns_header .columns-header-item1 .columns-header-text{
     margin: 0;
     height: 55px;
     line-height: 0.5;
     margin-top: 10px;
 }
-.columnsHeader .column1 .textCol .mobistor{
+.columns_header .columns-header-item1 .columns-header-text .mobistor{
     font-family: 'FuturaExtra';
     font-weight: 800;
     font-size: 32px;
@@ -96,7 +96,7 @@ header {
     color: #2F2C2D;
 
 }
-.columnsHeader .column1 .textCol .scooters{
+.columns_header .columns-header-item1 .columns-header-text .scooters{
     font-family: 'FuturaBold';
     font-weight: 400;
     font-size: 24px;
@@ -105,13 +105,13 @@ header {
 
 }
 /*---------------------------------------------------------------*/
-.columnsHeader .column2 .textCol{
+.columns_header .columns-header-item2 .columns-header-text{
     margin: 0;
     height: 55px;
     line-height: 0.2;
 
 }
-.columnsHeader .column2 .textCol .br1{
+.columns_header .columns-header-item2 .columns-header-text .columns-header-line1{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 700;
@@ -119,14 +119,14 @@ header {
 
     color: #353942;
 }
-.columnsHeader .column2 .textCol .br2{
+.columns_header .columns-header-item2 .columns-header-text .columns-header-line2{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     color: #353942;
 }
-.columnsHeader .column2 .textCol .br3{
+.columns_header .columns-header-item2 .columns-header-text .columns-header-line3{
     font-family: 'FuturaBook';
     font-style: normal;
     font-weight: 700;
@@ -134,17 +134,17 @@ header {
     color: #FF5C38;
 }
 /*---------------------------------------------------------------*/
-.columnsHeader .column3{
+.columns_header .columns-header-item3{
     display: flex;
     align-items: center;
 }
-.columnsHeader .column3 .textCol{
+.columns_header .columns-header-item3 .columns-header-text{
     margin: 0;
     
     line-height: 0.2;
     margin-left: 20px;
 }
-.columnsHeader .column3 .textCol .br1{
+.columns_header .columns-header-item3 .columns-header-text .columns-header-line1{
     color: #353942;
     text-transform: uppercase;
     font-weight: 700;
@@ -153,7 +153,7 @@ header {
 
 
 }
-.columnsHeader .column3 .textCol .br2{
+.columns_header .columns-header-item3 .columns-header-text .columns-header-line2{
     width: 130px;
     font-family: inter;
     font-style: normal;
@@ -164,38 +164,38 @@ header {
 }
 /*---------------------------------------------------------------*/
 
-.columnsHeader .column4{
+.columns_header .columns-header-item4{
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
-.columnsHeader .column4 .masenger{
+.columns_header .columns-header-item4 .masenger{
     margin-right: 10px
 }
-.columnsHeader .column4 .masenger{
+.columns_header .columns-header-item4 .masenger{
     width: 42px;
     height: 42px;
     border-radius: 100px;
 }
-.columnsHeader .column4 .masenger:hover{
+.columns_header .columns-header-item4 .masenger:hover{
     border:1px solid #FF8329
 }
-.columnsHeader .column4 .masenger.call{
+.columns_header .columns-header-item4 .masenger.call{
     display: none;
 }
 /*---------------------------------------------------------------*/
 
-.columnsHeader .column5{
+.columns_header .columns-header-item5{
     display: flex;
     align-items: center;
 }
-.columnsHeader .column5 .textCol{
+.columns_header .columns-header-item5 .columns-header-text{
     line-height: 0.2;
     margin: 0;
     margin-left: 20px;
 
 }
-.columnsHeader .column5 .textCol .br1{
+.columns_header .columns-header-item5 .columns-header-text .columns-header-line1{
     font-family: 'FuturaBold';
     font-style: normal;
     font-weight: bold;
@@ -206,7 +206,7 @@ header {
 
 
 }
-.columnsHeader .column5 .textCol .br2{
+.columns_header .columns-header-item5 .columns-header-text .columns-header-line2{
 
     font-family: Inter;
     font-style: normal;
@@ -217,7 +217,7 @@ header {
     text-align: center;
 
 }
-.columnsHeader {
+.columns_header {
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 0;
@@ -231,56 +231,56 @@ header {
         height: 5%;
         font-size: 1.5em;
     }
-    header .columnsHeader .column3 .textCol{
+    header .columns_header .columns-header-item3 .columns-header-text{
         margin: 0;
         
         line-height: 0.6;
         margin-left: 10px;
     }
-    header .columnsHeader {
+    header .columns_header {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    header .columnsHeader .column4 {
+    header .columns_header .columns-header-item4 {
         grid-column: 1;
         grid-row: 1;
       }
       
-    header .columnsHeader .column3 {
+    header .columns_header .columns-header-item3 {
         grid-column: 2;
         grid-row: 1;
     }
-    header .columnsHeader .column3 .br1{
+    header .columns_header .columns-header-item3 .columns-header-line1{
         display: none;
     }
-    header .columnsHeader .column3 .textCol{
+    header .columns_header .columns-header-item3 .columns-header-text{
         margin-top: -6px;
     }
-    header .columnsHeader .column1{
+    header .columns_header .columns-header-item1{
         display: none;
 
     }
-    header .columnsHeader .column2{
+    header .columns_header .columns-header-item2{
         display: none;
     }
-    header .columnsHeader .column5{
+    header .columns_header .columns-header-item5{
         display: none;
 
     }
-    header .columnsHeader .column4 .masenger.call{
+    header .columns_header .columns-header-item4 .masenger.call{
         display: block;
     }
-    header .columnsHeader .column4 .masenger img{
+    header .columns_header .columns-header-item4 .masenger img{
         width: 42px;
         height: 42px;
     }
-    header .columnsHeader .column4 .masenger{
+    header .columns_header .columns-header-item4 .masenger{
         width: 42px;
         height: 42px;
     }
 }
 @media screen and (max-width: 500px) {
-    header .columnsHeader .column4{
+    header .columns_header .columns-header-item4{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap:5px;
@@ -288,14 +288,14 @@ header {
         justify-content: center;
         margin-top: 23px;
     }
-    header .columnsHeader .column4 .masenger {
+    header .columns_header .columns-header-item4 .masenger {
         margin-right: 0;
     }
-    header .columnsHeader .column4 .masenger img{
+    header .columns_header .columns-header-item4 .masenger img{
         width: 35px;
         height: 35px;
     }
-    header .columnsHeader .column4 .masenger{
+    header .columns_header .columns-header-item4 .masenger{
         width: 35px;
         height: 35px;
     }
@@ -333,18 +333,18 @@ header {
 .topnav a:hover{
     color: #FF8329;
 }
-.headerNav .columnsHeader .column3{
+.headerNav .columns-header-item3{
     display: none;
 }
-.headerNav .columnsHeader .column1{
+.headerNav .columns-header-item1{
     display: none;
 
 }
-.headerNav .columnsHeader .column2{
+.headerNav .columns-header-item2{
     display: none;
 }
 @media screen and (max-width: 780px) {
-    header .headerNav .columnsHeader {
+    header .headerNav .columns_header {
         height: 70px;
         background-color: #ffffff;
         display: grid;
@@ -359,63 +359,63 @@ header {
         padding-bottom: 0;
 
     }
-    header .headerNav .columnsHeader .column1:nth-child(1) {
+    header .headerNav .columns-header-item1:nth-child(1) {
         grid-area: col1;
     }
     
-    header .headerNav .columnsHeader .column2:nth-child(2) {
+    header .headerNav .columns-header-item2:nth-child(2) {
         grid-area: col2;
     }
     
-    header .headerNav .columnsHeader .column3:nth-child(3) {
+    header .headerNav .columns-header-item3:nth-child(3) {
         grid-area: col3;
     }
-    header .headerNav .columnsHeader .column2 {
+    header .headerNav .columns-header-item2 {
         grid-column: 2;
         grid-row: 1;
       }
       
-    header .headerNav .columnsHeader .column3 {
+    header .headerNav .columns-header-item3 {
         grid-column: 3;
         grid-row: 1;
     }
-    header .headerNav .columnsHeader .column1{
+    header .headerNav .columns-header-item1{
         display: block;
         
     }
-    header .headerNav .columnsHeader .column1 .mobistor{
+    .columns_header .columns-header-item1 .columns-header-text .mobistor{
         font-size: 24px;
     }
-    header .headerNav .columnsHeader .column1 .scooters{
+    .columns_header .columns-header-item1 .columns-header-text .scooters{
         font-size: 18px;
     }
-    header .headerNav .columnsHeader .column1 .textCol{
+    header .headerNav .columns-header-item1 .columns-header-text{
         line-height: 20px;
         margin-top: 5px;
     }
-    header .headerNav .columnsHeader .column2{
+    header .headerNav .columns-header-item2{
         display: block;
     }
-    header .headerNav .columnsHeader .column2 .textCol{
+    header .headerNav .columns-header-item2 .columns-header-text{
         line-height: 10px;
     }
-    header .headerNav .columnsHeader .column2 .textCol .br1{
-        line-height: 10px;
-        font-size: 12px;
-    }
-    header .headerNav .columnsHeader .column2 .textCol .br2{
+    header .headerNav .columns-header-item2 .columns-header-text .columns-header-line1{
         line-height: 10px;
         font-size: 12px;
     }
-    header .headerNav .columnsHeader .column2 .textCol .br3{
+    header .headerNav .columns-header-item2 .columns-header-text .columns-header-line2{
+        line-height: 10px;
+        font-size: 12px;
+    }
+    header .headerNav .columns-header-item2 .columns-header-text .columns-header-line3{
         line-height: 10px;
         font-size: 10px;
     }
-    header .headerNav .columnsHeader .column3{
+    header .headerNav .columns-header-item3{
         display: block;
         width: 50px;
     }
-    header .columnsHeader .menu1{
+    header .columns_header .menu1{
         display: none;
     }
 /* ------------------------------------------------------------- */
@@ -450,16 +450,16 @@ header {
         z-index: 1;
         position: relative;
     }
-    .headerNav .columnsHeader .column3.responsive .menu1{
+    .headerNav .columns-header-item3.responsive .menu1{
         display: none;
     }
-    .headerNav .columnsHeader .column3.responsive .menu2{
+    .headerNav .columns-header-item3.responsive .menu2{
         display: block;
     }
-    .headerNav .columnsHeader .column3 .menu2{
+    .headerNav .columns-header-item3 .menu2{
         display: none;
     }
-    .headerNav .columnsHeader .column3 .menu1{
+    .headerNav .columns-header-item3 .menu1{
         display: block;
     }
     
@@ -2391,13 +2391,13 @@ footer {
     font-size: 2em;
 }
 }
-footer .columnsHeader{
+footer .columns_header{
     height: 100px;
 }
 
 
 /*---------------------------------------------------------------*/
-footer .columnsHeader .column1 .textCol .mobistor{
+footer .columns_header .columns-header-item1 .columns-header-text .mobistor{
     font-family: 'FuturaExtra';
     font-weight: 800;
     font-size: 32px;
@@ -2405,7 +2405,7 @@ footer .columnsHeader .column1 .textCol .mobistor{
     color: #ffffff;
 
 }
-footer .columnsHeader .column1 .textCol .scooters{
+footer .columns_header .columns-header-item1 .columns-header-text .scooters{
     font-family: 'FuturaBold';
     font-weight: 400;
     font-size: 24px;
@@ -2415,7 +2415,7 @@ footer .columnsHeader .column1 .textCol .scooters{
 }
 /*---------------------------------------------------------------*/
 
-footer .columnsHeader .column2 .textCol .br1{
+footer .columns_header .columns-header-item2 .columns-header-text .columns-header-line1{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 700;
@@ -2423,14 +2423,14 @@ footer .columnsHeader .column2 .textCol .br1{
 
     color: #ffffff;
 }
-footer .columnsHeader .column2 .textCol .br2{
+footer .columns_header .columns-header-item2 .columns-header-text .columns-header-line2{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     color: #ffffff;
 }
-footer .columnsHeader .column2 .textCol .br3{
+footer .columns_header .columns-header-item2 .columns-header-text .columns-header-line3{
     font-family: 'FuturaBook';
     font-style: normal;
     font-weight: 700;
@@ -2438,7 +2438,7 @@ footer .columnsHeader .column2 .textCol .br3{
     color: #FF5C38;
 }
 /*---------------------------------------------------------------*/
-footer .columnsHeader .column3 .textCol .br1{
+footer .columns_header .columns-header-item3 .columns-header-text .columns-header-line1{
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
@@ -2447,7 +2447,7 @@ footer .columnsHeader .column3 .textCol .br1{
 
 
 }
-footer .columnsHeader .column3 .textCol .br2{
+footer .columns_header .columns-header-item3 .columns-header-text .columns-header-line2{
     width: 130px;
     font-family: inter;
     font-style: normal;
@@ -2458,7 +2458,7 @@ footer .columnsHeader .column3 .textCol .br2{
 }
 /*---------------------------------------------------------------*/
 
-footer .columnsHeader .column5 .textCol .br1{
+footer .columns_header .columns-header-item5 .columns-header-text .columns-header-line1{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: bold;
@@ -2469,7 +2469,7 @@ footer .columnsHeader .column5 .textCol .br1{
 
 
 }
-footer .columnsHeader .column5 .textCol .br2{
+footer .columns_header .columns-header-item5 .columns-header-text .columns-header-line2{
     color: #ffffff;
     font-family: Inter;
     font-style: normal;
@@ -2481,20 +2481,20 @@ footer .columnsHeader .column5 .textCol .br2{
 
 }
 
-footer .columnsHeader{
+footer .columns_header{
     border-bottom: 1px solid #C4C4C4;
 }
-footer .columnsHeader .column4 .masenger{
+footer .columns_header .columns-header-item4 .masenger{
     width: 42px;
     height: 42px;
     border-radius: 100px;
 }
-footer .columnsHeader .column4 .masenger:hover{
+footer .columns_header .columns-header-item4 .masenger:hover{
     border:1px solid #FF8329
 }
 @media screen and (max-width: 980px) {
     
-    footer .columnsHeader {
+    footer .columns_header {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, auto);
@@ -2503,32 +2503,32 @@ footer .columnsHeader .column4 .masenger:hover{
         height: 500px;
         padding-top: 20px;
     }
-    footer .column1:nth-child(1) {
+    footer .columns_header .columns-header-item1:nth-child(1) {
         grid-area: col1;
     }
-    footer .column2:nth-child(2) {
+    footer .columns_header .columns-header-item2:nth-child(2) {
         grid-area: col2;
     }
-    footer .column3:nth-child(3) {
+    footer .columns_header .columns-header-item3:nth-child(3) {
         grid-area: col3;
     }
-    footer .column4:nth-child(4) {
+    footer .columns_header .columns-header-item4:nth-child(4) {
         grid-area: col4;
     }
-    footer .column5:nth-child(5) {
+    footer .columns_header .columns-header-item5:nth-child(5) {
         grid-area: col5;
     }
-    footer .columnsHeader .column5{
+    footer .columns_header .columns-header-item5{
         display: block;
         padding-bottom: 50px;
     }
-    footer .columnsHeader .column5 img{
+    footer .columns_header .columns-header-item5 img{
         display: block;
         margin-right: auto;
         margin-left: auto;
         
     }
-    footer .columnsHeader .column5 .textCol{
+    footer .columns_header .columns-header-item5 .columns-header-text{
         margin-top: 10px;
         display: block;
         margin-left: 0;
@@ -2536,28 +2536,28 @@ footer .columnsHeader .column4 .masenger:hover{
         margin-left: auto;
         line-height: 50%;
     }
-    footer .columnsHeader .column3{
+    footer .columns_header .columns-header-item3{
         display: block;
     }
-    footer .columnsHeader .column3 img{
+    footer .columns_header .columns-header-item3 img{
         display: block;
         margin-right: auto;
         margin-left: auto;
         
     }
-    footer .columnsHeader .column4 .masenger{
+    footer .columns_header .columns-header-item4 .masenger{
         margin-right: 0;
     }
-    footer .columnsHeader .column4 .masenger:hover{
+    footer .columns_header .columns-header-item4 .masenger:hover{
         color:#FF8329
     }
-    footer .columnsHeader .column4{
+    footer .columns_header .columns-header-item4{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap:10px;
        
     }
-    footer .columnsHeader .column3 .textCol{
+    footer .columns_header .columns-header-item3 .columns-header-text{
         margin-top: 10px;
         display: block;
         margin-left: 0;
@@ -2569,11 +2569,11 @@ footer .columnsHeader .column4 .masenger:hover{
     .brUnvis{
         display: none;
     }
-    footer .columnsHeader .column2 .textCol{
+    footer .columns_header .columns-header-item2 .columns-header-text{
         text-align: center;
         line-height: 50%;
     }
-    footer .columnsHeader .column1 .textCol{
+    footer .columns_header .columns-header-item1 .columns-header-text{
         text-align: center;
         line-height: 80%;
     }
