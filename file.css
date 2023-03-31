@@ -619,7 +619,7 @@ header {
 
 }
 
-.columnsPluses{
+.pluses-columns{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
@@ -630,18 +630,18 @@ header {
 
 }
 /*---------------------------------------------------------------*/
-.columnsPluses .column1, .columnsPluses .column2, .columnsPluses .column3{
+.pluses-columns .pluses-columns-item1, .pluses-columns .pluses-columns-item2, .pluses-columns .pluses-columns-item3{
     display: flex;
     align-items: center;
 }
-.columnsPluses img{
+.pluses-columns img{
     width: 80px;
     height: 80px;
     border-radius: 100px;
 
 }
 
-.columnsPluses .columnText{
+.pluses-columns .pluses-columns-text{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -650,17 +650,17 @@ header {
     margin-left: 10px;
     color: #353942;
 }
-.columnsPluses .columnText span{
+.pluses-columns .pluses-columns-text span{
     color: #FF5C38;
 }
 @media screen and (max-width: 1300px) {
-    .columnsPluses{
+    .pluses-columns{
         width: 90%;
     
     }
 }
 @media screen and (max-width: 1100px) {
-    .columnsPluses{
+    .pluses-columns{
         display: grid;
         gap:20px;
         
@@ -671,7 +671,7 @@ header {
         width: 355px;
         margin-top: 50px;
     }
-    .columnsPluses img{
+    .pluses-columns img{
         width: 64px;
         height: 64px;
         border-radius: 100px;
@@ -979,7 +979,7 @@ color: #4B4B4B;
 
     color: #FFFFFF;
 }
-.imgScooter{
+.katalog-img{
     z-index: -1;
     margin-top: -50px;
 }
@@ -1154,7 +1154,7 @@ color: #4B4B4B;
     
         color: #FFFFFF;
     }
-    .imgScooter{
+    .katalog-img{
         margin-top: 0px;
         width: 100%;
     }
@@ -1254,7 +1254,7 @@ color: #4B4B4B;
     overflow-x: hidden;
 
 }
-.katalog-containersPodbor {
+.podbor-container {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -1266,7 +1266,7 @@ color: #4B4B4B;
     background-repeat: repeat-y;
     background-size: cover;
 }
-.podbor .podborTitle{
+.podbor .podbor-title{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
@@ -1279,7 +1279,7 @@ color: #4B4B4B;
     margin: 0;
     color: #FFFFFF;
 }
-.podbor .podborSubTitle{
+.podbor .podbor-subTitle{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -1291,7 +1291,7 @@ color: #4B4B4B;
 
     color: #FFFFFF;
 }
-.columnsPodbor .column1 .bg, .columnsPodbor .column2 .bg, .columnsPodbor .column3 .bg{
+.podbor-columns-bg{
     width: 275px;
     height: 275px;
     border-radius: 100%;
@@ -1299,7 +1299,7 @@ color: #4B4B4B;
     border: 1px solid #FF1887;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.184211) 44.79%, rgba(0, 0, 0, 0.6) 100%);
 }
-.columnsPodbor .column4 .bg{
+.podbor-columns-item4-bg{
     width: 305px;
     height: 305px;
     background-image: url("img/main/podbor/4.png");
@@ -1308,15 +1308,15 @@ color: #4B4B4B;
     border: 0;
     margin-top: -30px;
 }
-.columnsPodbor img{
+.podbor-columns img{
     margin-top: -180px;
     padding-bottom: 0;
 }
 
-.columnsPodbor .column2 img{
+.podbor-columns .podbor-columns-item2 img{
     margin-left: -50px;
 }
-.columnsPodbor .podborText{
+.podbor-columns .podbor-columns-text{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -1328,10 +1328,10 @@ color: #4B4B4B;
 
     color: #FFFFFF;
 }
-.columnsPodbor .podborText .br1{
+.podbor-columns .podbor-columns-text .podbor-columns-line{
     color: #FFC700;
 }
-.columnsPodbor {
+.podbor-columns {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -1345,10 +1345,10 @@ color: #4B4B4B;
     .podbor {
           background-size: auto 100%;
     }  
-    .podbor .podborTitle{
+    .podbor .podbor-title{
         font-size: 26px;
     }
-    .podbor .podborSubTitle{
+    .podbor .podbor-subTitle{
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -1360,7 +1360,7 @@ color: #4B4B4B;
     
         color: #FFFFFF;
     }
-    .columnsPodbor .column1 .bg, .columnsPodbor .column2 .bg, .columnsPodbor .column3 .bg{
+    .podbor-columns-bg{
         width: 215px;
         height: 215px;
         border-radius: 100%;
@@ -1368,7 +1368,7 @@ color: #4B4B4B;
         border: 1px solid #FF1887;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.184211) 44.79%, rgba(0, 0, 0, 0.6) 100%);
     }
-    .columnsPodbor .column4 .bg{
+    .podbor-columns-item4-bg{
         width: 215px;
         height: 215px;
         background-image: url("img/main/podbor/4.png");
@@ -1377,66 +1377,63 @@ color: #4B4B4B;
         border: 0;
         margin-top: -30px;
     }
-    .columnsPodbor img{
+    .podbor-columns img{
         margin-top: -180px;
         padding-bottom: 0;
     }
-    .columnsPodbor .column1 img, .columnsPodbor .column3 img .columnsPodbor .column4 img{
+    .podbor-columns .podbor-columns-item1 img, .podbor-columns .podbor-columns-item3 img .podbor-columns .podbor-columns-item4 img{
         width: 100%;
 
     }
-    .columnsPodbor .column1{
+    .podbor-columns .podbor-columns-item1{
         margin-left: 0px;
         
     }
-    .columnsPodbor .column1 img{
+    .podbor-columns .podbor-columns-item1 img{
         margin-top: -150px;
     }
-    .columnsPodbor .column1 .bg{
+    .podbor-columns .podbor-columns-item1 .podbor-columns-bg{
         width: 215px;
         height: 215px;
     }
-    .columnsPodbor .column2{
+    .podbor-columns .podbor-columns-item2{
         margin-left: 170px;
         margin-top: 35px;
         width: 175px;
         height: 175px;
     }
-    .columnsPodbor .column2 .bg{
+    .podbor-columns .podbor-columns-item2 .podbor-columns-bg{
         width: 175px;
         height: 175px;
     }
-    .columnsPodbor .column2 img{
+    .podbor-columns .podbor-columns-item2 img{
         width: 170%;
         margin-left: -60px;
         margin-top: -130px;
     }
-    .columnsPodbor .column3{
+    .podbor-columns .podbor-columns-item3{
         margin-left: 0px;
 
     }
-    .columnsPodbor .column3 .bg{
+    .podbor-columns .podbor-columns-item3 .podbor-columns-bg{
         width: 180px;
         height: 180px;
     }
-    .columnsPodbor .column3 img{
+    .podbor-columns .podbor-columns-item3 img{
         margin-left: -10px;
         margin-top: -100px;
         width: 210px;
         height: 230px;
     }
-    .columnsPodbor .column4{
+    .podbor-columns .podbor-columns-item4{
         margin-left: 150px;
        
 
     }
-    .columnsPodbor .podborText{
+    .podbor-columns .podbor-columns-text{
         font-size: 12px;
     }
-    .columnsPodbor .podborText .br1{
-        color: #FFC700;
-    }
-    .columnsPodbor {
+    .podbor-columns {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 130px);
@@ -1445,19 +1442,19 @@ color: #4B4B4B;
       text-align: center;
     
     }
-    .columnsPodbor .column1:nth-child(1) {
+    .podbor-columns .podbor-columns-item1:nth-child(1) {
         grid-area: col1;
     }
     
-    .columnsPodbor .column2:nth-child(2) {
+    .podbor-columns .podbor-columns-item2:nth-child(2) {
         grid-area: col2;
     }
     
-    .columnsPodbor .column3:nth-child(3) {
+    .podbor-columns .podbor-columns-item3:nth-child(3) {
         grid-area: col3;
     }
     
-    .columnsPodbor .column4:nth-child(4) {
+    .podbor-columns .podbor-columns-item4:nth-child(4) {
         grid-area: col4;
     }
     
