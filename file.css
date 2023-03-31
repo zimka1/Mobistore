@@ -1786,7 +1786,7 @@ color: #4B4B4B;
     display: block;
     justify-content: center;
 }
-.questionsTitle{
+.questions-title{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
@@ -1795,7 +1795,7 @@ color: #4B4B4B;
     /* or 65px */
     color: #FFFFFF;
 }
-.questions .name{
+.questions .questions-subcolumns-text{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -1807,24 +1807,24 @@ color: #4B4B4B;
 
     color: #FFFFFF;
 }
-.questions .name .br1{
+.questions .questions-subcolumns-text .questions-subcolumns-line2{
     font-size: 14px;
 }
-.columnsQuestions1 .subcolumns{
+.questions-columns .questions-subcolumns{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "col2 col1";
     gap: 20px;
     align-items: center;
 }
-.columnsQuestions1 .subcolumns .subcolumn:nth-child(1) {
+.questions-columns .questions-subcolumns .questions-subcolumns-item:nth-child(1) {
     grid-area: col1;
 }
 
-.columnsQuestions1 .subcolumns .subcolumn:nth-child(2) {
+.questions-columns .questions-subcolumns .questions-subcolumns-item:nth-child(2) {
     grid-area: col2;
 }
-.columnsQuestions1{
+.questions-columns{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "col1 col1 col1 col2 col2";
@@ -1834,16 +1834,16 @@ color: #4B4B4B;
     gap: 0px;
     align-items: center;
 }
-.columnsQuestions1 .column.title{
+.questions-columns .questions-columns-item.title{
     display: flex;
     justify-content: center;
 }
 
-.columnsQuestions1 .column:nth-child(1) {
+.questions-columns .questions-columns-item:nth-child(1) {
     grid-area: col1;
 }
 
-.columnsQuestions1 .column:nth-child(2) {
+.questions-columns .questions-columns-item:nth-child(2) {
     grid-area: col2;
 }
 
@@ -1856,34 +1856,36 @@ color: #4B4B4B;
     .questions {
           background-size: auto 100%;
     }
-
-    .questionsTitle{
+    
+    .questions-title{
         font-size: 36px;
+
     }
-    .columnsQuestions1 .column.title{
+    .questions-columns .questions-columns-item.title{
         display: block;
+        
     }
-    .questions .name{
+    .questions .questions-subcolumns-text{
         font-size: 20px;
         text-align: left;
     }
-    .questions .name .br1{
+    .questions .questions-subcolumns-text .questions-subcolumns-line2{
         font-size: 18px;
     }
-    .columnsQuestions1 .subcolumns img{
+    .questions-columns .questions-subcolumns img{
         width: 70px;
         height: 70px;
         float: left;    
         
     }
-    .columnsQuestions1 .column.director {
+    .questions-columns .questions-columns-item.director{
         width: 60%;
     }
-    .columnsQuestions1 .subcolumns{
+    .questions-columns .questions-subcolumns{
         margin-top: 20px;
         display: flex
     }
-    .columnsQuestions1{
+    .questions-columns{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 80px);
@@ -1896,65 +1898,36 @@ color: #4B4B4B;
         align-items: center;
     }
 
-    
-    .columnsQuestions2 .queSales{
-        font-size: 16px;
-        width: 90%;
-    }
-    .columnsQuestions2 .column .dopSale{
-        font-size: 14px;
-        
-    }
-    .columnsQuestions2{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "col1";
-        gap: 0px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 50px;
-    }
-    .columnsQuestions2 .column:nth-child(1) {
-        grid-area: col1;
-    }
-    
-    .columnsQuestions2 .column:nth-child(2) {
-        grid-area: col2;
-    }
-    .columnsQuestions2 .column .dopSale{
-        display: block;
-    }
-    .columnsQuestions2 .column.dop{
-        display: none;
-    }
 }
 @media screen and (max-width: 600px) {
-    .questionsTitle{
+    .questions-title{
         font-size: 25px;
     }
-    .questions .name{
+    .questions-columns{
+        padding-left: 20px;
+    }
+    .questions .questions-subcolumns-text{
         font-size: 14px;
         text-align: left;
     }
-    .questions .name .br1{
+    .questions .questions-subcolumns-text .questions-subcolumns-line2{
         font-size: 13px;
     }
-    .columnsQuestions1 .subcolumns img{
+    .questions-columns .questions-subcolumns img{
         width: 52px;
         height: 52px;
         float: left;
     }
     
-    .columnsQuestions1 .subcolumns{
+    .questions-columns .questions-subcolumns{
         margin-top: 0;
     }
 }
 @media screen and (max-width: 400px) {
-    .questionsTitle{
+    .questions-title{
         font-size: 24px;
     }
-    .columnsQuestions1 .subcolumns img{
+    .questions-columns .questions-subcolumns img{
         width: 52px;
         height: 52px;
         float: left;
@@ -2079,7 +2052,7 @@ color: #FFFFFF;
 /* --------------------------------------------------------- */
 /* --------------------------------------------------------- */
 
-.testDr{
+.testDrive{
     background-image: url('img/main/test_drive/back.png');
     background-position: center;
     background-repeat: repeat-y;
@@ -2087,7 +2060,7 @@ color: #FFFFFF;
     display: flex;
     justify-content: center;
 }
-.testDrTitle{
+.testDrive-title{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
@@ -2098,10 +2071,10 @@ color: #FFFFFF;
     color: #4B4B4B;
     margin-bottom: 0;
 }
-.testDrTitle .br1{
+.testDrive-title .testDrive-title-line1{
     color: #FF5C38;
 }
-.testDrText{
+.testDrive-text{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -2110,14 +2083,14 @@ color: #FFFFFF;
     color: #333333;
     width: 40%;
 }
-.testDrInf{
+.testDriveInf{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 100px;
 }
 
-.testDrFormBg{
+.testDrive-form-container{
     width: 100%;
     background: #FFFFFF;
     border: 1px solid #ECECEC;
@@ -2125,7 +2098,7 @@ color: #FFFFFF;
     border-radius: 30px;
     
 }
-.testDrForm{
+.testDrive-Form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px 100px;
@@ -2135,26 +2108,26 @@ color: #FFFFFF;
     padding-left: 50px;
     padding-bottom: 50px;
 }
-.testDrForm .column:nth-child(1) {
+.testDrive-Form .testDrive-Form-item:nth-child(1) {
     grid-area: col1;
 }
-.testDrForm .column:nth-child(2) {
+.testDrive-Form .testDrive-Form-item:nth-child(2) {
     grid-area: col2;
 }
-.testDrForm .column:nth-child(3) {
+.testDrive-Form .testDrive-Form-item:nth-child(3) {
     grid-area: col3;
 }
-.testDrForm .column:nth-child(4) {
+.testDrive-Form .testDrive-Form-item:nth-child(4) {
     grid-area: col4;
 }
-.testDrForm .column:nth-child(5) {
+.testDrive-Form .testDrive-Form-item:nth-child(5) {
     grid-area: col5;
 }
 
-.testDrForm .column:nth-child(6) {
+.testDrive-Form .testDrive-Form-item:nth-child(6) {
     grid-area: col6;
 }
-.testDrFormTitle{
+.testDrive-Form-title{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
@@ -2164,7 +2137,7 @@ color: #FFFFFF;
     margin-bottom: 0;
     color: #4B4B4B;
 }
-.testDrFormText1{
+.testDrive-Form-text1{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -2174,7 +2147,7 @@ color: #FFFFFF;
     
     color: #333333;
 }
-.testDrFormText2{
+.testDrive-Form-text2{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -2184,7 +2157,7 @@ color: #FFFFFF;
 
     color: #676767;
 }
-.testDrFormText3{
+.testDrive-Form-text3{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -2194,13 +2167,13 @@ color: #FFFFFF;
 
     color: #676767;
 }
-.testDrForm img{
+.testDrive-Form img{
     width: 255px;
     height: 418px;
     margin-top: -250px;
     float: right;
 }
-.testDrForm textarea{
+.testDrive-Form textarea{
     font-family: 'FuturaDemi';
     width: 89%;
     height: 72px;
@@ -2211,7 +2184,7 @@ color: #FFFFFF;
     padding-top: 10px;
     padding-left: 5px;
 }
-.testDrInf .btn{
+.testDriveInf .btn{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: normal;
@@ -2228,46 +2201,46 @@ color: #FFFFFF;
     background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
     border-radius: 100px;
 }
-.testDrInf .btn:hover{
+.testDriveInf .btn:hover{
     box-shadow: 0px 0px 20px rgba(228, 117, 73, 0.734);
 }
 @media screen and (max-width: 1100px) {
-    .testDr {
+    .testDrive {
         background-position: 50% center;
       }
-    .testDr {
+    .testDrive {
           background-size: auto 100%;
     }
 
-    .testDrTitle{
+    .testDrive-title{
         margin-top: 100px;
         font-size: 28px;
     }
-    .testDrText{
+    .testDrive-text{
         font-size: 16px;
         width: 80%;
     }
-    .testDrFormTitle{
+    .testDrive-Form-title{
         font-size: 22px;
     }
-    .testDrFormText1{
+    .testDrive-Form-text1{
         font-size: 14px;
     }
-    .testDrFormText2{
+    .testDrive-Form-text2{
         font-size: 14px;
     }
-    .testDrFormText3{
+    .testDrive-Form-text3{
         font-size: 14px;
     }
-    .testDrFormBg{
+    .testDrive-form-container{
         width: 80%;
     }
-    .testDrFormBg{
+    .testDrive-form-container{
         height: 50%;
         width: 100%;
         
     }
-    .testDrForm{
+    .testDrive-Form{
         display: grid;
         grid-template-columns: repeat(1, auto);
         padding: 0px;
@@ -2280,7 +2253,7 @@ color: #FFFFFF;
         margin-left: auto;
         margin-right: auto;
     }
-    .testDrForm input{
+    .testDrive-Form textarea{
         display: flex;
         width: 90%;
         height: 72px;
@@ -2288,7 +2261,7 @@ color: #FFFFFF;
         margin-left: auto;
         margin-right: auto;
     }
-    .testDrInf .btn{
+    .testDriveInf .btn{
         font-family: 'FuturaDemi';
         font-style: normal;
         font-weight: normal;
@@ -2308,49 +2281,49 @@ color: #FFFFFF;
         margin-left: auto;
         margin-right: auto;
     }
-    .testDrForm img{
+    .testDrive-Form img{
         width: 186px;
         height: 305px;
         margin-top: 0px;
         float: right;
     }
-    .testDrForm .column1:nth-child(1) {
+    .testDrive-Form .testDrive-Form-item1:nth-child(1) {
         grid-area: col1;
     }
-    .testDrForm .column2:nth-child(2) {
+    .testDrive-Form .testDrive-Form-item2:nth-child(2) {
         grid-area: col2;
     }
-    .testDrForm .column3:nth-child(3) {
+    .testDrive-Form .testDrive-Form-item3:nth-child(3) {
         grid-area: col3;
     }
-    .testDrForm .column4:nth-child(4) {
+    .testDrive-Form .testDrive-Form-item4:nth-child(4) {
         grid-area: col4;
     }
-    .testDrForm .column5:nth-child(5) {
+    .testDrive-Form .testDrive-Form-item5:nth-child(5) {
         grid-area: col5;
     }
-    .testDrForm .column6:nth-child(6) {
+    .testDrive-Form .testDrive-Form-item6:nth-child(6) {
         grid-area: col6;
     }
-    .testDrForm .column1{
+    .testDrive-Form .testDrive-Form-item1{
         grid-row: 1;
     }
-    .testDrForm .column2{
+    .testDrive-Form .testDrive-Form-item2{
         grid-row: 6;
     }
-    .testDrForm .column3{
+    .testDrive-Form .testDrive-Form-item3{
         grid-row: 2;
     }
-    .testDrForm .column4{
+    .testDrive-Form .testDrive-Form-item4{
         grid-row: 3;
     }
-    .testDrForm .column5{
+    .testDrive-Form .testDrive-Form-item5{
         grid-row: 5;
     }
-    .testDrForm .column6{
+    .testDrive-Form .testDrive-Form-item6{
         grid-row: 4;
     }
-    .testDrForm .column2{
+    .testDrive-Form .testDrive-Form-item2{
         margin: 0;
         margin-top: 30px;
         display: flex;
@@ -2587,16 +2560,16 @@ footer .endColumn{
     justify-content: center;
     align-items: center;
 }
-footer .endColumn .column:nth-child(1) {
+footer .endColumn .endColumn-item:nth-child(1) {
     grid-area: col1;
 }
-footer .endColumn .column:nth-child(2) {
+footer .endColumn .endColumn-item:nth-child(2) {
     grid-area: col2;
 }
-footer .endColumn .column h4{
+footer .endColumn .endColumn-item h4{
     text-align: center;
 }
-footer .endColumn .nepodcherk{
+footer .endColumn .notUnderlined{
     font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -2608,7 +2581,7 @@ color: #FFFFFF;
 
 opacity: 0.43;
 }
-footer .endColumn .podcherk{
+footer .endColumn .underlined{
     font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -2634,10 +2607,10 @@ opacity: 0.43;
         justify-content: center;
         align-items: center;
     }
-    footer .endColumn .column:nth-child(1) {
+    footer .endColumn .endColumn-item:nth-child(1) {
         grid-area: col1;
     }
-    footer .endColumn .column:nth-child(2) {
+    footer .endColumn .endColumn-item:nth-child(2) {
         grid-area: col2;
     }
 }
