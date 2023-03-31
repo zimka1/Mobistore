@@ -1464,14 +1464,14 @@ color: #4B4B4B;
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
-.adv{
+.advantages{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     padding-bottom: 20px;
     border-bottom: 1px solid #ECECEC;
 }
-.advTitle{
+.advantages-title{
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: 400;
@@ -1481,14 +1481,14 @@ color: #4B4B4B;
     color: #4B4B4B;
 }
 
-.columnsAdv .column{
+.advantages-columns .advantages-columns-item{
     justify-content: center;
     text-align: center;
     z-index: 1;
     
 }
 
-.columnsAdv .columnText{
+.advantages-columns .advantages-columns-text{
     font-family: 'FuturaBook';
     font-style: normal;
     font-weight: 400;
@@ -1498,7 +1498,7 @@ color: #4B4B4B;
     color: #4B4B4B;
 }
 
-.columnsAdv {
+.advantages-columns {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: (auto auto);
@@ -1510,52 +1510,52 @@ color: #4B4B4B;
     padding-bottom: 40px;
 }
 
-.columnsAdv .column:nth-child(1) {
+.advantages-columns .advantages-columns-item:nth-child(1) {
     grid-area: col1;
 }
 
-.columnsAdv .column:nth-child(2) {
+.advantages-columns .advantages-columns-item:nth-child(2) {
     grid-area: col2;
 }
 
-.columnsAdv .column:nth-child(3) {
+.advantages-columns .advantages-columns-item:nth-child(3) {
     grid-area: col3;
 }
 
-.columnsAdv .column:nth-child(4) {
+.advantages-columns .advantages-columns-item:nth-child(4) {
     grid-area: col4;
 }
 
-.columnsAdv .column5:nth-child(5) {
+.advantages-columns .advantages-columns-item5:nth-child(5) {
     grid-area: col5;
 }
 @media screen and (max-width: 1000px) {
-    .advTitle{
+    .advantages-title{
         font-size: 26px;
     }
 
-    .columnsAdv .column .columnText{
+    .advantages-columns .advantages-columns-item .advantages-columns-text{
         font-size: 12px;
         
         padding: 0;
         margin: 0;
     }
-    .columnsAdv .column5 .columnText{
+    .advantages-columns .advantages-columns-item5 .advantages-columns-text{
         font-size: 12px;
         
         padding: 0;
         margin: 0;
     }
-    .columnsAdv img{
+    .advantages-columns img{
         width: 50%;
         height: 50%;
     }
-    .columnsAdv .column5 img{
+    .advantages-columns .advantages-columns-item5 img{
         width: 40%;
         height: 40%;
         margin-left: 120px;
     }
-    .columnsAdv {
+    .advantages-columns {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto;
@@ -1570,23 +1570,23 @@ color: #4B4B4B;
         
     }
     
-    .columnsAdv .column:nth-child(1) {
+    .advantages-columns .advantages-columns-item:nth-child(1) {
         grid-area: col1;
     }
     
-    .columnsAdv .column:nth-child(2) {
+    .advantages-columns .advantages-columns-item:nth-child(2) {
         grid-area: col2;
     }
     
-    .columnsAdv .column:nth-child(3) {
+    .advantages-columns .advantages-columns-item:nth-child(3) {
         grid-area: col3;
     }
     
-    .columnsAdv .column:nth-child(4) {
+    .advantages-columns .advantages-columns-item:nth-child(4) {
         grid-area: col4;
     }
     
-    .columnsAdv .column5:nth-child(5) {
+    .advantages-columns .advantages-columns-item5:nth-child(5) {
         grid-area: col5;
     }
 }
