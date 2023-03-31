@@ -7,7 +7,7 @@ menu1.onclick = function myFunction(){
       y.className += " responsive";
   }else{
       x.className = "topnav";
-      y.className = "column3";
+      y.className = "columns-header-item3";
   }
 }
 menu2.onclick = function myFunction(){
@@ -18,7 +18,7 @@ menu2.onclick = function myFunction(){
       y.className += " responsive";
   }else{
       x.className = "topnav";
-      y.className = "column3";
+      y.className = "columns-header-item3";
   }
 }
 
