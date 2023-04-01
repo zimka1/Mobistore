@@ -690,6 +690,7 @@ header {
     
 }
 .msscooter{
+    margin-top: 60px;
     padding-bottom: 70px;
 }
 .msScooterTitle span{
@@ -717,7 +718,7 @@ header {
     .msScooterTitle span{
         text-align: center;
        
-        font-size: 32px;
+        font-size: 28px;
 
     }
     .msScooterTitle{
@@ -741,9 +742,7 @@ header {
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
-.msScooter{
-    display: none;
-}
+
 
 .msscooter .owl-carousel{
     width:60%;
@@ -844,7 +843,7 @@ header {
 }
 @media screen and (max-width: 900px) {
     .msscooter{
-        border-bottom: 1px solid #ECECEC;
+        border-bottom: 2px solid #ECECEC;
     }
     .msscooter .owl-carousel{
         width:70%;
@@ -1343,10 +1342,9 @@ color: #4B4B4B;
 @media screen and (max-width: 1100px) {
     .podbor {
         background-position: 35% center;
-      }
-    .podbor {
-          background-size: auto 100%;
-    }  
+        background-size: auto 100%;
+        margin-top: 50px;
+    }
     .podbor .podbor-title{
         font-size: 26px;
     }
@@ -2174,10 +2172,9 @@ color: #FFFFFF;
 @media screen and (max-width: 1100px) {
     .testDrive {
         background-position: 50% center;
+        background-size: auto 100%;
       }
-    .testDrive {
-          background-size: auto 100%;
-    }
+
 
     .testDrive-title{
         margin-top: 100px;
