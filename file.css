@@ -773,15 +773,21 @@ header {
     background-color: transparent;
 }
 .msscooter .owl-prev .prev{
-    background: none;
+    background: transparent;
     border: none;
+    border-radius: 10px;
 }
-
+.msscooter .owl-prev .prev:hover{
+    filter: drop-shadow(0px 0px 10px #ff7700);
+}
 .msscooter .owl-next .next{
-    background: none;
+    background: transparent;
     border: none;
+    border-radius: 10px;
 }
-
+.msscooter .owl-next .next:hover{
+    filter: drop-shadow(0px 0px 10px #ff7700);
+}
 .msscooter .owl-theme .owl-dots .owl-dot span {
     display: none;
 }
@@ -1463,7 +1469,7 @@ color: #4B4B4B;
 .advantages{
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    max-width: 1300px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ECECEC;
 }
@@ -1589,7 +1595,7 @@ color: #4B4B4B;
 
 .feedback{
     height: 500px;
-    
+    max-width: 1300px;
     padding-bottom: 100px;
     overflow-x: hidden;
 }
@@ -1680,11 +1686,16 @@ color: #4B4B4B;
     background: none;
     border: none;
 }
+.feedBack .owl-prev .prev:hover{
+    filter: drop-shadow(0px 0px 10px #ff7700);
+}
 .feedBack .owl-next .next{
     background: none;
     border: none;
 }
-
+.feedBack .owl-next .next:hover{
+    filter: drop-shadow(0px 0px 10px #ff7700);
+}
 .feedBack{
     overflow-x: hidden;
 }
