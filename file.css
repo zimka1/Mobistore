@@ -87,6 +87,7 @@ header {
     height: 55px;
     line-height: 0.5;
     margin-top: 10px;
+    
 }
 .columns-header-item1 .columns-header-text .mobistor{
     font-family: 'FuturaExtra';
@@ -233,7 +234,6 @@ header {
     }
     header .columns-header-item3 .columns-header-text{
         margin: 0;
-        
         line-height: 0.6;
         margin-left: 10px;
     }
@@ -535,13 +535,13 @@ header {
 .original-kontent .btn:hover{
     box-shadow: 0px 0px 60px rgba(228, 117, 73, 0.734);
 }
-.unVisOrig .original-kontent .original-text1{
+.unVisOrig .original-text1{
     display: none;
 }
-.unVisOrig .original-kontent .original-text2{
+.unVisOrig .original-text2{
     display: none;
 }
-.unVisOrig .original-kontent .btn{
+.unVisOrig .btn{
     display: none;
 }
 @media screen and (max-width: 1067px) {
@@ -583,14 +583,14 @@ header {
     .unVisOrig{
         justify-content: center;
     }
-    .unVisOrig .original-kontent .original-text1{
+    .unVisOrig .original-text1{
         display: block;
         margin-top: -40px;
     }
-    .unVisOrig .original-kontent .original-text2{
+    .unVisOrig .original-text2{
         display: block;
     }
-    .unVisOrig .original-kontent .btn{
+    .unVisOrig .btn{
         display: block;
         margin-top: 40px;
         margin-left: auto;
@@ -605,7 +605,16 @@ header {
     
   
 }
+
+
+
+
 /*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+
+
 .pluses{
     background: linear-gradient(111.58deg, #F9E7E7 0%, #FFE8D7 100%);
     border-radius: 20px;
@@ -629,7 +638,6 @@ header {
     border-radius: 20px;
 
 }
-/*---------------------------------------------------------------*/
 .pluses-columns-item1, .pluses-columns-item2, .pluses-columns-item3{
     display: flex;
     align-items: center;
@@ -641,7 +649,7 @@ header {
 
 }
 
-.pluses-columns .pluses-columns-text{
+.pluses-columns-text{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -725,7 +733,7 @@ header {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        font-size: 18px;
+        font-size: 19px;
         line-height: 30px;
         width: 338px;
     }
@@ -749,7 +757,7 @@ header {
     margin:auto;
     background-color: transparent;
 }
-.msscooter .owl-carousel .slide img{
+.msscooter .slide img{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -771,20 +779,20 @@ header {
 .msscooter .owl-prev, .owl-next {
     background-color: transparent;
 }
-.msscooter .owl-prev .prev{
+.msscooter .prev{
     background: transparent;
     border: none;
     border-radius: 10px;
 }
-.msscooter .owl-prev .prev:hover{
+.msscooter .prev:hover{
     filter: drop-shadow(0px 0px 10px #ff7700);
 }
-.msscooter .owl-next .next{
+.msscooter .next{
     background: transparent;
     border: none;
     border-radius: 10px;
 }
-.msscooter .owl-next .next:hover{
+.msscooter .next:hover{
     filter: drop-shadow(0px 0px 10px #ff7700);
 }
 .msscooter .owl-theme .owl-dots .owl-dot span {
@@ -793,35 +801,35 @@ header {
 .msscooter button.owl-dot.active{
     border: 1px solid black;
 }
-.msscooter .owl-dots .owl-dot{
+.msscooter .owl-dot{
     width: 120px;
     height: 120px;
     margin-right: 10px;
 }
-.msscooter .owl-dots .owl-dot:nth-child(1) {
+.msscooter .owl-dot:nth-child(1) {
     background-image: url(img/slider/1.png);
     background-size: 100% 100%;
     border-radius: 100%;
 }
 
-.msscooter .owl-dots .owl-dot:nth-child(2) {
+.msscooter .owl-dot:nth-child(2) {
     background-image: url(img/slider/2.png);
     background-size: 100% 100%;
     border-radius: 100%;
 }
 
-.msscooter .owl-dots .owl-dot:nth-child(3) {
+.msscooter .owl-dot:nth-child(3) {
     background-image: url(img/slider/3.png);
     background-size: 100% 100%;
     border-radius: 100%;
 }
 
-.msscooter .owl-dots .owl-dot:nth-child(4) {
+.msscooter .owl-dot:nth-child(4) {
     background-image: url(img/slider/4.png);
     background-size: 100% 100%;
     border-radius: 100%;
 }
-.msscooter .owl-dots .owl-dot:nth-child(5) {
+.msscooter .owl-dot:nth-child(5) {
     background-image: url(img/slider/5.png);
     background-size: 100% 100%;
     border-radius: 100%;
@@ -836,7 +844,7 @@ header {
         margin-left: auto;
         margin-right: auto;
     }
-    .msscooter .owl-dots .owl-dot{
+    .msscooter .owl-dot{
         width: 100px;
         height: 100px;
     }
@@ -857,7 +865,7 @@ header {
     .msscooter .owl-prev img, .owl-next img{
         display: none;
     }
-    .msscooter .owl-dots .owl-dot{
+    .msscooter .owl-dot{
         width: 75px;
         height: 75px;
     }
@@ -867,7 +875,7 @@ header {
         width: 100%;
         margin:auto;
     }
-    .msscooter .owl-carousel .slide img{
+    .msscooter .slide img{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -875,7 +883,7 @@ header {
     .msscooter .owl-prev img, .owl-next img{
         display: none;
     }
-    .msscooter .owl-dots .owl-dot{
+    .msscooter .owl-dot{
         width: 60px;
         height: 60px;
     }
@@ -1128,12 +1136,8 @@ color: #4B4B4B;
         position: relative;
     }
     .power-bg{
-        background-color: #ff7700;
-        background-repeat: no-repeat;
         width: 35%;
         height: 20px;
-        background-position: center bottom; 
-        display: inline-block;
         border-radius: 20px;
         margin-left: 20px;
         margin-top:  10px;
@@ -1144,16 +1148,7 @@ color: #4B4B4B;
         padding: 0;
         margin: 0;
         margin-top: 2px;
-        justify-content: center;
-        font-style: normal;
-        font-weight: 400;
         font-size: 12px;
-        line-height: 140%;
-        /* identical to box height, or 20px */
-    
-        text-align: center;
-    
-        color: #FFFFFF;
     }
     .katalog-img{
         margin-top: 0px;
@@ -1167,32 +1162,17 @@ color: #4B4B4B;
         justify-content: center;
     }
     .katalog-card-inf table .characteristica{
-        font-style: normal;
-        font-weight: 400;
         font-size: 10px;
-        line-height: 120%;
-        /* or 14px */
         width: 80px;
         height: 30px;
         display: flex;
         align-items: center;
-        border-top: 1px solid #ECECEC;
-        border-bottom: 1px solid #ECECEC;
-        color: #353942;
     }
     .katalog-card-inf table .value{
         font-style: normal;
         font-weight: 600;
         font-size: 10px;
-        line-height: 120%;
-        /* or 14px */
         height: 30px;
-        
-        
-        justify-content: center;
-        border-top: 1px solid #ECECEC;
-        border-bottom: 1px solid #ECECEC;
-        color: #353942;
     }
     .katalog-card-inf table{
         padding-top: 0px;
@@ -1205,43 +1185,27 @@ color: #4B4B4B;
         justify-content: space-between;
     }
     .katalog-card-inf .cost{
-        font-style: normal;
-        font-weight: 600;
         font-size: 12px;
         margin: 0;
         display: flex;
         align-items: center;
         text-transform: uppercase;
-        
-        color: #353942;
-        
         opacity: 0.4;
     }
     .katalog-card-inf .money{
-        font-style: normal;
-        font-weight: 400;
         font-size: 18px;
         line-height: 120%;
         padding: 0;
         margin-top: 6px;
-        color: #4B4B4B;
     }
     .katalog-card-inf .btn{
-        font-style: normal;
-        font-weight: normal;
         margin-top: 25px;
         width: 155px;
         height: 40px;
         font-size: 14px;
-        line-height: 120%;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
         margin-bottom: 30px;
         margin-top: 10px;
         margin-left: -5px;
-        background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
-        border-radius: 100px;
     }
 }
 
@@ -1349,16 +1313,8 @@ color: #4B4B4B;
         font-size: 26px;
     }
     .podbor .podbor-subTitle{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
         font-size: 18px;
-        line-height: 120%;
-        /* or 34px */
         margin-top: 10px;
-        text-align: center;
-    
-        color: #FFFFFF;
     }
     .podbor-columns-bg{
         width: 215px;
@@ -1371,9 +1327,6 @@ color: #4B4B4B;
     .podbor-columns-item4-bg{
         width: 215px;
         height: 215px;
-        background-image: url("img/main/podbor/4.png");
-        background-repeat: no-repeat;
-        background-size: 100% auto;
         border: 0;
         margin-top: -30px;
     }
@@ -2226,21 +2179,12 @@ color: #FFFFFF;
         margin-right: auto;
     }
     .testDriveInf .btn{
-        font-family: 'FuturaDemi';
-        font-style: normal;
-        font-weight: normal;
         margin-top: 25px;
         width: 90%;
         height: 70px;
         font-size: 22px;
-        line-height: 120%;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
         margin-bottom: 0px;
         margin-top: 10px;
-        background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
-        border-radius: 100px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -2295,9 +2239,9 @@ color: #FFFFFF;
     }
 }
 
-
-
-
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
 
 
 footer {
@@ -2513,7 +2457,9 @@ footer .columns-header-item4 .masenger:hover{
         line-height: 80%;
     }
 }
-
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
 footer .endColumn{
     width: 80%;
     margin-left: auto;
