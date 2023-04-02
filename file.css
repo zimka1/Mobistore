@@ -1888,7 +1888,12 @@ font-size: 22px;
 
 color: #FFFFFF;
 }
-
+.accordionItemHeading:hover{
+    background: linear-gradient(90deg, #FF1887 0%, #FF5C38 100%);
+    border-radius: 12px;
+    border-bottom: 0px solid #FF1887;
+    margin-top: 10px;
+}
 .accordionItemHeading.active{
     background: linear-gradient(90deg, #FF1887 0%, #FF5C38 100%);
     border-radius: 12px;
@@ -1902,7 +1907,7 @@ color: #FFFFFF;
    
     width: 30%;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;   
+    transition: max-height 1s ease-out;   
     margin-bottom: 0;
     background-color: #000000;
     background: rgba(0, 0, 0, 0.7);
