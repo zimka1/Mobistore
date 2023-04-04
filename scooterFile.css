@@ -499,6 +499,9 @@
     margin-right: auto;
     margin-top: 20px;
 }
+.description-inp .btn:hover{
+    box-shadow: 0px 0px 20px rgba(228, 117, 73, 0.734);
+}
 .description-inp-lowerText{
     font-family: 'Inter';
     font-style: normal;
@@ -562,6 +565,7 @@
 .description-columns-item5 .possibilities{
     width: 566px;
 }
+
 
 @media screen and (max-width: 580px){
     .description-columns-item2 h4{
