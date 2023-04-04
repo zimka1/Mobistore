@@ -121,6 +121,15 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+  
+  const slider = $("#slider3").owlCarousel({
+    items: 1,
+    loop: true,
+    mouseDrag:true,
+ });
+});
+
 
 
 
