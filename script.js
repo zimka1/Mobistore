@@ -42,8 +42,8 @@ $(document).ready(function(){
     nav: true,
     mouseDrag:true,
     navText: [
-      '<button class="prev" style=""><img src="img/slider/back.png" alt=""></button>',
-        '<button class="next"><img src="img/slider/next.png" alt=""></button>'
+      '<button class="prev" style=""><img src="img/slider/back.png.svg" alt=""></button>',
+        '<button class="next"><img src="img/slider/next.png.svg" alt=""></button>'
     ],
     margin:0,
     stagePadding: 0,
@@ -76,8 +76,8 @@ $(document).ready(function(){
     nav: true,
     mouseDrag:true,
     navText: [
-      '<button class="prev" style=""><img src="img/slider/back.png" alt=""></button>',
-        '<button class="next"><img src="img/slider/next.png" alt=""></button>'
+      '<button class="prev" style=""><img src="img/slider/back.png.svg" alt=""></button>',
+        '<button class="next"><img src="img/slider/next.png.svg" alt=""></button>'
     ],
     dots:0,
     margin:0,

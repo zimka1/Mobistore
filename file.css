@@ -25,6 +25,9 @@ html {
     font-weight: normal;
     font-style: normal;
 }
+.btn{
+    border:0;
+}
 body{
     margin: 0;
     padding: 0;
@@ -482,7 +485,7 @@ header {
 
 }
 .original{
-    background-image: url('img/main/original.png');
+    background-image: url('img/main/original.png.svg');
     background-position: center;
     background-repeat: repeat-y;
 }
@@ -506,7 +509,7 @@ header {
 }
 .original-kontent .original-text1 span{
     color: #FFFFFF;
-    background-image: url("img/main/line.png");
+    background-image: url("img/main/line.png.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center bottom; 
@@ -813,30 +816,30 @@ header {
     margin-right: 10px;
 }
 .msscooter .owl-dot:nth-child(1) {
-    background-image: url(img/slider/1.png);
+    background-image: url(img/slider/1.png.svg);
     background-size: 100% 100%;
     border-radius: 100%;
 }
 
 .msscooter .owl-dot:nth-child(2) {
-    background-image: url(img/slider/2.png);
+    background-image: url(img/slider/2.png.svg);
     background-size: 100% 100%;
     border-radius: 100%;
 }
 
 .msscooter .owl-dot:nth-child(3) {
-    background-image: url(img/slider/3.png);
+    background-image: url(img/slider/3.png.svg);
     background-size: 100% 100%;
     border-radius: 100%;
 }
 
 .msscooter .owl-dot:nth-child(4) {
-    background-image: url(img/slider/4.png);
+    background-image: url(img/slider/4.png.svg);
     background-size: 100% 100%;
     border-radius: 100%;
 }
 .msscooter .owl-dot:nth-child(5) {
-    background-image: url(img/slider/5.png);
+    background-image: url(img/slider/5.png.svg);
     background-size: 100% 100%;
     border-radius: 100%;
 }
@@ -1024,10 +1027,13 @@ color: #4B4B4B;
     height: 20px;
     display: flex;
     align-items: center;
-    border-top: 1px solid #ECECEC;
     border-bottom: 1px solid #ECECEC;
     color: #353942;
 }
+.katalog-card-inf table tr:nth-child(1) .characteristica{
+    border-top: 1px solid #ECECEC;
+}
+
 .katalog-card-inf table .value{
     font-family: inter;
     font-style: normal;
@@ -1036,13 +1042,17 @@ color: #4B4B4B;
     line-height: 120%;
     /* or 14px */
     height: 20px;
-    
-    
     justify-content: center;
-    border-top: 1px solid #ECECEC;
     border-bottom: 1px solid #ECECEC;
     color: #353942;
 }
+.katalog-card-inf table tr:nth-child(1) .value{
+    border-top: 1px solid #ECECEC;
+}
+/* .katalog-card-inf table .value:nth-child(1){
+    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+} */
 .katalog-card-inf table{
     padding-top: 0px;
     margin-top: 10px;
@@ -1232,7 +1242,7 @@ color: #4B4B4B;
     margin-top: 150px;
 }
 .podbor{
-    background-image: url('img/main/podbor.png');
+    background-image: url('img/main/podbor.png.svg');
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -1273,7 +1283,7 @@ color: #4B4B4B;
 .podbor-columns-item4-bg{
     width: 305px;
     height: 305px;
-    background-image: url("img/main/podbor/4.png");
+    background-image: url("img/main/podbor/4.png.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     border: 0;
@@ -1703,7 +1713,7 @@ color: #4B4B4B;
 
 .questions{
     margin-top: 30px;
-    background-image: url('img/main/questions/back.png');
+    background-image: url('img/main/questions/back.png.svg');
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -1982,7 +1992,7 @@ color: #FFFFFF;
 /* --------------------------------------------------------- */
 
 .testDrive{
-    background-image: url('img/main/test_drive/back.png');
+    background-image: url('img/main/test_drive/back.png.svg');
     background-position: center;
     background-repeat: repeat-y;
     background-size: 100% 100%;

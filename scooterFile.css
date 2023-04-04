@@ -213,22 +213,22 @@
     margin-right: 1px;
 }
 .description-imeges .owl-dot:nth-child(1) {
-    background-image: url(img/model/images/1.png);
+    background-image: url(img/model/images/1.png.svg);
     background-size: 100% 100%;
 }
 
 .description-imeges .owl-dot:nth-child(2) {
-    background-image: url(img/model/images/2.png);
+    background-image: url(img/model/images/2.png.svg);
     background-size: 100% 100%;
 }
 
 .description-imeges .owl-dot:nth-child(3) {
-    background-image: url(img/model/images/3.png);
+    background-image: url(img/model/images/3.png.svg);
     background-size: 100% 100%;
 }
 
 .description-imeges .owl-dot:nth-child(4) {
-    background-image: url(img/model/images/4.png);
+    background-image: url(img/model/images/4.png.svg);
     background-size: 100% 100%;
 }
 
