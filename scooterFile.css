@@ -567,24 +567,29 @@
     .description-columns-item2 h4{
         font-size: 32px;
         width: 259px;
-        margin-left: 100px;
+        margin-left: 20px;
     }
     .description-imeges{
         width: 355px;
         height: 436px;
         border-radius: 20px;
+        margin-top: 20px;
     }
     .description-imeges .power-bg{
 
         margin-left: 70%;
         padding-left: 5px;
         padding-right: 5px;
+        padding-bottom: 0;
+        width: 25%;
+        height: 25px;
+        margin-top: 10px;
     }
     .description-imeges .power{
         display: flex;
         padding: 0;
         margin: 0;
-        margin-top: 6px;
+        margin-top: 3px;
         
     }
     .description-imeges .owl-carousel{
@@ -598,12 +603,12 @@
         margin-right: auto;
     }
     .owl-theme .owl-nav.disabled+.owl-dots{
-        margin-top: 20px;
+        margin-top: 35px;
     }
     .description-imeges .owl-dot{
         width: 87px;
         height: 87px;
-        margin-right: 1px;
+        margin-right: 1.75px;
     }
     .description-table table{
         width: 315px;
