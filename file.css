@@ -27,6 +27,8 @@ html {
 }
 .btn{
     border:0;
+    cursor: pointer;
+
 }
 body{
     margin: 0;
@@ -493,7 +495,7 @@ header {
   
 .original-kontent{
     padding: 50px 90px;
-    
+    max-width: 1300px;
 }
 /*---------------------------------------------------------------*/
 .original-kontent .original-text1{
@@ -634,7 +636,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     overflow-x: hidden;
-
+    max-width: 1300px;
 }
 
 .pluses-columns{
@@ -787,10 +789,11 @@ header {
   }
 .msscooter .owl-prev, .owl-next {
     background-color: transparent;
+    
 }
 .msscooter .prev{
     background: transparent;
-    
+    cursor: pointer;
     border: none;
     border-radius: 10px;
 }
@@ -802,6 +805,7 @@ header {
 }
 .msscooter .next{
     background: transparent;
+    cursor: pointer;
     border: none;
     border-radius: 10px;
 }
@@ -913,7 +917,7 @@ font-weight: 400;
 font-size: 54px;
 line-height: 120%;
 /* or 65px */
-margin-top: 50px;
+margin-top: 200px;
 text-align: center;
 
 color: #FF5C38;
@@ -1019,6 +1023,7 @@ color: #4B4B4B;
 }
 .katalog-card-inf{
     padding-left: 20px;
+    height: 450px;
 }
 .katalog-card-inf table .characteristica{
     font-family: inter;
@@ -1091,7 +1096,7 @@ color: #4B4B4B;
     font-family: 'FuturaDemi';
     font-style: normal;
     font-weight: normal;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     width: 280px;
     height: 70px;
     font-size: 22px;
@@ -1099,9 +1104,9 @@ color: #4B4B4B;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    
+    /* margin-bottom: 30px; */
+    position: absolute;
+    bottom: 5%;
     background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
     border-radius: 100px;
 }
@@ -1150,6 +1155,7 @@ color: #4B4B4B;
 @media screen and (max-width: 800px) {
     .katalog-card{
         width: 180px;
+        height: 603px;
         min-height: 650px;
         background-color: #ffffff;
         border-radius: 30px;
@@ -1180,6 +1186,7 @@ color: #4B4B4B;
     .katalog-card-inf{
         padding-left: 20px;
         justify-content: center;
+
     }
     .katalog-card-inf table .characteristica{
         font-size: 10px;
@@ -1219,13 +1226,11 @@ color: #4B4B4B;
         margin-top: 6px;
     }
     .katalog-card-inf .btn{
-        margin-top: 25px;
         width: 155px;
         height: 40px;
         font-size: 14px;
-        margin-bottom: 30px;
-        margin-top: 10px;
         margin-left: -5px;
+        bottom: 4%;
     }
 }
 
@@ -1292,26 +1297,46 @@ color: #4B4B4B;
     background-size: 100% auto;
     border: 0;
     margin-top: -30px;
+    cursor: pointer;
 }
 .podbor-columns img{
-    margin-top: -180px;
     padding-bottom: 0;
 }
-
 .podbor-columns-item2 img{
-    margin-left: -50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+}
+.podbor-columns-item1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -150px;
+}
+.podbor-columns-item3 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -120px;
 }
 .podbor-columns-text{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    margin-top: -40px;
+    margin-top: 10px;
     /* or 22px */
 
     text-align: center;
 
     color: #FFFFFF;
+}
+.podbor-columns-item2 .podbor-columns-text{
+    margin-top: -30px;
+}
+.podbor-columns-item3 .podbor-columns-text{
+    margin-top: -10px;
 }
 .podbor-columns-text .podbor-columns-line{
     color: #FFC700;
@@ -1328,9 +1353,13 @@ color: #4B4B4B;
         background-position: 35% center;
         background-size: auto 100%;
         margin-top: 50px;
+        padding-bottom: 150px;
     }
     .podbor .podbor-title{
         font-size: 26px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .podbor .podbor-subTitle{
         font-size: 18px;
@@ -1354,16 +1383,15 @@ color: #4B4B4B;
         margin-top: -180px;
         padding-bottom: 0;
     }
-    .podbor-columns-item1 img, .podbor-columns-item3 img, .podbor-columns-item4 img{
-        width: 100%;
-
-    }
+    
     .podbor-columns-item1{
         margin-left: 0px;
         
     }
     .podbor-columns-item1 img{
-        margin-top: -150px;
+        margin-top: -110px;
+        width: 154px;
+        height: 200px;
     }
     .podbor-columns-item1 .podbor-columns-bg{
         width: 215px;
@@ -1380,9 +1408,9 @@ color: #4B4B4B;
         height: 175px;
     }
     .podbor-columns-item2 img{
-        width: 170%;
-        margin-left: -60px;
-        margin-top: -130px;
+        width: 210px;
+        height: 180px;
+        margin-top: -70px;
     }
     .podbor-columns-item3{
         margin-left: 0px;
@@ -1393,10 +1421,9 @@ color: #4B4B4B;
         height: 180px;
     }
     .podbor-columns-item3 img{
-        margin-left: -10px;
-        margin-top: -100px;
-        width: 210px;
-        height: 230px;
+        margin-top: -70px;
+        width: 120px;
+        height: 150px;
     }
     .podbor-columns-item4{
         margin-left: 150px;
@@ -1406,6 +1433,7 @@ color: #4B4B4B;
     .podbor-columns-text{
         font-size: 12px;
     }
+
     .podbor-columns {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -1605,7 +1633,11 @@ color: #4B4B4B;
     color: #4B4B4B;
 }
 
-
+.feedBack .owl-carousel{
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .feedBack .slide.first {
     opacity: 1;
 }
@@ -1656,6 +1688,7 @@ color: #4B4B4B;
 }
 .feedBack .owl-prev .prev{
     background: none;
+    cursor: pointer;
     border: none;
 }
 .feedBack .owl-prev .prev:hover{
@@ -1663,6 +1696,7 @@ color: #4B4B4B;
 }
 .feedBack .owl-next .next{
     background: none;
+    cursor: pointer;
     border: none;
 }
 .feedBack .owl-next .next:hover{
@@ -1774,8 +1808,7 @@ color: #4B4B4B;
     align-items: center;
 }
 .questions-columns-item.title{
-    display: flex;
-    justify-content: center;
+    
 }
 
 .questions-columns-item:nth-child(1) {
@@ -1829,8 +1862,9 @@ color: #4B4B4B;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 80px);
         grid-template-areas: "col1" "col2";
-        width: 90%;
+        width: 85%;
         padding-top: 50px;
+        margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
         gap: 0px;
@@ -2000,7 +2034,8 @@ color: #FFFFFF;
     background-image: url('img/main/test_drive/back.png.svg');
     background-position: center;
     background-repeat: repeat-y;
-    background-size: 100% 100%;
+    background-size: cover;
+    
     display: flex;
     justify-content: center;
 }
@@ -2014,6 +2049,7 @@ color: #FFFFFF;
     line-height: 120%;
     color: #4B4B4B;
     margin-bottom: 0;
+    
 }
 .testDrive-title .testDrive-title-line1{
     color: #FF5C38;
@@ -2026,24 +2062,29 @@ color: #FFFFFF;
     line-height: 140%;
     color: #333333;
     width: 40%;
+   
 }
 .testDriveInf{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 100px;
 }
 
 .testDrive-form-container{
     width: 100%;
-    background: #FFFFFF;
-    border: 1px solid #ECECEC;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
     
+
+    margin-bottom: 50px;
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .testDrive-Form{
     display: grid;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    border: 1px solid #ECECEC;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px 100px;
     grid-template-areas: "col1 col2" "col3 col4" "col5 col6";
