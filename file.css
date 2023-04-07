@@ -25,6 +25,7 @@ html {
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 .btn{
     border:0;
     cursor: pointer;
@@ -161,7 +162,8 @@ header {
 }
 .columns-header-item3 .columns-header-text .columns-header-line2{
     width: 130px;
-    font-family: inter;
+    font-family: 'Inter', sans-serif;
+;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -214,7 +216,8 @@ header {
 }
 .columns-header-item5 .columns-header-text .columns-header-line2{
 
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
+;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -662,8 +665,7 @@ header {
 
 .pluses-columns-text{
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     margin-left: 10px;
@@ -671,6 +673,7 @@ header {
 }
 .pluses-columns span{
     color: #FF5C38;
+    font-weight: 600;
 }
 @media screen and (max-width: 1300px) {
     .pluses-columns{
@@ -1026,7 +1029,8 @@ color: #4B4B4B;
     height: 450px;
 }
 .katalog-card-inf table .characteristica{
-    font-family: inter;
+    font-family: 'Inter', sans-serif;
+;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1044,7 +1048,8 @@ color: #4B4B4B;
 }
 
 .katalog-card-inf table .value{
-    font-family: inter;
+    font-family: 'Inter', sans-serif;
+;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -1067,7 +1072,7 @@ color: #4B4B4B;
     margin-top: 10px;
 }
 .katalog-card-inf .cost{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -1270,7 +1275,7 @@ color: #4B4B4B;
     color: #FFFFFF;
 }
 .podbor .podbor-subTitle{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -1321,13 +1326,13 @@ color: #4B4B4B;
     margin-top: -120px;
 }
 .podbor-columns-text{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     margin-top: 10px;
     /* or 22px */
-
+    
     text-align: center;
 
     color: #FFFFFF;
@@ -1340,6 +1345,7 @@ color: #4B4B4B;
 }
 .podbor-columns-text .podbor-columns-line{
     color: #FFC700;
+    font-weight: 700;
 }
 .podbor-columns {
   display: grid;
@@ -1654,7 +1660,7 @@ color: #4B4B4B;
   text-align: center;
 }
 .feedBack .column.imges .columnText{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -1769,7 +1775,7 @@ color: #4B4B4B;
     color: #FFFFFF;
 }
 .questions-subcolumns-text{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -1896,7 +1902,7 @@ color: #4B4B4B;
 }
 @media screen and (max-width: 400px) {
     .questions-title{
-        font-size: 24px;
+        font-size: 23px;
     }
     .questions-subcolumns img{
         width: 52px;
@@ -2024,13 +2030,11 @@ color: #FFFFFF;
 /* --------------------------------------------------------- */
 /* --------------------------------------------------------- */
 /* --------------------------------------------------------- */
-
 .testDrive{
     background-image: url('img/main/test_drive/back.png.svg');
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
-    
     display: flex;
     justify-content: center;
 }
@@ -2044,7 +2048,6 @@ color: #FFFFFF;
     line-height: 120%;
     color: #4B4B4B;
     margin-bottom: 0;
-    
 }
 .testDrive-title .testDrive-title-line1{
     color: #FF5C38;
@@ -2057,29 +2060,30 @@ color: #FFFFFF;
     line-height: 140%;
     color: #333333;
     width: 40%;
-   
 }
 .testDriveInf{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 100px;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .testDrive-form-container{
     width: 100%;
     
 
-    margin-bottom: 50px;
-    max-width: 1160px;
-    margin-left: auto;
-    margin-right: auto;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    
 }
 .testDrive-Form{
     display: grid;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
-    border: 1px solid #ECECEC;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px 100px;
     grid-template-areas: "col1 col2" "col3 col4" "col5 col6";
@@ -2164,6 +2168,9 @@ color: #FFFFFF;
     padding-top: 10px;
     padding-left: 5px;
 }
+::-webkit-input-placeholder {
+    color: #4B4B4B;
+}
 .testDriveInf .btn{
     font-family: 'FuturaDemi';
     font-style: normal;
@@ -2187,7 +2194,7 @@ color: #FFFFFF;
 @media screen and (max-width: 1100px) {
     .testDrive {
         background-position: 50% center;
-        background-size: auto 100%;
+        background-size: cover;
       }
 
 
@@ -2301,6 +2308,7 @@ color: #FFFFFF;
     }
 }
 
+
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
@@ -2390,7 +2398,8 @@ footer .columns-header-item3 .columns-header-text .columns-header-line1{
 }
 footer .columns-header-item3 .columns-header-text .columns-header-line2{
     width: 130px;
-    font-family: inter;
+    font-family: 'Inter', sans-serif;
+;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2412,7 +2421,8 @@ footer .columns-header-item5 .columns-header-text .columns-header-line1{
 }
 footer .columns-header-item5 .columns-header-text .columns-header-line2{
     color: #ffffff;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
+;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -2542,7 +2552,7 @@ footer .endColumn .endColumn-item h4{
     text-align: center;
 }
 footer .endColumn .notUnderlined{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
@@ -2554,7 +2564,7 @@ color: #FFFFFF;
 opacity: 0.43;
 }
 footer .endColumn .underlined{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
