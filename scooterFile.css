@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 .back{
     background: #FFFFFF;
     height: 60px;
@@ -157,8 +159,8 @@
 
 .description-imeges{
     background-color: #FFFFFF;
-    width: 570px;
-    height: 700px;
+    width: 568px;
+    height: 702px;
     border-radius: 30px;
     margin-right: 0;
     padding-right: 0;
@@ -212,7 +214,12 @@
 .description-imeges .owl-dot{
     width: 141px;
     height: 140px;
-    margin-right: 1px;
+    
+}
+.description-imeges .owl-theme .owl-dots{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .description-imeges .owl-dot:nth-child(1) {
     background-image: url(img/model/images/1.png.svg);
@@ -367,11 +374,11 @@
 
 }
 .description-addSer .first .number{
-    font-weight: 900;
+    font-weight: 600;
 
 }
 .description-addSer .second .number{
-    font-weight: 900;
+    font-weight: 600;
 
 }
 
@@ -616,7 +623,12 @@
     .description-imeges .owl-dot{
         width: 87px;
         height: 87px;
-        margin-right: 1.75px;
+        
+    }
+    .description-imeges .owl-dots{
+        display: flex;
+        justify-content: space-between;
+        
     }
     .description-table table{
         width: 315px;
