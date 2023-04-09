@@ -247,7 +247,7 @@
 ;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 120%;
     /* or 14px */
     height: 37px;
@@ -261,17 +261,20 @@
 
 }
 .description-table table .value{
-    font-family: 'Inter', sans-serif;
-;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 120%;
-    /* or 14px */
     height: 37px;
     justify-content: center;
     border-top: 1px solid #ECECEC;
     color: #353942;
+}
+.description-table table .value h4{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
 }
 .description-table table .value.first{
     border-top: 0px solid #ECECEC;
@@ -391,6 +394,7 @@
     width: 80%;
     margin-left: 6%;
     margin-top: 30px;
+    
 }
 
 .description-price-item1 h4{
