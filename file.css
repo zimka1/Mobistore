@@ -439,6 +439,9 @@ header {
     header .columns-header .menu1{
         display: none;
     }
+    .headerNav .columns-header-item3{
+        margin-top: -3px;
+    }
 /* ------------------------------------------------------------- */
 
     .topnav a{
