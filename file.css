@@ -294,18 +294,25 @@ header {
         gap:5px;
         text-align: center;
         justify-content: center;
-        margin-top: 23px;
+        margin-top: 18px;
     }
     header .columns-header-item4 .masenger {
         margin-right: 0;
     }
     header .columns-header-item4 .masenger img{
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
     }
     header .columns-header-item4 .masenger{
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
+    }
+    header .columns-header-item3 img.map{
+        width: 17px;
+        height: 22px;
+    }
+    header .columns-header-item3{
+        margin-top: 5px;
     }
 }
 
@@ -561,7 +568,7 @@ header {
 }
 @media screen and (max-width: 1067px) {
     .original {
-      background-position: 85% center;
+      background-position: 90% center;
     }
     .original{
         background-size: auto 100%;
