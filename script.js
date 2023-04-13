@@ -174,7 +174,7 @@ const cardsData = [];
 
 for (let i = 0; i < 6; i++) {
   cardsData.push({
-    name: 'Midway i-Max Pro',
+    name: 'Электросамокат Midway i-Max Pro',
     image: 'img/main/card/midway.png.svg',
     price: '38900 ₽',
     detailsUrl: 'scooter.html',
