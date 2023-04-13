@@ -164,3 +164,65 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+
+
+
+
+const cardsData = [];
+
+for (let i = 0; i < 6; i++) {
+  cardsData.push({
+    name: 'Midway i-Max Pro',
+    image: 'img/main/card/midway.png.svg',
+    price: '38900 ₽',
+    detailsUrl: 'scooter.html',
+    features: [
+      { title: 'Максимальная скорость', value: '35 км/час' },
+      { title: 'Пробег на одном заряде', value: 'до 45 км' },
+      { title: 'Мощность двигателя', value: '600 W' },
+      { title: 'Аккумулятор', value: '18000 mAh' },
+      { title: 'Вес самоката', value: '22 кг' },
+      { title: 'Максимальная нагрузка', value: '150 кг' },
+      { title: 'Гарантия', value: '1 год' },
+      { title: 'Колёса', value: '10 дм' }
+    ]
+  })
+}
+
+const cardTemplate = document.querySelector('#katalog-card-template');
+document.querySelectorAll('.katalog-columns').forEach(container => {
+  cardsData.forEach(data => {
+    const card = cardTemplate.content.cloneNode(true);
+    const cardImage = card.querySelector('.katalog-img');
+    const cardName = card.querySelector('.katalog-card-name');
+    const cardPrice = card.querySelector('.money');
+    const cardFeatures = card.querySelector('.midway');
+    const cardDetailsBtn = card.querySelector('.btn');
+
+    cardImage.src = data.image;
+    cardName.textContent = data.name;
+    cardPrice.textContent = data.price;
+
+    data.features.forEach(feature => {
+      const row = document.createElement('tr');
+      const titleCell = document.createElement('td');
+      const valueCell = document.createElement('td');
+      titleCell.className = 'characteristica';
+      valueCell.className = 'value';
+      titleCell.textContent = feature.title;
+      valueCell.textContent = feature.value;
+      row.appendChild(titleCell);
+      row.appendChild(valueCell);
+      cardFeatures.appendChild(row);
+    });
+
+    cardDetailsBtn.addEventListener('click', () => {
+      window.location.href = data.detailsUrl;
+    });
+
+    container.appendChild(card);
+    
+  });
+});
