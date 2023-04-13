@@ -496,19 +496,10 @@
     color: #4B4B4B;
 }
 .description-inp .btn{
-    background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
-    border-radius: 100px;
-    font-family: 'FuturaDemi';
-    font-style: normal;
-    font-weight: 400;
+
     font-size: 20px;
-    line-height: 120%;
-    /* identical to box height, or 24px */
-    text-align: center;
-    text-transform: uppercase;
     width: 90%;
     height: 60px;
-    color: #FFFFFF;
     display: block;
     margin-left: auto;
     margin-right: auto;

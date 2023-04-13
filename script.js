@@ -24,14 +24,10 @@ menu2.onclick = function myFunction(){
 
 
 
-function clearTextarea(element) {
-  if (element.value == element.defaultValue) {
-    element.value = '';
-  }
-}
 
 
 
+// Первый слайдер на главной странице 
 
 
 $(document).ready(function(){
@@ -65,7 +61,7 @@ $(document).ready(function(){
 });
 
 
-
+// Слайдер feedback
 
 
 $(document).ready(function(){
@@ -120,6 +116,7 @@ $(document).ready(function(){
  });
 });
 
+// Слайдер на странице с товаром 
 
 $(document).ready(function(){
   
@@ -131,6 +128,7 @@ $(document).ready(function(){
 });
 
 
+// Вопрос-ответ
 
 
 var acc = document.getElementsByClassName("accordionItemHeading");
@@ -167,7 +165,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-
+// Добавление карточек
 
 
 const cardsData = [];

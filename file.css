@@ -29,7 +29,16 @@ html {
 .btn{
     border:0;
     cursor: pointer;
-
+    font-family: 'FuturaDemi';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
+    border-radius: 100px;
 }
 body{
     margin: 0;
@@ -543,19 +552,10 @@ header {
     margin: 0;
 }
 .original-kontent .btn{
-    font-family: 'FuturaDemi';
-    font-style: normal;
-    font-weight: normal;
     margin-top: 25px;
     width: 280px;
     height: 70px;
-    font-size: 22px;
-    line-height: 120%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
-    border-radius: 100px;
+    
 }
 .original-kontent .btn:hover{
     box-shadow: 0px 0px 60px rgba(228, 117, 73, 0.734);
@@ -1129,22 +1129,12 @@ color: #4B4B4B;
     color: #4B4B4B;
 }
 .katalog-card-inf .btn{
-    font-family: 'FuturaDemi';
-    font-style: normal;
-    font-weight: normal;
-    /* margin-top: 25px; */
     width: 280px;
     height: 70px;
     font-size: 22px;
-    line-height: 120%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
     /* margin-bottom: 30px; */
     position: absolute;
     bottom: 3%;
-    background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
-    border-radius: 100px;
     box-shadow: 0px 0px 10px rgba(228, 117, 73, 0.734);
 }
 .katalog-card-inf .btn:hover{
@@ -2289,21 +2279,12 @@ color: #FFFFFF;
     color: #4B4B4B;
 }
 .testDriveInf .btn{
-    font-family: 'FuturaDemi';
-    font-style: normal;
-    font-weight: normal;
     margin-top: 25px;
     width: 90%;
     height: 70px;
     font-size: 22px;
-    line-height: 120%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
     margin-bottom: 30px;
     margin-top: 10px;
-    background: linear-gradient(93.63deg, #FF1887 0%, #FF5C38 100.8%);
-    border-radius: 100px;
 }
 .testDriveInf .btn:hover{
     box-shadow: 0px 0px 20px rgba(228, 117, 73, 0.734);
