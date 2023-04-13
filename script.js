@@ -1,4 +1,6 @@
 
+// Функции для открытия Navbar на маленьких экранах
+
 menu1.onclick = function myFunction(){
   var x = document.getElementById("myTopnav");
   var y = document.getElementById("columnTopnav");
