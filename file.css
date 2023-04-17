@@ -219,7 +219,8 @@ header {
     }
     header .columns-header {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+        justify-content: center;
     }
     header .columns-header-item4 {
         grid-column: 1;
@@ -229,6 +230,7 @@ header {
     header .columns-header-item3 {
         grid-column: 2;
         grid-row: 1;
+        
     }
     header .columns-header-item3 .firstBr{
         display: none;
@@ -345,6 +347,9 @@ header {
     .topnav a{
         padding: 16px 16px;
     }
+    .topnav{
+        margin-top: 0;
+    }
     header .headerNav .columns-header {
         height: 70px;
         background-color: #ffffff;
@@ -360,7 +365,7 @@ header {
 
     }
     .headerNav{
-        height: 80px;
+        height: 70px;
         border-bottom: 1px solid #C4C4C4;
     }
     .headerNav .columns-header-item1:nth-child(1) {
