@@ -132,7 +132,9 @@
     .description-titleAddSer{
         margin-top: 10px;
     }
-    
+    .description-columns-item5{
+        padding-bottom: 80px;
+    }
 }
 @media screen and (max-width: 580px){
     .description-columns-item2 h4{
