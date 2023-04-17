@@ -639,7 +639,7 @@
     }
     .description-table{
         width: 355px;
-        height: 331px;
+        height: 345px;
     }
 
 
@@ -663,7 +663,7 @@
         grid-template-rows: repeat(2, auto);
         width: 90%;
         margin-left: 5%;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .description-addSer .first h4{
@@ -688,7 +688,7 @@
         display: flex;
         align-items: center;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
     .description-price{
         display: grid;
@@ -772,5 +772,7 @@
     .possibilities-text span{
         font-weight: 600;
     }
-        
+    .description-registration .unvis{
+        height: 2px;
+    } 
 }
