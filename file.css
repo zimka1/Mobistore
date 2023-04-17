@@ -88,6 +88,9 @@ header {
     grid-template-areas: "col1 col2 col3 col4 col5";
     justify-items: center;
     align-items: center;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 0;
