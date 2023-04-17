@@ -84,6 +84,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 10px;
     }
     .description-columns-item1 {
        
@@ -127,6 +128,9 @@
     .description-columns-item5 {
         grid-column: 1;
         grid-row: 5;
+    }
+    .description-titleAddSer{
+        margin-top: 10px;
     }
     
 }
@@ -581,7 +585,7 @@
     .description-columns-item2 h4{
         font-size: 32px;
         width: 259px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .description-imeges{
         width: 355px;
@@ -650,6 +654,7 @@
     .description-titleAddSer{
         font-size: 16px;
         padding-left: 20px;
+        
         margin-bottom: 10px;
     }
     .description-addSer{

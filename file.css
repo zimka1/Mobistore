@@ -343,7 +343,7 @@ header {
 .headerNav .columns-header-item2{
     display: none;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1000px) {
     .topnav a{
         padding: 16px 16px;
     }
