@@ -45,6 +45,7 @@
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
+    overflow-x: hidden;
 }
 
 .description-columns{
