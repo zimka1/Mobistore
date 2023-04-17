@@ -120,7 +120,7 @@ header {
     /* or 32px */
     margin: 0;
     text-transform: uppercase;
-
+    cursor: pointer;
     color: #2F2C2D;
 }
 .columns-header-item1 .columns-header-text .scooters{
