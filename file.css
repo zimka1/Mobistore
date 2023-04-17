@@ -450,6 +450,7 @@ header {
         position: relative;
         margin-top: 0;
         border-radius: 0px 0px 20px 20px;
+        z-index: 200;
     }
     .topnav.topnav.responsive a:nth-child(9){
         border-radius: 0px 0px 20px 20px;
@@ -2411,6 +2412,7 @@ footer {
     background-color: #3C3D46;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
+
 @media screen and (max-width: 980px) {
     footer {
         
@@ -2428,105 +2430,26 @@ footer {
 footer .columns-header{
     height: 100px;
 }
-
-
-/*---------------------------------------------------------------*/
-footer .columns-header-item1 .columns-header-text .mobistor{
-    font-family: 'FuturaExtra';
-    font-weight: 800;
-    font-size: 32px;
-    text-transform: uppercase;
-    color: #ffffff;
-
+footer .columns-header-item1{
+    border-right: 1px solid #676767;
 }
-footer .columns-header-item1 .columns-header-text .scooters{
-    font-family: 'FuturaBold';
-    font-weight: 400;
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #F55522;
-
+footer .columns-header-item1 .mobistor{
+    color: #FFFFFF;
 }
-/*---------------------------------------------------------------*/
-
-footer .columns-header-item2 .columns-header-text .columns-header-line1{
-    font-family: 'FuturaDemi';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-
+footer .columns-header-item2 .columns-header-text{
+    color: #ffffff
+}
+footer .columns-header-item3 .columns-header-line1{
     color: #ffffff;
 }
-footer .columns-header-item2 .columns-header-text .columns-header-line2{
-    font-family: 'FuturaDemi';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
+footer .columns-header-item3 .columns-header-line2{
     color: #ffffff;
 }
-footer .columns-header-item2 .columns-header-text .columns-header-line3{
-    font-family: 'FuturaBook';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    color: #FF5C38;
-}
-/*---------------------------------------------------------------*/
-footer .columns-header-item3 .columns-header-text .columns-header-line1{
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: 'FuturaBold';
-    font-size: 12px;
-
-
-}
-footer .columns-header-item3 .columns-header-text .columns-header-line2{
-    width: 130px;
-    font-family: 'Inter', sans-serif;
-;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    font-weight: 400;
+footer .columns-header-item5 .columns-header-line1{
     color: #ffffff;
 }
-/*---------------------------------------------------------------*/
-
-footer .columns-header-item5 .columns-header-text .columns-header-line1{
-    font-family: 'FuturaDemi';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: right;
-    text-transform: uppercase;
+footer .columns-header-item5 .columns-header-line2{
     color: #ffffff;
-
-
-}
-footer .columns-header-item5 .columns-header-text .columns-header-line2{
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    text-align: right;
-
-    text-align: center;
-
-}
-
-footer .columns-header{
-    border-bottom: 1px solid #C4C4C4;
-}
-footer .columns-header-item4 .masenger{
-    width: 42px;
-    height: 42px;
-    border-radius: 100px;
-}
-footer .columns-header-item4 .masenger:hover{
-    border:1px solid #FF8329
 }
 @media screen and (max-width: 980px) {
     
@@ -2537,7 +2460,8 @@ footer .columns-header-item4 .masenger:hover{
         grid-template-areas: "col1" "col2" "col3" "col4" "col5";
         gap: 20px;
         height: 500px;
-        padding-top: 20px;
+        padding-top: 40px;
+        padding-bottom: 0px;
     }
     footer .columns-header-item1:nth-child(1) {
         grid-area: col1;
@@ -2556,7 +2480,7 @@ footer .columns-header-item4 .masenger:hover{
     }
     footer .columns-header-item5{
         display: block;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
     footer .columns-header-item5 img{
         display: block;
@@ -2570,7 +2494,7 @@ footer .columns-header-item4 .masenger:hover{
         margin-left: 0;
         margin-right: auto;
         margin-left: auto;
-        line-height: 50%;
+        line-height: 120%;
     }
     footer .columns-header-item3{
         display: block;
@@ -2582,16 +2506,14 @@ footer .columns-header-item4 .masenger:hover{
         
     }
     footer .columns-header-item4 .masenger{
-        margin-right: 0;
+        margin-right: 10px;
     }
     footer .columns-header-item4 .masenger:hover{
         color:#FF8329
     }
     footer .columns-header-item4{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap:10px;
-       
+        display: flex;
+        
     }
     footer .columns-header-item3 .columns-header-text{
         margin-top: 10px;
@@ -2599,7 +2521,8 @@ footer .columns-header-item4 .masenger:hover{
         margin-left: 0;
         margin-right: auto;
         margin-left: auto;
-        line-height: 50%;
+        line-height: 140%;
+        width: 263px;
         text-align: center;
     }
     .brUnvis{
@@ -2607,18 +2530,24 @@ footer .columns-header-item4 .masenger:hover{
     }
     footer .columns-header-item2 .columns-header-text{
         text-align: center;
-        line-height: 50%;
+        line-height: 100%;
     }
     footer .columns-header-item1 .columns-header-text{
         text-align: center;
         line-height: 80%;
+    }
+    footer .columns-header .columns-header-item1 .columns-header-text .mobistor{
+        font-size: 32px;
+    }
+    footer .columns-header .columns-header-item1 .scooters{
+        font-size: 24px;
     }
 }
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 footer .endColumn{
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -2626,6 +2555,7 @@ footer .endColumn{
     grid-template-areas: "col1 col1 col2 col2";
     justify-content: center;
     align-items: center;
+    border-top: 1px solid #676767;
 }
 footer .endColumn .endColumn-item:nth-child(1) {
     grid-area: col1;
@@ -2664,7 +2594,7 @@ opacity: 0.43;
 
 @media screen and (max-width: 980px) {
     footer .endColumn{
-        width: 80%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         display: grid;

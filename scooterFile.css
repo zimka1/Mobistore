@@ -245,7 +245,6 @@
 
 .description-table table .characteristica{
     font-family: 'Inter', sans-serif;
-;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -576,6 +575,9 @@
 
 
 @media screen and (max-width: 580px){
+    .description-name{
+        margin-bottom: 0;
+    }
     .description-columns-item2 h4{
         font-size: 32px;
         width: 259px;
@@ -586,6 +588,7 @@
         height: 436px;
         border-radius: 20px;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
     .description-imeges .power-bg{
 
