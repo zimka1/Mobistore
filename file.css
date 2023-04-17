@@ -45,6 +45,10 @@ body{
     padding: 0;
     background-color: #E5E5E5;
 }
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
 header {
     width: 100%;
     height: 15%;
@@ -71,191 +75,148 @@ header {
     font-size: 1.5em;
 }
 }
-/* .columns-header {
-    display: grid;
-    grid-template-columns: repeat(5, 2fr);
-    width: 100%;
-    gap: 30px;
-    padding: 0 0 0 20px;
-    margin-top: 0px;
-    height: 55px;
-    justify-content: center; 
-   
-} */
-.columns-header {
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.columns-header{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "col1 col2 col3 col4 col5";
-    justify-items: center;
     align-items: center;
+    justify-content: center;
     max-width: 1400px;
+    height: 94px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
-
-
-
-/*---------------------------------------------------------------*/
+.columns-header-item1{
+    display: flex;
+    border-right: 1px solid #F0F0F0;
+    justify-content: center;
+}
+.columns-header-item2{
+    display: flex;
+    justify-content: center;
+}
+.columns-header-item3{
+    display: flex;
+    justify-content: center;
+}
+.columns-header-item4{
+    display: flex;
+    justify-content: center;
+}
+.columns-header-item5{
+    display: flex;
+    justify-content: center;
+}
 .columns-header-item1 .columns-header-text{
-    margin: 0;
-    height: 55px;
-    line-height: 0.5;
-    margin-top: 10px;
-    
-}
-.columns-header-item1 .columns-header-text .mobistor{
     font-family: 'FuturaExtra';
-    font-weight: 800;
+    font-style: italic;
+    font-weight: 400;
     font-size: 32px;
+    line-height: 70%;
+    /* or 32px */
+    margin: 0;
     text-transform: uppercase;
-    color: #2F2C2D;
 
+    color: #2F2C2D;
 }
 .columns-header-item1 .columns-header-text .scooters{
-    font-family: 'FuturaBold';
-    font-weight: 400;
     font-size: 24px;
-    text-transform: uppercase;
     color: #F55522;
-
 }
-/*---------------------------------------------------------------*/
 .columns-header-item2 .columns-header-text{
+    font-family: 'FuturaBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    /* or 17px */
     margin: 0;
-    height: 55px;
-    line-height: 0.2;
-
-}
-.columns-header-item2 .columns-header-text .columns-header-line1{
-    font-family: 'FuturaDemi';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-
     color: #353942;
 }
-.columns-header-item2 .columns-header-text .columns-header-line2{
-    font-family: 'FuturaDemi';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    color: #353942;
-}
-.columns-header-item2 .columns-header-text .columns-header-line3{
+.columns-header-item2 .columns-header-line3{
     font-family: 'FuturaBook';
-    font-style: normal;
-    font-weight: 700;
     font-size: 12px;
-    color: #FF5C38;
+    color: #F55522;
 }
-/*---------------------------------------------------------------*/
 .columns-header-item3{
     display: flex;
     align-items: center;
 }
 .columns-header-item3 .columns-header-text{
-    margin: 0;
-    
-    line-height: 0.2;
-    margin-left: 20px;
-}
-.columns-header-item3 .columns-header-text .columns-header-line1{
-    color: #353942;
-    text-transform: uppercase;
-    font-weight: 700;
     font-family: 'FuturaBold';
-    font-size: 12px;
-
-
-}
-.columns-header-item3 .columns-header-text .columns-header-line2{
-    width: 130px;
-    font-family: 'Inter', sans-serif;
-;
     font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    font-weight: 400;
-
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    width: 139px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #353942;
+    margin-left: 19px;
 }
-/*---------------------------------------------------------------*/
-
-.columns-header-item4{
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-.columns-header-item4 .masenger{
-    margin-right: 10px
-}
-.columns-header-item4 .masenger{
-    width: 42px;
-    height: 42px;
-    border-radius: 100px;
-}
-.columns-header-item4 .masenger:hover{
-    border:1px solid #FF8329
+.columns-header-item3 .columns-header-line2{
+    font-family: 'FuturaBook';
+    text-transform:none;
+    color: #353942;
 }
 .columns-header-item4 .masenger.call{
     display: none;
 }
-/*---------------------------------------------------------------*/
-
+.columns-header-item4 .masenger{
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+}
 .columns-header-item5{
     display: flex;
     align-items: center;
 }
 .columns-header-item5 .columns-header-text{
-    line-height: 0.2;
-    margin: 0;
-    margin-left: 20px;
-
-}
-.columns-header-item5 .columns-header-text .columns-header-line1{
     font-family: 'FuturaBold';
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
-    text-align: right;
+    line-height: 140%;
+    text-align: center;
     text-transform: uppercase;
     color: #353942;
-
-
+    width: 180px;
+    margin: 0;
+    margin-left: 19px;
 }
-.columns-header-item5 .columns-header-text .columns-header-line2{
-
-    font-family: 'Inter', sans-serif;
-;
+.columns-header-item5 .columns-header-line2{
+    font-family: 'Inter';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 12px;
-    text-align: right;
+    line-height: 140%;
+    /* identical to box height, or 17px */
+    text-transform: none;
     color: #353942;
-    text-align: center;
 
 }
-.columns-header {
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-
 @media screen and (max-width: 980px) {
     header {
         
         height: 5%;
         font-size: 1.5em;
     }
+    .columns-header{
+        height: auto;
+    }
     header .columns-header-item3 .columns-header-text{
         margin: 0;
-        line-height: 0.6;
+        line-height: 140%;
         margin-left: 10px;
+    }
+    .columns-header{
+        padding-top: 10px;
+        padding-bottom: 10px;
+
     }
     header .columns-header {
         display: grid;
@@ -269,6 +230,9 @@ header {
     header .columns-header-item3 {
         grid-column: 2;
         grid-row: 1;
+    }
+    header .columns-header-item3 .firstBr{
+        display: none;
     }
     header .columns-header .columns-header-item3 .columns-header-line1{
         display: none;
@@ -297,27 +261,31 @@ header {
     header .columns-header-item4 .masenger{
         width: 42px;
         height: 42px;
+        
     }
 }
 @media screen and (max-width: 500px) {
     header .columns-header-item4{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, auto);
         gap:5px;
         text-align: center;
         justify-content: center;
-        margin-top: 18px;
+    }
+    .columns-header{
+        padding-top: 6px;
+        padding-bottom: 6px;
     }
     header .columns-header-item4 .masenger {
         margin-right: 0;
     }
     header .columns-header-item4 .masenger img{
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
     header .columns-header-item4 .masenger{
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
     header .columns-header-item3 img.map{
         width: 17px;
@@ -327,7 +295,7 @@ header {
         margin-top: 5px;
     }
 }
-
+/*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
@@ -336,7 +304,6 @@ header {
     justify-content: center;
     width: 100%;
     height: 42px;
-    margin-top: 15px;
     border-top: solid 1px #C4C4C4;
     border-bottom: solid 1px #C4C4C4;
 
@@ -362,6 +329,9 @@ header {
 .topnav a:hover{
     color: #FF8329;
 }
+.headerNav .columns-header{
+    display: none;
+}
 .headerNav .columns-header-item3{
     display: none;
 }
@@ -382,7 +352,6 @@ header {
         gap: 0px;
         justify-items: center;
         align-items: center;
-        margin-top: 10px;
         padding-top: 0;
         margin-bottom: 0;
         padding-bottom: 0;
@@ -394,6 +363,7 @@ header {
     }
     .headerNav .columns-header-item1:nth-child(1) {
         grid-area: col1;
+        
     }
     
     .headerNav .columns-header-item2:nth-child(2) {
@@ -403,6 +373,10 @@ header {
     .headerNav .columns-header-item3:nth-child(3) {
         grid-area: col3;
     }
+    .headerNav .columns-header-item3 a{
+        width: 42px;
+        height: 42px;
+    } 
     .headerNav .columns-header-item2 {
         grid-column: 2;
         grid-row: 1;
@@ -414,7 +388,7 @@ header {
     }
     header .headerNav .columns-header-item1{
         display: block;
-        
+        border-right: 0;
     }
     .columns-header-item1 .columns-header-text .mobistor{
         font-size: 24px;
@@ -424,24 +398,20 @@ header {
     }
     .headerNav .columns-header-item1 .columns-header-text{
         line-height: 20px;
-        margin-top: 5px;
     }
     header .headerNav .columns-header-item2{
         display: block;
     }
     header .headerNav .columns-header-item2 .columns-header-text{
-        line-height: 10px;
+        line-height: 120%;
     }
     .headerNav .columns-header-item2 .columns-header-line1{
-        line-height: 10px;
         font-size: 12px;
     }
     .headerNav .columns-header-item2 .columns-header-line2{
-        line-height: 10px;
         font-size: 12px;
     }
     .headerNav .columns-header-item2 .columns-header-line3{
-        line-height: 10px;
         font-size: 10px;
     }
     header .headerNav .columns-header-item3{
@@ -451,11 +421,9 @@ header {
     header .columns-header .menu1{
         display: none;
     }
-    .headerNav .columns-header-item3{
-        margin-top: -5px;
-    }
 /* ------------------------------------------------------------- */
 
+    
     .topnav a{
         display: none;
     }
@@ -469,12 +437,16 @@ header {
     nav{
         width: 100%;
         height: 70px;
+        
     }
     .topnav.responsive{
         position: relative;
         margin-top: 0;
+        border-radius: 0px 0px 20px 20px;
     }
-    
+    .topnav.topnav.responsive a:nth-child(9){
+        border-radius: 0px 0px 20px 20px;
+    }
     .topnav.responsive a{
         border-bottom: solid 1px #C4C4C4;
         border-top: solid 1px #C4C4C4;
@@ -482,7 +454,6 @@ header {
         float: none;
         display: block;
         text-align: left;
-        background: #fff;
         z-index: 1;
         position: relative;
     }
