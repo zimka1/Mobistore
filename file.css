@@ -936,7 +936,7 @@ header {
 }
 .msscooter .slider {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
@@ -1933,7 +1933,7 @@ header {
 }
 .feedBack .slider {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
