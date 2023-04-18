@@ -170,6 +170,10 @@ header {
     width: 42px;
     height: 42px;
     margin-right: 10px;
+    border-radius: 100px;
+}
+.columns-header-item4 .masenger:hover{
+    border: 1.5px solid #F55522;
 }
 .columns-header-item5{
     display: flex;
