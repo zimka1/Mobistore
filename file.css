@@ -1933,7 +1933,7 @@ header {
 }
 .feedBack .slider {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
