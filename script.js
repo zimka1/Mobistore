@@ -32,102 +32,92 @@ menu2.onclick = function myFunction(){
 // Первый слайдер на главной странице 
 
 
-$(document).ready(function(){
-  
-  const slider = $("#slider").owlCarousel({
-    items: 1,
-    loop: true,
-    nav: true,
-    mouseDrag:true,
-    navText: [
-      '<button class="prev" style=""><img src="img/slider/back.png.svg" alt=""></button>',
-        '<button class="next"><img src="img/slider/next.png.svg" alt=""></button>'
-    ],
-    margin:0,
-    stagePadding: 0,
-    responsive:{
-      400: {
-        margin:10,
-        stagePadding: 0
-      },
-      600: {
-        margin:0,
-        stagePadding: 0
-      },
-      900: {
-          margin:20,
-        stagePadding: 30
-      }
-    }
- });
+
+const slider = document.querySelector('.msscooter .slider');
+const slides = slider.querySelectorAll('.msscooter .slide');
+const prevBtn = document.querySelector('.msscooter .slider-prev');
+const nextBtn = document.querySelector('.msscooter .slider-next');
+const dots = document.querySelectorAll('.msscooter .slider-dot');
+
+let currentSlide = 0;
+
+function goToSlide(n) {
+  slider.scrollLeft = slides[n].offsetLeft;
+  currentSlide = n;
+  setActiveDot();
+}
+
+function nextSlide() {
+  if (currentSlide === slides.length - 1) {
+    goToSlide(0);
+  } else {
+    goToSlide(currentSlide + 1);
+  }
+}
+
+function prevSlide() {
+  if (currentSlide === 0) {
+    goToSlide(slides.length - 1);
+  } else {
+    goToSlide(currentSlide - 1);
+  }
+}
+
+function setActiveDot() {
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentSlide);
+  });
+}
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    goToSlide(index);
+  });
 });
+
+prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
+
+goToSlide(0);
+
 
 
 // Слайдер feedback
 
 
-$(document).ready(function(){
-  
-  const slider = $("#slider2").owlCarousel({
-    items: 4,
-    loop: true,
-    nav: true,
-    mouseDrag:true,
-    navText: [
-      '<button class="prev" style=""><img src="img/slider/back.png.svg" alt=""></button>',
-        '<button class="next"><img src="img/slider/next.png.svg" alt=""></button>'
-    ],
-    dots:0,
-    margin:0,
-    stagePadding: 0,
-    responsive:{
-      300:{
-        items:1,
-        margin: -90,
-        stagePadding:0
-      },
-      400:{
-        items:1,
-        margin: -140,
-        stagePadding:0
-      },
-      500:{
-        items:3,
-        margin:250,
-        stagePadding:0
-      },
-      600:{
-        items:3,
-        margin:250,
-        stagePadding:0
-      },
-      730: {
-        items: 3
-      },
-      1000: {
-        items: 4,
+const slider2 = document.querySelector('.feedBack  .slider');
+const slides2 = slider2.querySelectorAll('.feedBack  .slide');
+const prevBtn2 = document.querySelector('.feedBack  .slider-prev');
+const nextBtn2 = document.querySelector('.feedBack  .slider-next');
 
-      },
-      1900: {
-        items:4,
-        margin: 0,
-        stagePadding:0
-       
-      }
-    }
- });
-});
+let currentSlide2 = 0;
 
-// Слайдер на странице с товаром 
+function goToSlide2(n) {
+  slider2.scrollLeft = slides2[n].offsetLeft;
+  currentSlide2 = n;
+}
 
-$(document).ready(function(){
-  
-  const slider = $("#slider3").owlCarousel({
-    items: 1,
-    loop: true,
-    mouseDrag:true,
- });
-});
+function nextSlide2() {
+  if (currentSlide2 === slides2.length - 4) {
+    goToSlide2(0);
+  } else {
+    goToSlide2(currentSlide2 + 1);
+  }
+}
+
+function prevSlide2() {
+  if (currentSlide2 === 0) {
+    goToSlide2(slides2.length - 1);
+  } else {
+    goToSlide2(currentSlide2 - 1);
+  }
+}
+
+
+prevBtn2.addEventListener('click', prevSlide2);
+nextBtn2.addEventListener('click', nextSlide2);
+
+goToSlide2(0);
 
 
 // Вопрос-ответ
@@ -226,3 +216,12 @@ document.querySelectorAll('.katalog-columns').forEach(container => {
     
   });
 });
+
+
+
+
+
+
+
+
+

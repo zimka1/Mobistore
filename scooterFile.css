@@ -77,7 +77,7 @@
     grid-row: 4;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
     .description-columns{
         justify-content: center;
     }
@@ -167,8 +167,8 @@
 
 .description-imeges{
     background-color: #FFFFFF;
-    width: 568px;
-    height: 702px;
+    width: 570px;
+    height: 695px;
     border-radius: 30px;
     margin-right: 0;
     padding-right: 0;
@@ -203,51 +203,106 @@
 
     color: #FFFFFF;
 }
-.description-imeges .owl-carousel{
-    padding-top: 40px;
-    background-color: transparent;
-}
-.description-imeges .slide img{
-    width: 70%;
-    height: 70%;
+
+.description-imeges .slider-container {
+    position: relative;
+    width: 568px;
     margin-left: auto;
     margin-right: auto;
 }
-.description-imeges .owl-theme .owl-dots .owl-dot span {
-    display: none;
-}
-.owl-theme .owl-nav.disabled+.owl-dots{
-    margin-top: 60px;
-}
-.description-imeges .owl-dot{
-    width: 141px;
-    height: 140px;
-    
-}
-.description-imeges .owl-theme .owl-dots{
-    width: 100%;
+
+.description-imeges .slider-nav {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
-}
-.description-imeges .owl-dot:nth-child(1) {
-    background-image: url(img/model/images/1.png.svg);
-    background-size: 100% 100%;
+    width: 100%;
 }
 
-.description-imeges .owl-dot:nth-child(2) {
-    background-image: url(img/model/images/2.png.svg);
-    background-size: 100% 100%;
+.description-imeges .slider-prev,
+.description-imeges .slider-next {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+.description-imeges .slider-prev img:hover{
+    filter: drop-shadow(0px 0px 10px #ff7700);
+}
+.description-imeges .slider-next img:hover{
+    filter: drop-shadow(0px 0px 10px #ff7700);
+}
+.description-imeges .slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    /* убрать полоску прокрутки в Firefox */
+    -ms-overflow-style: none;
+    /* убрать полоску прокрутки в IE 10+ */
 }
 
-.description-imeges .owl-dot:nth-child(3) {
-    background-image: url(img/model/images/3.png.svg);
-    background-size: 100% 100%;
+.description-imeges .slider::-webkit-scrollbar {
+    display: none;
+    /* убрать полоску прокрутки в Chrome, Safari и Opera */
 }
 
-.description-imeges .owl-dot:nth-child(4) {
-    background-image: url(img/model/images/4.png.svg);
-    background-size: 100% 100%;
+.description-imeges .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
 }
+
+.description-imeges .slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.description-imeges .slider-dot {
+    width: 141px;
+    height: 140px;
+    background-color: #ccc;
+    margin: 0 0.5px;
+    cursor: pointer;
+}
+.description-imeges .slider-dot:nth-child(1){
+    border-radius: 0px 0px 0px 30px;
+}
+.description-imeges .slider-dot:nth-child(4){
+    border-radius: 0px 0px 30px 0px;
+}
+.description-imeges .slider-dot.active {
+    border: 1px solid #000000;
+}
+
+@media screen and (max-width: 580px) {
+    .description-imeges .slider-container {
+        width: 355px;
+    }
+    .description-imeges .slide{
+        height: 314px;
+    }
+    .description-imeges .slide img{
+        height: 279px;
+        width: 268px;
+    }
+    .description-imeges .slider-dot{
+        width: 87px;
+        height: 87px;
+        margin: 0 1px;
+    }
+    .description-imeges .slider-dots {
+        margin-top: 0px;
+    }
+    .description-imeges .slider-dot.active {
+        border: 1px solid #000000;
+    }
+}
+
 
 
 .description-table table .characteristica{
@@ -593,7 +648,7 @@
     .description-imeges{
         width: 355px;
         height: 436px;
-        border-radius: 20px;
+        border-radius: 25px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -614,29 +669,7 @@
         margin-top: 3px;
         
     }
-    .description-imeges .owl-carousel{
-        padding-top: 20px;
-        background-color: transparent;
-    }
-    .description-imeges .slide img{
-        width: 70%;
-        height: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .owl-theme .owl-nav.disabled+.owl-dots{
-        margin-top: 35px;
-    }
-    .description-imeges .owl-dot{
-        width: 87px;
-        height: 87px;
-        
-    }
-    .description-imeges .owl-dots{
-        display: flex;
-        justify-content: space-between;
-        
-    }
+    
     .description-table table{
         width: 315px;
     }
