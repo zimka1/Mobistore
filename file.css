@@ -184,6 +184,7 @@ header {
     margin-left: 19px;
 }
 
+
 .columns-header-item3 .columns-header-line2 {
     font-family: 'FuturaBook';
     text-transform: none;
@@ -348,6 +349,13 @@ header {
     header .columns-header-item3 img.map {
         width: 17px;
         height: 22px;
+    }
+    header .columns-header-item3 a{
+        width: 17px;
+        height: 22px;
+    }
+    header .columns-header-item3 .columns-header-text{
+        margin-top: 0px;
     }
 }
 
