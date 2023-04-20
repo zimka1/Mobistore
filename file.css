@@ -199,9 +199,18 @@ header {
     width: 42px;
     height: 42px;
     margin-right: 10px;
+    box-sizing: border-box;
     border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+    border: 1px solid #EAEAEA;
 }
-
+.columns-header-item4 .masenger img{
+    width: 24px;
+    height: 24px;
+}
 .columns-header-item4 .masenger:hover {
     border: 1.5px solid #F55522;
 }
@@ -304,11 +313,14 @@ header {
 
     header .columns-header .columns-header-item4 .masenger.call {
         display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     header .columns-header-item4 .masenger img {
-        width: 42px;
-        height: 42px;
+        width: 24px;
+        height: 24px;
     }
 
     header .columns-header-item4 .masenger {
@@ -337,8 +349,8 @@ header {
     }
 
     header .columns-header-item4 .masenger img {
-        width: 35px;
-        height: 35px;
+        width: 20px;
+        height: 20px;
     }
 
     header .columns-header-item4 .masenger {
@@ -591,7 +603,7 @@ header {
 }
 
 .original {
-    background-image: url('img/main/original.png.svg');
+    background-image: url('img/main/original.png');
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -618,7 +630,7 @@ header {
 
 .original-kontent .original-text1 span {
     color: #FFFFFF;
-    background-image: url("img/main/line.png.svg");
+    background-image: url("img/main/line.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center bottom;
@@ -1402,7 +1414,7 @@ header {
 }
 
 .podbor {
-    background-image: url('img/main/podbor.png.svg');
+    background-image: url('img/main/podbor.jpg');
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -1447,7 +1459,7 @@ header {
 .podbor-columns-item4-bg {
     width: 305px;
     height: 305px;
-    background-image: url("img/main/podbor/4.png.svg");
+    background-image: url("img/main/podbor/4.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     border: 0;
@@ -2063,7 +2075,7 @@ header {
 
 .questions {
     margin-top: 120px;
-    background-image: url('img/main/questions/back.png.svg');
+    background-image: url('img/main/questions/back.jpg');
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -2383,7 +2395,7 @@ header {
 /* --------------------------------------------------------- */
 /* --------------------------------------------------------- */
 .testDrive {
-    background-image: url('img/main/test_drive/back.png.svg');
+    background-image: url('img/main/test_drive/back.jpg');
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -2766,6 +2778,10 @@ footer .columns-header-item5 .columns-header-line1 {
 
 footer .columns-header-item5 .columns-header-line2 {
     color: #ffffff;
+}
+footer .columns-header-item4 .masenger {
+    background: #3C3D46;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (max-width: 980px) {
