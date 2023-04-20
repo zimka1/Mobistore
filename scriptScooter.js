@@ -13,17 +13,64 @@ function goToSlide2(n) {
 }
 
 function nextSlide2() {
-  if (currentSlide2 === slides2.length - 4) {
-    goToSlide2(0);
+  if(window.innerWidth >= 1400){
+    if (currentSlide2 === slides2.length - 4) {
+      goToSlide2(0);
+    } else {
+      goToSlide2(currentSlide2 + 1);
+    }
+  } else if(window.innerWidth >= 950){
+    if (currentSlide2 === slides2.length - 3) {
+      goToSlide2(0);
+    } else {
+      goToSlide2(currentSlide2 + 1);
+    }
+  } else if(window.innerWidth >= 600){
+    if (currentSlide2 === slides2.length - 2) {
+      goToSlide2(0);
+    } else {
+      goToSlide2(currentSlide2 + 1);
+    }
   } else {
-    goToSlide2(currentSlide2 + 1);
+    if (currentSlide2 === slides2.length - 1) {
+      goToSlide2(0);
+    } else {
+      goToSlide2(currentSlide2 + 1);
+    }
   }
 }
 
 function prevSlide2() {
   if (currentSlide2 === 0) {
-    goToSlide2(slides2.length - 1);
+    if(window.innerWidth >= 1400){
+      goToSlide2(slides2.length - 4);
+    } else if(window.innerWidth >= 950){
+      goToSlide2(slides2.length - 3);
+    } else if(window.innerWidth >= 600){
+      goToSlide2(slides2.length - 2);
+    } else {
+      goToSlide2(slides2.length - 1);
+    }
+
   } else {
+    if(window.innerWidth >= 1400 ){
+      if (currentSlide2 > slides2.length - 4) {
+        currentSlide2 = slides2.length - 4;
+      }
+    } else if(window.innerWidth >= 950 ){
+      if (currentSlide2 > slides2.length - 3) {
+        currentSlide2 = slides2.length - 3;
+      }
+    } else if(window.innerWidth >= 650 ){
+      if (currentSlide2 > slides2.length - 2) {
+        currentSlide2 = slides2.length - 2;
+      }
+    } else{
+      if (currentSlide2 > slides2.length - 1) {
+        currentSlide2 = slides2.length - 1;
+      }
+    }
+    
     goToSlide2(currentSlide2 - 1);
   }
 }
