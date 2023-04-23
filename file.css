@@ -1007,6 +1007,9 @@ header {
         height: 100px;
         margin: 0 5px;
     }
+    .msscooter .slider-dot.active {
+        border: 1.5px solid #000000;
+    }
 }
 @media screen and (max-width: 600px) {
     .msscooter .slider-nav{
@@ -2878,7 +2881,11 @@ footer .columns-header-item4 .masenger {
 
     footer .columns-header-item2 .columns-header-text {
         text-align: center;
-        line-height: 100%;
+        line-height: 132%;
+    }
+    footer .columns-header-item2 .columns-header-line3 {
+        text-align: center;
+        line-height: 154%;
     }
 
     footer .columns-header-item1 .columns-header-text {
