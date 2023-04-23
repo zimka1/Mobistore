@@ -88,6 +88,8 @@ const slides3 = slider3.querySelectorAll('.description-imeges .slide');
 const dots3 = document.querySelectorAll('.description-imeges .slider-dot');
 
 let currentSlide3 = 0;
+let startX = 0;
+let endX = 0;
 
 function goToSlide3(n) {
   slider3.scrollLeft = slides3[n].offsetLeft;
@@ -107,6 +109,22 @@ dots3.forEach((dot, index) => {
   });
 });
 
+slider3.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+});
+
+slider3.addEventListener('touchmove', (e) => {
+  endX = e.touches[0].clientX;
+});
+
+slider3.addEventListener('touchend', () => {
+  if (startX - endX > 50 && currentSlide3 < slides3.length - 1) {
+    currentSlide3++;
+  } else if (endX - startX > 50 && currentSlide3 > 0) {
+    currentSlide3--;
+  }
+  goToSlide3(currentSlide3);
+});
 
 goToSlide3(0);
 

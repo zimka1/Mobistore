@@ -40,6 +40,8 @@ const nextBtn = document.querySelector('.msscooter .slider-next');
 const dots = document.querySelectorAll('.msscooter .slider-dot');
 
 let currentSlide = 0;
+let startX = 0;
+let endX = 0;
 
 function goToSlide(n) {
   slider.scrollLeft = slides[n].offsetLeft;
@@ -78,7 +80,25 @@ dots.forEach((dot, index) => {
 prevBtn.addEventListener('click', prevSlide);
 nextBtn.addEventListener('click', nextSlide);
 
+// Touch events for swiping
+slider.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchmove', (e) => {
+  endX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', () => {
+  if (endX < startX) {
+    nextSlide();
+  } else if (endX > startX) {
+    prevSlide();
+  }
+});
+
 goToSlide(0);
+
 
 
 
