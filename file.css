@@ -945,14 +945,13 @@ header {
 .msscooter .slider-next {
     border: none;
     background-color: transparent;
-    font-size: 20px;
     cursor: pointer;
 }
-.msscooter .slider-prev img:hover{
-    filter: drop-shadow(0px 0px 10px #ff7700);
+.msscooter .prev-btn:hover{
+    filter: drop-shadow(0px 0px 8px #ff7700);
 }
-.msscooter .slider-next img:hover{
-    filter: drop-shadow(0px 0px 10px #ff7700);
+.msscooter .next-btn:hover{
+    filter: drop-shadow(0px 0px 8px #ff7700);
 }
 .msscooter .slider {
     display: flex;
